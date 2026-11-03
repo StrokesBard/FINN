@@ -1,4 +1,5 @@
 import email.message
+import sys
 import urllib.request
 import urllib.robotparser
 
@@ -43,8 +44,9 @@ def test_screener_query_wildcards_are_honoured():
     assert not allowed(r, "https://www.screener.in/company/source/quarter/6596/")
 
 
+@pytest.mark.skipif(sys.version_info >= (3, 15), reason="the stdlib parser handles wildcards from 3.15")
 def test_stdlib_robotparser_misses_those_wildcards():
-    # The reason finn.http has its own matcher.
+    # The reason finn.http has its own matcher: we target 3.12+.
     rp = urllib.robotparser.RobotFileParser()
     rp.parse(robots_response("www.screener.in").text.splitlines())
     assert rp.can_fetch("finn", "https://www.screener.in/api/company/search/?q=infy")

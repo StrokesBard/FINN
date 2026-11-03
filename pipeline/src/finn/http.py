@@ -38,8 +38,8 @@ class FetchError(Exception):
 
 
 # --- robots.txt (RFC 9309) ---------------------------------------------------
-# urllib.robotparser ignores the `*` and `$` wildcards that real files use
-# (screener.in: `Disallow: /*?q=`), so it would wrongly allow those URLs.
+# Before Python 3.15, urllib.robotparser ignores the `*` and `$` wildcards that
+# real files use (screener.in: `Disallow: /*?q=`) and wrongly allows those URLs.
 
 def robots_rules(status, content_type, body):
     """The rule lines to obey, given how a host answered /robots.txt.
