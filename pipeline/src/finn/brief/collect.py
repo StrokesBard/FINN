@@ -98,8 +98,12 @@ def collect(client, data_dir, portfolio, now, days=7):
     result_syms = sorted({r["item"]["symbol"] for r in window if cls.classify(r["item"]).category == "results"})
     for sym in result_syms:
         step(f"results XBRL {sym}", lambda sym=sym: _xbrl(client, data_dir, sym, window))
-    people = [r for r in window if cls.classify(r["item"]).category == "management_change"]
-    step("management-change PDFs", lambda: _pdfs(client, data_dir, people))
+    # Text of the filings whose substance is only in the PDF: management changes (for profiles,
+    # and for the model) and filings whose NSE summary says nothing.
+    from finn.brief.build import headline
+    from finn.llm.tasks import select
+    to_read = [rec for _, rec in select(window, headline)]
+    step("filing PDFs (profiles, model extraction)", lambda: _pdfs(client, data_dir, to_read))
     return report
 
 

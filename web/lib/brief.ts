@@ -74,6 +74,52 @@ export interface Move {
   caveats: string[];
 }
 
+/** Model output that passed verification: every quote was found in the filing's text. */
+export interface AiFact {
+  label: string;
+  value: string;
+  quote: string;
+  page: number | null;
+}
+
+export interface AiDigest {
+  headline: string;
+  quote: string;
+  page: number | null;
+  facts: AiFact[];
+  url: string;
+  model: string;
+}
+
+export interface AiPerson {
+  person: string;
+  role: string;
+  change: string;
+  effective_date: string | null;
+  reason: string | null;
+  quote: string;
+  page: number | null;
+  top_role: boolean;
+  url: string;
+  model: string;
+}
+
+export interface Llm {
+  enabled: boolean;
+  reason: string;
+  routing: { tier: string; model: string; use: string }[];
+  cards_with_extracts: number;
+  filings_waiting: number;
+  claims_shown: number;
+  claims_discarded: number;
+  spend: {
+    calls: number;
+    cost_usd: number;
+    since: string | null;
+    by_model: Record<string, { calls: number; input_tokens: number; output_tokens: number; cost_usd: number }>;
+  };
+}
+
 export interface Card {
   id: string;
   symbol: string;
@@ -91,6 +137,7 @@ export interface Card {
   results?: Results;
   profile?: { text: string; page: number; url: string; filing: string } | null;
   moves?: Move[];
+  ai?: { digest: AiDigest | null; people: AiPerson[]; discarded: number };
 }
 
 export interface Brief {
@@ -105,6 +152,16 @@ export interface Brief {
   price_check: { sessions: { day: string; url: string; stocks: number }[]; stocks: number; hits: number };
   ranking: { tiers: { key: Tier; label: string; rule: string }[]; category_order: string[] };
   sources: { label: string; url: string }[];
+  llm?: Llm;
+}
+
+const MODEL_NAMES: Record<string, string> = {
+  "claude-haiku-5-5": "Claude Haiku 5.5",
+  "claude-opus-5-5": "Claude Opus 5.5",
+};
+
+export function modelName(id: string): string {
+  return MODEL_NAMES[id] ?? id;
 }
 
 export const WINDOWS = ["24h", "3d", "7d"] as const;

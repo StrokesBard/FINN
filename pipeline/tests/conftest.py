@@ -77,6 +77,50 @@ def build_data_dir(d):
     return d
 
 
+# --- a stand-in for the Anthropic client: replays queued replies, records requests ---------
+
+class _FakeMessages:
+    def __init__(self, replies):
+        self.replies = replies
+        self.calls = []
+
+    def create(self, **request):
+        self.calls.append(request)
+        r = self.replies.pop(0)
+        if isinstance(r, Exception):
+            raise r
+        return r
+
+
+class FakeAnthropic:
+    def __init__(self, *replies):
+        queue = list(replies)
+        self.messages = _FakeMessages(queue)
+        self.beta = type("Beta", (), {})()
+        self.beta.messages = _FakeMessages(queue)
+
+    @property
+    def calls(self):
+        return self.messages.calls + self.beta.messages.calls
+
+
+def model_reply(payload, stop_reason="end_turn", input_tokens=2000, output_tokens=300):
+    """Shaped like an SDK Message: a (hidden) thinking block, then the JSON text block."""
+    from types import SimpleNamespace as NS
+    text = payload if isinstance(payload, str) else json.dumps(payload)
+    return NS(content=[NS(type="thinking", thinking=""), NS(type="text", text=text)], stop_reason=stop_reason,
+              usage=NS(input_tokens=input_tokens, output_tokens=output_tokens,
+                       cache_creation_input_tokens=0, cache_read_input_tokens=0),
+              _request_id="req_test")
+
+
+def api_error(cls_name, status):
+    import anthropic
+    import httpx2
+    response = httpx2.Response(status, request=httpx2.Request("POST", "https://api.anthropic.com/v1/messages"))
+    return getattr(anthropic, cls_name)(f"HTTP {status}", response=response, body=None)
+
+
 def robots_response(host):
     manifest = json.loads((FIXTURES / "robots" / "manifest.json").read_text())[host]
     body = (FIXTURES / "robots" / f"{host}.txt").read_bytes()

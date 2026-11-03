@@ -15,6 +15,10 @@ from finn.archive import Archive
 from finn.brief import classify as cls
 from finn.brief import prices, profile, results
 from finn.brief.collect import pdf_text_path
+from finn.llm import engine, ledger
+from finn.llm import tasks as llm_tasks
+from finn.llm.config import TIERS as MODEL_TIERS
+from finn.llm.config import load_settings
 from finn.sources import nse_announcements
 from finn.times import IST
 
@@ -184,6 +188,37 @@ def _profile_enrichment(data_dir, filings):
     return None
 
 
+def _model_extracts(data_dir, recs):
+    """Verified model output for one card's filings, read from the cache only.
+
+    `finn brief` never calls the API. Whatever `finn enrich` stored and verified is
+    shown; anything discarded is only counted; filings it has not read yet are counted
+    as waiting.
+    """
+    from finn.llm.enrich import documents
+    digest, people, discarded, waiting, seen = None, [], 0, 0, set()
+    for task_name, _rec, doc in documents(data_dir, llm_tasks.select(recs, headline)):
+        if doc is None:
+            continue
+        outcome = engine.cached(data_dir, task_name, doc)
+        if outcome is None:
+            waiting += 1
+            continue
+        discarded += len(outcome.rejected)
+        if not outcome.output:
+            continue
+        model = MODEL_TIERS[llm_tasks.TASKS[task_name].tier].model
+        if task_name == "people_change":
+            for c in outcome.output["changes"]:
+                key = (llm_tasks.normalize(c["person"]), c["change"])
+                if key not in seen:
+                    seen.add(key)
+                    people.append({**c, "url": doc.url, "model": model})
+        elif digest is None:
+            digest = {**outcome.output, "url": doc.url, "model": model}
+    return digest, people, discarded, waiting
+
+
 def _price_cards(data_dir, portfolio, names, start, end):
     symbols = set(portfolio["holdings"])
     sessions = prices.load_sessions(Path(data_dir, "cache", "bhavcopy"), symbols)
@@ -229,22 +264,25 @@ def _price_cards(data_dir, portfolio, names, start, end):
     return cards, checked
 
 
-def build(data_dir, portfolio, now, window="24h"):
+def build(data_dir, portfolio, now, window="24h", settings=None):
     label, hours = WINDOWS[window]
     start = now - timedelta(hours=hours)
     names = _names(data_dir)
     symbols = set(portfolio["holdings"])
+    settings = settings or load_settings()
 
     recs = [r for r in Archive(data_dir, nse_announcements.SOURCE).rows()
             if r["item"].get("symbol") in symbols and r["published"]
             and start <= datetime.fromisoformat(r["published"]) <= now]
 
-    groups = {}
+    groups, recs_by_group = {}, {}
     for rec in recs:
         c = _classify(data_dir, rec)
         sym = rec["item"]["symbol"]
         groups.setdefault((sym, c.category), []).append(_filing(rec, c))
+        recs_by_group.setdefault((sym, c.category), []).append(rec)
 
+    model_totals = {"read": 0, "waiting": 0, "shown": 0, "discarded": 0}
     cards = []
     for (sym, category), filings in groups.items():
         filings.sort(key=lambda f: f["time"], reverse=True)
@@ -266,6 +304,21 @@ def build(data_dir, portfolio, now, window="24h"):
                 card["headline"] = f"{quarter} results"
         if category == "management_change" and tier != cls.ROUTINE:
             card["profile"] = _profile_enrichment(data_dir, filings)
+
+        digest, people, discarded, waiting = _model_extracts(data_dir, recs_by_group[(sym, category)])
+        model_totals["waiting"] += waiting
+        model_totals["discarded"] += discarded
+        if digest or people or discarded:
+            model_totals["read"] += 1
+            model_totals["shown"] += len(people) + (1 + len(digest["facts"]) if digest else 0)
+            card["ai"] = {"digest": digest, "people": people, "discarded": discarded}
+        # The model finds the role; the same top-role rule decides, on the verified quote.
+        top = next((p for p in people if p["top_role"]), None)
+        if top and card["tier"] != cls.NEEDS_YOU:
+            card["tier"] = cls.NEEDS_YOU
+            card["why"].insert(0, {"text": "A change at the top. The model found the role in the filing; its quote "
+                                           "was checked against the PDF and the top-role rule matched it.",
+                                   "evidence": f'Filing text: "{top["quote"]}"'})
         cards.append(card)
 
     # Moves by a company that already has a "needs you" card go inside that card, so one
@@ -339,6 +392,20 @@ def build(data_dir, portfolio, now, window="24h"):
         "price_check": {"sessions": checked, "stocks": len(symbols), "hits": hits},
         "ranking": {"tiers": [{"key": t, "label": TIER_LABELS[t], "rule": TIER_RULES[t]} for t in TIERS],
                     "category_order": [LABELS[c] for c in ORDER]},
+        "llm": {
+            "enabled": settings.enabled, "reason": settings.reason,
+            "routing": [
+                {"tier": "extract", "model": MODEL_TIERS["extract"].model,
+                 "use": "Reads filing PDFs: what a filing with an empty NSE summary discloses, and who changed "
+                        "which role, when and why."},
+                {"tier": "reason", "model": MODEL_TIERS["reason"].model,
+                 "use": "Not used by the Brief. Reserved for weighing management's guidance against reported "
+                        "results in the Dossier."},
+            ],
+            "cards_with_extracts": model_totals["read"], "filings_waiting": model_totals["waiting"],
+            "claims_shown": model_totals["shown"], "claims_discarded": model_totals["discarded"],
+            "spend": ledger.summary(data_dir),
+        },
         "sources": [
             {"label": "NSE corporate announcements", "url": "https://www.nseindia.com/companies-listing/corporate-filings-announcements"},
             {"label": "NSE daily bhavcopy (UDiFF)", "url": "https://www.nseindia.com/all-reports"},

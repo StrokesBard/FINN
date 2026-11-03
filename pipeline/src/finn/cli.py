@@ -2,6 +2,7 @@
 
     finn archive [--every N]   poll NSE's history-less feeds and append what is new (exit 1 if a source failed)
     finn collect               fetch and cache what the Brief needs for the portfolio
+    finn enrich                optional: the model reads filings rules can't summarise (needs an API key)
     finn brief                 build data/brief/brief-<window>.json from local files only
 """
 import argparse
@@ -39,6 +40,30 @@ def _collect(args):
     return 0 if all(ok for _, ok, _ in report) else 1
 
 
+def _enrich(args, settings=None, client=None):
+    from finn.brief.collect import load_portfolio
+    from finn.llm.config import TIERS, load_settings
+    from finn.llm.enrich import enrich
+    settings = settings or load_settings()
+    print(f"Model extraction is {'on' if settings.enabled else 'off'}: {settings.reason}")
+    report = enrich(args.data_dir, load_portfolio(args.portfolio), now_ist(), settings, client)
+    ready = report["candidates"] - report["no_text"]
+    if not settings.enabled:
+        print(f"  {ready} filing(s) have text only a model can summarise; they wait until a key is set. "
+              "The Brief works without them and says so.")
+        return 0
+    print(f"  {report['candidates']} filing(s) selected, {report['no_text']} without a text layer (skipped)")
+    for status, n in sorted(report["status"].items()):
+        print(f"  {status:<18} {n}")
+    print(f"  claims shown {report['claims_shown']}, "
+          f"discarded (quote not in the document) {report['claims_discarded']}")
+    print(f"  this run cost ${report['cost_usd']:.4f} on {TIERS['extract'].model}; nothing is sent twice")
+    if report["stopped"]:
+        print(f"  stopped: {report['stopped']}. Check ANTHROPIC_API_KEY in .env (the key is never printed).")
+        return 1
+    return 0
+
+
 def _brief(args):
     import json
 
@@ -67,6 +92,7 @@ def main(argv=None):
     arc.add_argument("--feeds", nargs="+", default=list(FEEDS), metavar="FEED", help="RSS feeds to poll")
     arc.add_argument("--no-api", action="store_true", help="skip the announcements API")
     for name, text in (("collect", "fetch and cache what the Brief needs for the portfolio"),
+                       ("enrich", "read the filings rules can't summarise with the model (needs an API key)"),
                        ("brief", "build the Brief JSON for every window from local data")):
         p = sub.add_parser(name, help=text)
         p.add_argument("--data-dir", type=Path, default=Path(os.environ.get("FINN_DATA_DIR", "data")))
@@ -76,6 +102,8 @@ def main(argv=None):
     logging.basicConfig(level=logging.WARNING, format="%(levelname)s %(name)s: %(message)s")
     if args.command == "collect":
         return _collect(args)
+    if args.command == "enrich":
+        return _enrich(args)
     if args.command == "brief":
         return _brief(args)
     client = Client()

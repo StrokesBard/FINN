@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Suspense } from "react";
+import { AiHow, AiStatus } from "@/components/ai";
 import { NeedsCard, WorthCard } from "@/components/cards";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { DoneRestorer } from "@/components/triage";
@@ -67,6 +68,7 @@ async function BriefScreen({ searchParams }: { searchParams: PageProps<"/">["sea
         {brief.price_check.sessions.map((s) => istDay(s.day)).join(", ") || "no session in this window"}.
         Thresholds: price ±{t.price_move_pct}%, volume {t.volume_multiple}× the {t.volume_lookback_sessions}-session average.
       </p>
+      {brief.llm ? <AiStatus llm={brief.llm} /> : null}
 
       <section id="needs" className="stack needs" aria-labelledby="needs-h">
         <h2 id="needs-h">Needs you</h2>
@@ -126,9 +128,10 @@ function HowItWorks({ brief }: { brief: Brief }) {
         <p className="fine">
           Filings from one company about the same thing are grouped into one card. A company’s unusual move goes
           inside its card when it has one. Labels come from rules over NSE’s own subject line and summary, so each
-          card can say which words it matched. No model is involved.
+          card can say which words it matched. No model decides a label or a rank.
         </p>
       </details>
+      {brief.llm ? <AiHow llm={brief.llm} /> : null}
       <details>
         <summary><h2>Your portfolio · {brief.portfolio.holdings.length}</h2></summary>
         <p className="fine">{brief.portfolio.note}</p>

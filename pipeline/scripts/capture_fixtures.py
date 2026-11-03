@@ -224,8 +224,23 @@ def capture_brief():
     save("brief/EQUITY_L.csv", (eq[0] + "".join(row for row in eq[1:] if row.split(",")[0] in symbols)).encode())
 
 
+LLM_DOCS = ["ITC_02112026184512_SE_Sproutlife_.pdf", "HDFCBANK3_31102026221631_SE_INTIMATION-_Sanjay_Dsouza.pdf",
+            "TRENT_29102026163044_AppointmentofDirector.pdf", "TRENT_29102026163102_AppointmentofDirector.pdf"]
+
+
+def capture_llm():
+    """Text of real filings (as the pipeline extracted it) and their NSE records, for the model tests."""
+    from finn.archive import Archive
+    data = Path(__file__).resolve().parents[2] / "data"
+    for name in LLM_DOCS:
+        save(f"llm/pdf_text/{name}.json", (data / "cache" / "pdf_text" / f"{name}.json").read_bytes())
+    wanted = {f"https://nsearchives.nseindia.com/corporate/{n}" for n in LLM_DOCS}
+    rows = [r for r in Archive(data, "nse_api/announcements").rows() if r["item"].get("attchmntFile") in wanted]
+    save("llm/announcements.jsonl", "".join(json.dumps(r, ensure_ascii=False) + "\n" for r in rows).encode("utf-8"))
+
+
 if __name__ == "__main__":
     steps = {"robots": capture_robots, "api": capture_api, "rss": capture_rss, "truncated": capture_truncated,
-             "brief": capture_brief}
+             "brief": capture_brief, "llm": capture_llm}
     for name in sys.argv[1:] or steps:
         steps[name]()

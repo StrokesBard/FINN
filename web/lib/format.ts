@@ -37,6 +37,13 @@ export function multiple(x: number | null): string {
   return x === null ? "n/m" : `${grouped(x, 1)}×`;
 }
 
+/** Model spend from the usage ledger: "$0.0042"; tiny amounts are not rounded to zero. */
+export function usd(x: number): string {
+  if (x === 0) return "$0";
+  if (x < 0.0001) return "under $0.0001";
+  return `$${x.toFixed(4)}`;
+}
+
 export function istTime(iso: string): string {
   return new Intl.DateTimeFormat("en-IN", {
     timeZone: IST, day: "numeric", month: "short", hour: "2-digit", minute: "2-digit", hour12: false,

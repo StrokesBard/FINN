@@ -1,5 +1,6 @@
 import type { Card, Filing, Metric, Move, Results } from "@/lib/brief";
 import { count, crore, istDay, istTime, multiple, pct, rupees, sign } from "@/lib/format";
+import { AiBlock } from "./ai";
 import { CardShell } from "./triage";
 
 const ELEMENT_LABEL: Record<string, string> = {
@@ -232,6 +233,7 @@ export function NeedsCard({ card }: { card: Card }) {
       {card.profile ? <Profile p={card.profile} /> : null}
       {card.category !== "results" && card.filings[0]?.nse_summary && card.filings[0].headline !== card.headline
         ? <p className="summary">{card.filings[0].headline}</p> : null}
+      {card.ai ? <AiBlock ai={card.ai} /> : null}
       <WhyHere card={card} />
       <Sources card={card} />
     </CardShell>
@@ -246,6 +248,7 @@ export function WorthCard({ card }: { card: Card }) {
       <h3 className="headline small">{card.headline}</h3>
       {card.results ? <ResultsTable r={card.results} /> : null}
       {card.profile ? <Profile p={card.profile} /> : null}
+      {card.ai ? <AiBlock ai={card.ai} /> : null}
       <WhyHere card={card} />
       <Sources card={card} />
     </CardShell>

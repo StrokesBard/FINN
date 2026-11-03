@@ -5,8 +5,10 @@ import pytest
 from conftest import build_data_dir
 
 from finn.brief.build import ORDER, TIERS, build
+from finn.llm.config import Settings
 from finn.times import IST
 
+NO_KEY = Settings(False, "No API key (test).")
 NOW = datetime(2026, 11, 3, 17, 5, tzinfo=IST)
 PORTFOLIO = {"name": "test", "holdings": ["KEC", "SBIN", "MEDANTA", "RELIANCE", "ALKEM", "BAJAJFINSV", "UPL", "ITC"],
              "thresholds": {"price_move_pct": 5, "volume_multiple": 2, "volume_lookback_sessions": 20}}
@@ -19,7 +21,7 @@ def data_dir(tmp_path_factory):
 
 @pytest.fixture(scope="module")
 def brief(data_dir):
-    return build(data_dir, PORTFOLIO, NOW, "24h")
+    return build(data_dir, PORTFOLIO, NOW, "24h", settings=NO_KEY)
 
 
 def cards(brief, **match):
@@ -91,7 +93,7 @@ def test_a_move_with_no_other_news_gets_its_own_card_with_sources(brief):
 
 def test_several_moves_by_one_company_share_one_card_each_with_its_own_source(data_dir):
     # RELIANCE crossed thresholds on 2 Nov and again on 3 Nov; the 3-day Brief shows one card.
-    b = build(data_dir, PORTFOLIO, NOW, "3d")
+    b = build(data_dir, PORTFOLIO, NOW, "3d", settings=NO_KEY)
     rel = cards(b, symbol="RELIANCE", category="price_move")
     assert len(rel) == 1
     days = [m["day"] for m in rel[0]["moves"]]
@@ -115,7 +117,7 @@ def test_routine_items_are_hidden_but_counted_with_reasons(brief):
 
 def test_windows_contain_what_their_label_says(data_dir):
     for key in ("24h", "3d", "7d"):
-        b = build(data_dir, PORTFOLIO, NOW, key)
+        b = build(data_dir, PORTFOLIO, NOW, key, settings=NO_KEY)
         start = datetime.fromisoformat(b["window"]["start"])
         for c in b["cards"]:
             for f in c["filings"]:
