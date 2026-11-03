@@ -4,6 +4,28 @@ FINN is a mobile-first investor agent. This repository builds its **push** side,
 
 Every number on the screen comes from a primary source (NSE filings, NSE's daily price files, NSE's structured XBRL results), and each card links to those sources. The **pull** side, an on-demand research **Dossier** grounded in annual reports and earnings-call transcripts, is not built yet.
 
+## Try it
+
+| | |
+|---|---|
+| **Live app**, in any phone browser | https://finn-eight-zeta.vercel.app |
+| **Android app** (APK, 1 MB) | https://github.com/StrokesBard/FINN/releases/download/v1.0/FINN.apk |
+
+<p>
+  <img src="docs/qr-app.png" width="150" alt="QR code for https://finn-eight-zeta.vercel.app">
+  &nbsp;&nbsp;
+  <img src="docs/qr-apk.png" width="150" alt="QR code for the Android APK download">
+</p>
+
+Scan with the phone's camera: the left code opens the live app, the right one downloads the Android app.
+
+**Installing the APK on Android:**
+1. Open the APK link on the phone and download `FINN.apk`.
+2. Open the downloaded file. If Android asks, allow your browser to install apps ("Allow from this source"), then go back.
+3. Tap **Install**. Play Protect may warn that it doesn't recognise the developer; tap **More details → Install anyway**.
+
+The app opens the live site full screen, so it always shows the current Brief and works offline with the last Brief it loaded. On an iPhone, open the live link in Safari and use **Share → Add to Home Screen**.
+
 ## What the screen shows
 
 - **Window:** 24 hours, 3 days or 7 days. The page shows the exact start and end time in IST, and when it was built.
@@ -161,6 +183,22 @@ Then open `http://<this PC's IPv4 address>:3000` on the phone. Find the address 
 
 To refresh later, run steps 3 to 5 again and reload the page. To keep the history-less feeds archived, leave `python -m finn archive --every 300` running.
 
+## How it's deployed
+
+```
+GitHub Action (weekdays 18:00 IST)  finn archive → collect → enrich → brief
+ │  pushes brief/*.json to the `data` branch (downloads and the archive stay in the Actions cache)
+ ▼
+raw.githubusercontent.com/StrokesBard/FINN/data/brief/brief-<window>.json
+ │  read at request time, cached for minutes
+ ▼
+Vercel (Next.js, root directory `web`)  →  https://finn-eight-zeta.vercel.app  →  Android app (PWABuilder)
+```
+
+- **Workflow:** [.github/workflows/data.yml](.github/workflows/data.yml). Run it by hand from the Actions tab. Model reading turns on only if the repository has an `ANTHROPIC_API_KEY` secret.
+- **Vercel:** import the repo, set **Root Directory** to `web`, and keep everything else at its default. No environment variables are needed: on Vercel the app reads the data branch. Set `FINN_BRIEF_URL` to read from elsewhere. Pushes to the `data` branch don't trigger a deploy ([web/vercel.json](web/vercel.json)).
+- **Phone:** [web/app/manifest.ts](web/app/manifest.ts) and the icons make the site installable, and [web/public/sw.js](web/public/sw.js) keeps the last Brief readable offline. The Android app was packaged with [PWABuilder](https://www.pwabuilder.com); [web/public/.well-known/assetlinks.json](web/public/.well-known/assetlinks.json) proves the site and the app belong together, so it opens without a browser bar. The signing key is kept outside the repository.
+
 ## Checks
 
 ```bash
@@ -194,14 +232,14 @@ pipeline/          Python package `finn`: sources, archive, collect, the Brief, 
   scripts/         fixture capture, screen verification
 web/               Next.js 16 app (the Brief screen)
 spike/             the scripts that proved each data source, and FINDINGS.md
+docs/              QR codes for "Try it"
 data/              everything the pipeline writes; git-ignored on main (see below)
 ```
 
 ## Known limits
 
 - **No Dossier yet.** The pull side (annual reports, transcripts, promised vs delivered) is not built.
-- **Data refreshes manually** (steps 3 to 5). Nothing is scheduled or deployed yet.
-- **NSE's announcements API is undocumented,** and access from cloud servers hasn't been tested.
+- **The scheduled refresh hasn't been proven yet.** NSE's announcements API is undocumented, and whether it answers GitHub's servers is untested. Until the workflow runs green, the live Brief stays at the snapshot published from this PC on 3 Nov 2026 (steps 3 to 5, then a push to the `data` branch).
 - **The corporate-actions API returns at most 20 rows per company.**
 - **Model reading is untested against real API calls.** It's tested without a key using stand-in replies, so the share of claims that survive verification is unknown until it runs with a key.
 

@@ -22,6 +22,8 @@ env/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+# the exported AI conversation is shared through Drive: it holds personal details
+/ai-build-history/
 # personal Claude Code permissions (launch.json is shared)
 .claude/settings.local.json
 .coverage
