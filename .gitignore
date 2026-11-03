@@ -1,0 +1,4 @@
+# Only brief/*.json is published here. Downloads and the archive stay in the Actions cache.
+cache/
+raw/
+llm/
