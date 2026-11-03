@@ -7,6 +7,8 @@ const inter = Inter({ subsets: ["latin"], display: "swap" });
 export const metadata: Metadata = {
   title: "FINN · Brief",
   description: "What changed across your portfolio, ranked, explained and sourced.",
+  applicationName: "FINN",
+  appleWebApp: { capable: true, title: "FINN", statusBarStyle: "default" },
 };
 
 export const viewport: Viewport = {
