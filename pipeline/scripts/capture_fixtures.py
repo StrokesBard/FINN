@@ -78,12 +78,25 @@ def capture_rss():
             break
     save("rss/Online_announcements_poll2.xml", trim(second.content, 15))
 
-    # Feeds chosen for their quirks: shared links, empty and odd timestamps.
-    for feed, head, tail in [("Financial_Results", 4, 0), ("Integrated_Filing_Financials", 3, 0),
+    # Feeds chosen for their quirks: shared links, repeated items, empty and odd timestamps.
+    for feed, head, tail in [("Financial_Results", 4, 0), ("InsiderTrading", 50, 0),
+                             ("Integrated_Filing_Financials", 3, 0),
                              ("Annual_Reports", 3, 0), ("Offer_Documents", 2, 2),
                              ("Related_Party_Trans", 2, 2), ("Circulars", 3, 0), ("Daily_Buyback", 2, 1)]:
         r = fetch(RSS.format(feed))
         save(f"rss/{feed}.xml", trim(r.content, head, tail))
+
+
+def capture_truncated():
+    """NSE sometimes serves Online_announcements cut off mid-item. When it does,
+    keep the first few whole items plus the broken tail exactly as received."""
+    r = fetch(RSS.format("Online_announcements"))
+    if r.content.rstrip().endswith(b"</rss>"):
+        print("    feed is complete right now; existing truncated fixture kept")
+        return
+    items = list(ITEM.finditer(r.content))
+    head = r.content[:items[0].start()] + b"".join(m.group(0) for m in items[:5])
+    save("rss/Online_announcements_truncated.xml", head + r.content[items[-1].end():])
 
 
 def capture_api():
@@ -99,6 +112,6 @@ def capture_api():
 
 
 if __name__ == "__main__":
-    steps = {"robots": capture_robots, "api": capture_api, "rss": capture_rss}
+    steps = {"robots": capture_robots, "api": capture_api, "rss": capture_rss, "truncated": capture_truncated}
     for name in sys.argv[1:] or steps:
         steps[name]()

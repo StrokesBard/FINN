@@ -1,3 +1,4 @@
+import re
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
 
@@ -31,8 +32,8 @@ def test_unusable_values_give_none(raw):
 def test_every_dated_item_in_the_captured_feeds_parses(fixtures):
     seen = 0
     for path in sorted((fixtures / "rss").glob("*.xml")):
-        for item in ET.parse(path).getroot().iter("item"):
-            raw = item.findtext("pubDate") or ""
+        for item in re.findall(rb"<item>.*?</item>", path.read_bytes(), re.S):  # whole items only
+            raw = ET.fromstring(item).findtext("pubDate") or ""
             if raw.strip():
                 seen += 1
                 assert parse_exchange_time(raw) is not None, f"{path.name}: {raw!r}"
