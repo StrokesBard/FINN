@@ -194,19 +194,46 @@ sessions = sorted(p.name for p in (CACHE / "bhavcopy").glob("*.csv.zip"))
 
 def rendered(url):
     """The page as the browser shows it. React streams parts of a large page as hidden
-    <div id="S:n"> segments that its runtime moves into <template id="P:n"> holes; do the same."""
-    page = requests.get(url, timeout=60).content.decode("utf-8")
-    for _ in range(100):
-        holes = re.findall(r'<template id="P:([0-9a-z]+)"></template>', page)
-        if not holes:
+    segments with id="S:n" that its runtime moves into <template id="P:n"> holes; do the same.
+    A segment is a <div> in normal flow, but a <tbody>, <tr> and so on inside tables."""
+    tree = html.fromstring(requests.get(url, timeout=60).content.decode("utf-8"))
+    for _ in range(500):
+        moved = False
+        for hole in tree.xpath('//template[starts-with(@id, "P:")]'):
+            found = tree.xpath(f'//*[@id="S:{hole.get("id")[2:]}"]')
+            if not found:
+                continue
+            seg, parent = found[0], hole.getparent()
+            at, tail = parent.index(hole), hole.tail or ""
+            if seg.text:   # text before the segment's first child joins whatever precedes the hole
+                if at == 0:
+                    parent.text = (parent.text or "") + seg.text
+                else:
+                    parent[at - 1].tail = (parent[at - 1].tail or "") + seg.text
+            children = list(seg)
+            parent.remove(hole)
+            for k, child in enumerate(children):   # move, as React's $RS does: no copy is left behind
+                parent.insert(at + k, child)
+            if children:
+                children[-1].tail = (children[-1].tail or "") + tail
+            elif at:
+                parent[at - 1].tail = (parent[at - 1].tail or "") + tail
+            else:
+                parent.text = (parent.text or "") + tail
+            box = seg.getparent()
+            box.remove(seg)
+            # drop the now-empty hidden wrappers (<table hidden><tbody>) the segment travelled in
+            while box is not None and len(box) == 0 and box.tag in ("tbody", "thead", "tr", "table", "div") \
+                    and (box.get("hidden") is not None or box.tag in ("tbody", "thead", "tr")):
+                up = box.getparent()
+                if up is None:
+                    break
+                up.remove(box)
+                box = up
+            moved = True
+        if not moved:
             break
-        tree = html.fromstring(page)
-        for h in holes:
-            seg = tree.xpath(f'//div[@id="S:{h}"]')
-            if seg:
-                inner = (seg[0].text or "") + "".join(html.tostring(c, encoding="unicode") for c in seg[0])
-                page = page.replace(f'<template id="P:{h}"></template>', inner, 1)
-    return html.fromstring(page)
+    return tree
 
 
 def verify(window):
