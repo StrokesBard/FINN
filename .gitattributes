@@ -1,0 +1,17 @@
+# Store text with LF in the repo and check it out as LF on every OS,
+# so Windows (core.autocrlf=true here) and Linux CI/deploy see identical files.
+* text=auto eol=lf
+
+# Windows-only scripts need CRLF to run correctly.
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+*.ps1  text eol=crlf
+
+# Real captured fixtures are kept byte-for-byte as the exchange served them.
+pipeline/tests/fixtures/** -text
+
+*.pdf  binary
+*.zip  binary
+*.png  binary
+*.jpg  binary
+*.ico  binary
