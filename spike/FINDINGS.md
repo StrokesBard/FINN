@@ -139,6 +139,17 @@ Neither is needed. The biggest open risk is that NSE's JSON API is unofficial, a
 13. **pypdf 6.x prints "fontTools is required…" warnings** (97 on one annual report) unless `fonttools` is installed. It's now pinned.
 14. **OneDrive:** the project sits inside a synced OneDrive folder. Keep virtualenvs and caches **outside** it (the spike venv lives in the session temp folder), or OneDrive will try to sync thousands of files and can lock them during `pip install`.
 
+## Found later, while building the archiver (same day)
+
+These came up running `finn archive` for real and are handled in `pipeline/`:
+
+- **NSE served `Online_announcements.xml` cut off mid-item.** It had 1,207 whole items and no closing `</rss>`, and this lasted several minutes before a complete copy came back. Feeds that don't parse as a whole are salvaged item by item.
+- **Feeds repeat items.** `InsiderTrading.xml` had 21 items, of which only 8 were distinct.
+- **The RSS feeds support conditional GET** (ETag and Last-Modified), so an unchanged feed costs a 304 with no body. The JSON API sends no validators.
+- **`nsearchives` stalled some requests until they timed out.** It happened with some longer User-Agent strings, and also for `robots.txt` itself. We didn't investigate further, because that would mean probing bot defences. The pipeline uses one short honest UA, `finn/0.1 (research prototype)`, and treats timeouts as transient: retry with backoff, then skip until the next poll.
+- **`api.bseindia.com/robots.txt` answers differently over time.** Earlier it gave a 403 (Akamai); later it served BSE's HTML home page.
+- **Before Python 3.15, `urllib.robotparser` ignores `*` wildcards.** It allows URLs that screener.in's `Disallow: /*?q=` forbids, so `finn.http` has its own RFC 9309 matcher.
+
 ## Library and OS notes
 
 - Windows 11 has **Python 3.15.2** (default) and 3.12 installed. All libraries in [requirements.txt](requirements.txt) installed from **binary wheels only** on both (`--only-binary :all:`), so no compiler is needed.
