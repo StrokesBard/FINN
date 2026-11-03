@@ -19,6 +19,9 @@ dependencies = [
 dev = [
   "pytest==9.1.1",
   "ruff==0.17.3",
+  # scripts/verify_brief.py: an independent second reading of the PDFs and the rendered page
+  "pdfplumber==0.11.10",
+  "cssselect==1.6.0",
 ]
 
 [project.scripts]
