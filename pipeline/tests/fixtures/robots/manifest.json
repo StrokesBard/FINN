@@ -1,0 +1,30 @@
+{
+  "query1.finance.yahoo.com": {
+    "status": 200,
+    "content_type": "text/plain"
+  },
+  "finance.yahoo.com": {
+    "status": 200,
+    "content_type": "text/plain"
+  },
+  "www.screener.in": {
+    "status": 200,
+    "content_type": "text/plain; charset=utf-8"
+  },
+  "www.nseindia.com": {
+    "status": 200,
+    "content_type": "text/plain; charset=utf-8"
+  },
+  "nsearchives.nseindia.com": {
+    "status": 404,
+    "content_type": "text/html;charset=UTF-8"
+  },
+  "www.bseindia.com": {
+    "status": 200,
+    "content_type": "text/html"
+  },
+  "api.bseindia.com": {
+    "status": 200,
+    "content_type": "text/html"
+  }
+}

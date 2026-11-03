@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "finn"
+version = "0.1.0"
+description = "FINN ingestion pipeline: archives NSE filings for the daily Brief"
+requires-python = ">=3.12"
+# Exact pins: this is an app, and these versions are verified on Windows (3.12, 3.15).
+dependencies = [
+  "requests==2.34.2",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest==9.1.1",
+]
+
+[project.scripts]
+finn = "finn.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
