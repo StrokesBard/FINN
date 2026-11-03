@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "app.vercel.finn_eight_zeta.twa",
+        "sha256_cert_fingerprints": ["76:E3:E5:C9:5B:7D:16:CB:C1:6D:24:E2:54:57:52:95:82:0C:D0:17:03:CC:9D:9C:D7:38:60:F2:8F:93:EF:D1"]
+      }
+    }]
