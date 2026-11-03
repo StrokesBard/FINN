@@ -2,6 +2,7 @@
 
     finn archive [--every N]   poll NSE's history-less feeds and append what is new (exit 1 if a source failed)
     finn collect               fetch and cache what the Brief needs for the portfolio
+    finn brief                 build data/brief/brief-<window>.json from local files only
 """
 import argparse
 import logging
@@ -38,6 +39,24 @@ def _collect(args):
     return 0 if all(ok for _, ok, _ in report) else 1
 
 
+def _brief(args):
+    import json
+
+    from finn.brief.build import WINDOWS, build
+    from finn.brief.collect import load_portfolio
+    portfolio, now = load_portfolio(args.portfolio), now_ist()
+    out = args.data_dir / "brief"
+    out.mkdir(parents=True, exist_ok=True)
+    for key in WINDOWS:
+        brief = build(args.data_dir, portfolio, now, key)
+        path = out / f"brief-{key}.json"
+        path.write_text(json.dumps(brief, ensure_ascii=False, indent=1), encoding="utf-8")
+        c = brief["counts"]
+        print(f"  {path}: {c['needs_you']} need you, {c['worth_knowing']} worth knowing, "
+              f"{c['routine_filings']} routine hidden ({c['filings']} filings)")
+    return 0
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(prog="finn")
     sub = parser.add_subparsers(dest="command", required=True)
@@ -47,7 +66,8 @@ def main(argv=None):
     arc.add_argument("--every", type=int, metavar="SECONDS", help="keep polling at this interval")
     arc.add_argument("--feeds", nargs="+", default=list(FEEDS), metavar="FEED", help="RSS feeds to poll")
     arc.add_argument("--no-api", action="store_true", help="skip the announcements API")
-    for name, text in (("collect", "fetch and cache what the Brief needs for the portfolio"),):
+    for name, text in (("collect", "fetch and cache what the Brief needs for the portfolio"),
+                       ("brief", "build the Brief JSON for every window from local data")):
         p = sub.add_parser(name, help=text)
         p.add_argument("--data-dir", type=Path, default=Path(os.environ.get("FINN_DATA_DIR", "data")))
         p.add_argument("--portfolio", type=Path, default=Path("config/portfolio.json"))
@@ -56,6 +76,8 @@ def main(argv=None):
     logging.basicConfig(level=logging.WARNING, format="%(levelname)s %(name)s: %(message)s")
     if args.command == "collect":
         return _collect(args)
+    if args.command == "brief":
+        return _brief(args)
     client = Client()
     data_dir = args.data_dir.resolve()
     try:

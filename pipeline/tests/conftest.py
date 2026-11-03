@@ -57,6 +57,26 @@ class FakeSession:
         return resp
 
 
+def build_data_dir(d):
+    """A data/ tree made from the real 2-3 Nov 2026 slice in fixtures/brief (what `finn collect` would leave)."""
+    import shutil
+    b = FIXTURES / "brief"
+    raw = d / "raw" / "nse_api" / "announcements"
+    raw.mkdir(parents=True)
+    for line in (b / "announcements.jsonl").read_text(encoding="utf-8").splitlines():
+        day = json.loads(line)["published"][:10]
+        with (raw / f"{day}.jsonl").open("a", encoding="utf-8") as fh:
+            fh.write(line + "\n")
+    cache = d / "cache"
+    (cache / "nse").mkdir(parents=True)
+    shutil.copy(b / "EQUITY_L.csv", cache / "nse" / "EQUITY_L.csv")
+    for src, dst in [("bhavcopy", "bhavcopy"), ("xbrl", "xbrl"), ("pdf_text", "pdf_text"),
+                     ("corporate_actions", "nse_api/corporate_actions"),
+                     ("integrated_filings", "nse_api/integrated_filings")]:
+        shutil.copytree(b / src, cache / dst)
+    return d
+
+
 def robots_response(host):
     manifest = json.loads((FIXTURES / "robots" / "manifest.json").read_text())[host]
     body = (FIXTURES / "robots" / f"{host}.txt").read_bytes()
