@@ -1,0 +1,14 @@
+{
+  "name": "Demo portfolio",
+  "note": "18 NSE companies across 16 sectors and a range of sizes, picked for an interesting demo during the Q2 FY27 results season.",
+  "thresholds": {
+    "price_move_pct": 5,
+    "volume_multiple": 2,
+    "volume_lookback_sessions": 20
+  },
+  "holdings": [
+    "RELIANCE", "HDFCBANK", "SBIN", "INFY", "ITC", "BAJAJFINSV",
+    "ALKEM", "SUNPHARMA", "DIXON", "TRENT", "HAL", "PETRONET",
+    "UPL", "KEC", "IRCTC", "CDSL", "MEDANTA", "NATIONALUM"
+  ]
+}
