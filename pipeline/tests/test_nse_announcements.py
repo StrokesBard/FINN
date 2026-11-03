@@ -1,8 +1,8 @@
 import copy
 
 import pytest
-
 from conftest import SEEN
+
 from finn.archive import Archive
 from finn.http import FetchError
 from finn.sources import nse_announcements as api
@@ -11,7 +11,7 @@ from finn.sources import nse_announcements as api
 def test_records_are_keyed_by_seq_id_and_dated_by_sort_date(api_items):
     recs = api.parse(api_items, SEEN)
     assert [r.key for r in recs] == [it["seq_id"] for it in api_items]
-    for r, it in zip(recs, api_items):
+    for r, it in zip(recs, api_items, strict=True):
         assert r.published_raw == it["sort_date"]
         assert f"{r.published:%Y-%m-%d %H:%M:%S}" == it["sort_date"]
         assert r.item is it

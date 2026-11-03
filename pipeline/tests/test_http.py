@@ -5,8 +5,8 @@ import urllib.robotparser
 
 import pytest
 import requests
-
 from conftest import FakeResponse, FakeSession, robots_response
+
 from finn.http import Blocked, Client, FetchError, allowed, robots_rules
 
 

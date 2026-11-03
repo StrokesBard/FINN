@@ -1,6 +1,6 @@
 import pytest
-
 from conftest import SEEN
+
 from finn.archive import Archive
 from finn.http import FetchError
 from finn.sources import nse_rss

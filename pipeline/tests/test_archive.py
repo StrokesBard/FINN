@@ -2,8 +2,8 @@ import json
 from datetime import date, timedelta
 
 import pytest
-
 from conftest import SEEN
+
 from finn.archive import Archive, Record
 from finn.times import parse_exchange_time
 
@@ -69,7 +69,7 @@ def test_lines_within_a_day_are_in_time_order(tmp_path, api_items):
     arc = Archive(tmp_path, SOURCE)
     arc.add(records(api_items))  # the API serves newest first
     for f in arc.files():
-        stamps = [json.loads(l)["published"] for l in lines(f)]
+        stamps = [json.loads(line)["published"] for line in lines(f)]
         assert stamps == sorted(stamps)
 
 

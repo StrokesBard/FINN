@@ -3,8 +3,8 @@ import types
 from datetime import date, datetime
 
 import pytest
-
 from conftest import SEEN, FakeResponse
+
 from finn import cli, ingest
 from finn.http import Blocked
 from finn.sources import nse_announcements, nse_rss
