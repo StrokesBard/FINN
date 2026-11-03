@@ -1,0 +1,34 @@
+[
+ {
+  "bcEndDate": "-",
+  "bcStartDate": "-",
+  "caBroadcastDate": null,
+  "comp": "Global Health Limited",
+  "exDate": "14-Aug-2026",
+  "faceVal": "2",
+  "ind": "-",
+  "isin": "INE474Q01031",
+  "ndEndDate": "-",
+  "ndStartDate": "-",
+  "recDate": "14-Aug-2026",
+  "series": "EQ",
+  "subject": "Dividend - Re 0.50 Per Share",
+  "symbol": "MEDANTA"
+ },
+ {
+  "bcEndDate": "-",
+  "bcStartDate": "-",
+  "caBroadcastDate": null,
+  "comp": "Global Health Limited",
+  "exDate": "22-Aug-2025",
+  "faceVal": "2",
+  "ind": "-",
+  "isin": "INE474Q01031",
+  "ndEndDate": "-",
+  "ndStartDate": "-",
+  "recDate": "22-Aug-2025",
+  "series": "EQ",
+  "subject": "Dividend - Re 0.50 Per Share",
+  "symbol": "MEDANTA"
+ }
+]
