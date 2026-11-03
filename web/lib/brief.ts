@@ -171,14 +171,39 @@ export function pickWindow(value: string | string[] | undefined): WindowKey {
   return WINDOWS.find((w) => w === value) ?? "24h";
 }
 
-// data/brief at the repo root by default; FINN_BRIEF_DIR overrides it.
+// Where the Brief JSON comes from.
+// - Remote: FINN_BRIEF_URL, or on Vercel the repo's `data` branch, which the scheduled
+//   GitHub workflow rebuilds. Read over HTTPS from GitHub's raw file host.
+// - Local (development, `next start` on your machine): data/brief at the repo root, which
+//   `python -m finn brief` writes. FINN_BRIEF_DIR overrides the folder.
+const REPO_DATA = "https://raw.githubusercontent.com/StrokesBard/FINN/data/brief";
+const BRIEF_URL = (process.env.FINN_BRIEF_URL ?? (process.env.VERCEL ? REPO_DATA : "")).replace(/\/+$/, "");
 const BRIEF_DIR = process.env.FINN_BRIEF_DIR ?? path.join(process.cwd(), "..", "data", "brief");
 
-/** The Brief for a window. The file's mtime is part of the cache key, so a rebuild shows up at once. */
+export const BRIEF_SOURCE = BRIEF_URL
+  ? { kind: "remote" as const, where: BRIEF_URL }
+  : { kind: "local" as const, where: BRIEF_DIR };
+
+/** The Brief for a window, or null if it hasn't been built (or can't be reached). */
 export async function getBrief(window: WindowKey): Promise<Brief | null> {
+  if (BRIEF_URL) {
+    return fetchBrief(`${BRIEF_URL}/brief-${window}.json`);
+  }
   const file = path.join(BRIEF_DIR, `brief-${window}.json`);
   try {
+    // The file's mtime is part of the cache key, so a local rebuild shows up at once.
     return await loadBrief(file, (await stat(file)).mtimeMs);
+  } catch {
+    return null;
+  }
+}
+
+async function fetchBrief(url: string): Promise<Brief | null> {
+  "use cache";
+  cacheLife("minutes"); // the workflow rebuilds daily; GitHub's raw host caches for ~5 minutes anyway
+  try {
+    const res = await fetch(url, { headers: { Accept: "application/json" } });
+    return res.ok ? ((await res.json()) as Brief) : null;
   } catch {
     return null;
   }

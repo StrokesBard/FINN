@@ -4,6 +4,13 @@
 !.env.example
 *.pem
 *.key
+# Android signing material from PWABuilder: back it up somewhere safe, never commit it
+*.keystore
+*.jks
+signing-key-info.txt
+# app packages are attached to GitHub Releases, not committed
+*.apk
+*.aab
 
 # --- Python ---
 __pycache__/

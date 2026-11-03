@@ -4,7 +4,7 @@ import { AiHow, AiStatus } from "@/components/ai";
 import { NeedsCard, WorthCard } from "@/components/cards";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { DoneRestorer } from "@/components/triage";
-import { type Brief, getBrief, pickWindow } from "@/lib/brief";
+import { BRIEF_SOURCE, type Brief, getBrief, pickWindow } from "@/lib/brief";
 import { istDay, istTime, istWeekday } from "@/lib/format";
 
 export default function Page(props: PageProps<"/">) {
@@ -32,8 +32,17 @@ async function BriefScreen({ searchParams }: { searchParams: PageProps<"/">["sea
   if (!brief) {
     return (
       <main className="empty">
-        <p>No Brief has been built yet.</p>
-        <p className="fine">Run <code>python -m finn collect</code> and then <code>python -m finn brief</code> from the repo root.</p>
+        {BRIEF_SOURCE.kind === "remote" ? (
+          <>
+            <p>The Brief couldn’t be loaded right now.</p>
+            <p className="fine">It is read from <code>{BRIEF_SOURCE.where}</code>. Try again in a minute.</p>
+          </>
+        ) : (
+          <>
+            <p>No Brief has been built yet.</p>
+            <p className="fine">Run <code>python -m finn collect</code> and then <code>python -m finn brief</code> from the repo root.</p>
+          </>
+        )}
       </main>
     );
   }

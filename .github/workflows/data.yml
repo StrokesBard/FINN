@@ -1,0 +1,73 @@
+# Rebuilds the Brief from live NSE data and publishes it to the `data` branch, which the
+# live site reads (raw.githubusercontent.com/StrokesBard/FINN/data/brief/brief-<window>.json).
+#
+# Downloads (price files, XBRL, PDFs) and the filing archive live in the Actions cache,
+# never in git. Only brief/*.json is committed, on its own branch, so main's history
+# stays code-only.
+name: Refresh the Brief data
+
+on:
+  schedule:
+    - cron: "30 12 * * 1-5"   # 18:00 IST on weekdays, after NSE publishes the day's price file (~16:35 IST)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: brief-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pipeline/pyproject.toml
+
+      - name: Install the pipeline
+        run: pip install -e ./pipeline
+
+      - name: Check out the data branch at data/
+        run: |
+          git fetch origin data:data
+          git worktree add data data
+
+      - name: Restore downloads and the filing archive
+        uses: actions/cache@v6
+        with:
+          path: |
+            data/cache
+            data/raw
+            data/llm
+          key: finn-data-${{ github.run_id }}
+          restore-keys: finn-data-
+
+      - name: Archive the feeds, collect, read filings, build the Brief
+        env:
+          # Optional. Without this secret, model reading stays off and the Brief says so.
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python -m finn archive || echo "::warning::an NSE feed could not be archived this run"
+          python -m finn collect
+          python -m finn enrich
+          python -m finn brief
+
+      - name: Publish brief/*.json to the data branch
+        working-directory: data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add brief
+          if git diff --cached --quiet; then
+            echo "The Brief is unchanged."
+          else
+            git commit -m "Brief data, $(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M IST')"
+            git push origin data
+          fi
