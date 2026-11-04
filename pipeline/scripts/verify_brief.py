@@ -22,6 +22,8 @@ import pdfplumber
 import requests
 from lxml import html
 
+sys.stdout.reconfigure(encoding="utf-8")  # problems quote "→" and "₹", which a Windows console can't encode
+
 ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "data"
 CACHE = DATA / "cache"

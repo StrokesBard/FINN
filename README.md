@@ -186,7 +186,7 @@ To refresh later, run steps 3 to 5 again and reload the page. To keep the histor
 ## How it's deployed
 
 ```
-GitHub Action (weekdays 18:00 IST)  finn archive → collect → enrich → brief
+GitHub Action (scheduled weekdays 18:00 IST)  finn archive → collect → enrich → brief
  │  pushes brief/*.json to the `data` branch (downloads and the archive stay in the Actions cache)
  ▼
 raw.githubusercontent.com/StrokesBard/FINN/data/brief/brief-<window>.json
@@ -196,7 +196,7 @@ Vercel (Next.js, root directory `web`)  →  https://finn-eight-zeta.vercel.app 
 ```
 
 - **Workflow:** [.github/workflows/data.yml](.github/workflows/data.yml). Run it by hand from the Actions tab. Model reading turns on only if the repository has an `ANTHROPIC_API_KEY` secret.
-- **Vercel:** import the repo, set **Root Directory** to `web`, and keep everything else at its default. No environment variables are needed: on Vercel the app reads the data branch. Set `FINN_BRIEF_URL` to read from elsewhere. Pushes to the `data` branch don't trigger a deploy ([web/vercel.json](web/vercel.json)).
+- **Vercel:** import the repo, set **Root Directory** to `web`, and keep everything else at its default. No environment variables are needed: on Vercel the app reads the data branch. Set `FINN_BRIEF_URL` to read from elsewhere. Pushes to the `data` branch don't trigger a deploy: that branch carries its own `web/vercel.json`, because Vercel reads its settings from the commit it is given.
 - **Phone:** [web/app/manifest.ts](web/app/manifest.ts) and the icons make the site installable, and [web/public/sw.js](web/public/sw.js) keeps the last Brief readable offline. The Android app was packaged with [PWABuilder](https://www.pwabuilder.com); [web/public/.well-known/assetlinks.json](web/public/.well-known/assetlinks.json) proves the site and the app belong together, so it opens without a browser bar. The signing key is kept outside the repository.
 
 ## Checks
@@ -221,6 +221,8 @@ The last check reads the rendered page for every window and re-derives each figu
 
 It then checks that every link answers HTTP 200.
 
+To check the live site, pass its URL, but compare like with like: the script reads the window from `data/brief`, so first copy the published `brief/*.json` from the `data` branch there, and run `finn collect` and `finn archive` so the source files cover the same days. Otherwise it reports false problems.
+
 Test fixtures are real responses captured on 2026-11-03 (see [pipeline/tests/fixtures/README.md](pipeline/tests/fixtures/README.md)). Refresh them with `python pipeline/scripts/capture_fixtures.py`.
 
 ## Layout
@@ -239,7 +241,7 @@ data/              everything the pipeline writes; git-ignored on main (see belo
 ## Known limits
 
 - **No Dossier yet.** The pull side (annual reports, transcripts, promised vs delivered) is not built.
-- **The scheduled refresh hasn't been proven yet.** NSE's announcements API is undocumented, and whether it answers GitHub's servers is untested. Until the workflow runs green, the live Brief stays at the snapshot published from this PC on 3 Nov 2026 (steps 3 to 5, then a push to the `data` branch).
+- **Scheduled refreshes can start late.** GitHub queues scheduled workflows: the 18:00 IST job first ran at about 01:25 IST the next morning. The Brief shows when it was built, and its windows count back from that time. It worked from GitHub's servers, but NSE's announcements API is undocumented and could change.
 - **The corporate-actions API returns at most 20 rows per company.**
 - **Model reading is untested against real API calls.** It's tested without a key using stand-in replies, so the share of claims that survive verification is unknown until it runs with a key.
 
