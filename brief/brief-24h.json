@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-10T04:06:12.362662+05:30",
+ "generated_at": "2026-11-11T01:25:11.733110+05:30",
  "window": {
   "key": "24h",
   "label": "Last 24 hours",
-  "start": "2026-11-09T04:06:12.362662+05:30",
-  "end": "2026-11-10T04:06:12.362662+05:30"
+  "start": "2026-11-10T01:25:11.733110+05:30",
+  "end": "2026-11-11T01:25:11.733110+05:30"
  },
  "windows": [
   {
@@ -104,158 +104,21 @@
   "volume_lookback_sessions": 20
  },
  "counts": {
-  "needs_you": 1,
+  "needs_you": 0,
   "worth_knowing": 3,
-  "routine_filings": 5,
-  "filings": 8,
-  "companies": 4
+  "routine_filings": 4,
+  "filings": 7,
+  "companies": 2
  },
  "cards": [
   {
-   "id": "SBIN:price_move:2026-11-09",
-   "symbol": "SBIN",
-   "company": "State Bank of India",
-   "category": "price_move",
-   "category_label": "Unusual move",
-   "tier": "needs_you",
-   "time": "2026-11-09T15:30:00+05:30",
-   "headline": "Unusual volume",
-   "why": [
-    {
-     "text": "09 Nov: Traded 2.1× its average volume of the previous 20 sessions, beyond your 2× threshold.",
-     "evidence": "NSE bhavcopy files 09 Oct – 09 Nov 2026"
-    }
-   ],
-   "filings": [],
-   "moves": [
-    {
-     "day": "2026-11-09",
-     "close": 1042.0,
-     "prev_close": 1016.0,
-     "change_pct": 2.5590551181102317,
-     "volume": 24065897,
-     "avg_volume": 11449551.25,
-     "volume_multiple": 2.1019074437524354,
-     "source_url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261109_F_0000.csv.zip",
-     "lookback": [
-      {
-       "day": "2026-10-09",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261009_F_0000.csv.zip",
-       "volume": 6050801
-      },
-      {
-       "day": "2026-10-12",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261012_F_0000.csv.zip",
-       "volume": 9306202
-      },
-      {
-       "day": "2026-10-13",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261013_F_0000.csv.zip",
-       "volume": 7120906
-      },
-      {
-       "day": "2026-10-14",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261014_F_0000.csv.zip",
-       "volume": 11382365
-      },
-      {
-       "day": "2026-10-15",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261015_F_0000.csv.zip",
-       "volume": 8607715
-      },
-      {
-       "day": "2026-10-16",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261016_F_0000.csv.zip",
-       "volume": 7842693
-      },
-      {
-       "day": "2026-10-19",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261019_F_0000.csv.zip",
-       "volume": 15083265
-      },
-      {
-       "day": "2026-10-21",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261021_F_0000.csv.zip",
-       "volume": 10252486
-      },
-      {
-       "day": "2026-10-22",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261022_F_0000.csv.zip",
-       "volume": 5781352
-      },
-      {
-       "day": "2026-10-23",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261023_F_0000.csv.zip",
-       "volume": 9734968
-      },
-      {
-       "day": "2026-10-26",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261026_F_0000.csv.zip",
-       "volume": 6680063
-      },
-      {
-       "day": "2026-10-27",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261027_F_0000.csv.zip",
-       "volume": 10927771
-      },
-      {
-       "day": "2026-10-28",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261028_F_0000.csv.zip",
-       "volume": 11012192
-      },
-      {
-       "day": "2026-10-29",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261029_F_0000.csv.zip",
-       "volume": 7852345
-      },
-      {
-       "day": "2026-10-30",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261030_F_0000.csv.zip",
-       "volume": 7510705
-      },
-      {
-       "day": "2026-11-02",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261102_F_0000.csv.zip",
-       "volume": 9929558
-      },
-      {
-       "day": "2026-11-03",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261103_F_0000.csv.zip",
-       "volume": 27959412
-      },
-      {
-       "day": "2026-11-04",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261104_F_0000.csv.zip",
-       "volume": 14881781
-      },
-      {
-       "day": "2026-11-05",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261105_F_0000.csv.zip",
-       "volume": 25273153
-      },
-      {
-       "day": "2026-11-06",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261106_F_0000.csv.zip",
-       "volume": 15801292
-      }
-     ],
-     "price_hit": false,
-     "volume_hit": true,
-     "caveats": []
-    }
-   ],
-   "related": [],
-   "rank": 1,
-   "rank_reason": "1st of 1 in Needs you. Cards sort by category (Unusual move is 2nd in the order), then newest first."
-  },
-  {
-   "id": "PETRONET:earnings_call:106853500",
-   "symbol": "PETRONET",
-   "company": "Petronet LNG Limited",
+   "id": "BAJAJFINSV:earnings_call:106854221",
+   "symbol": "BAJAJFINSV",
+   "company": "Bajaj Finserv Limited",
    "category": "earnings_call",
    "category_label": "Earnings call",
    "tier": "worth_knowing",
-   "time": "2026-11-09T16:57:21+05:30",
+   "time": "2026-11-10T16:17:35+05:30",
    "headline": "Transcript",
    "why": [
     {
@@ -265,13 +128,13 @@
    ],
    "filings": [
     {
-     "id": "106853500",
-     "time": "2026-11-09T16:57:21+05:30",
+     "id": "106854221",
+     "time": "2026-11-10T16:17:35+05:30",
      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
      "headline": "Transcript",
-     "nse_summary": "Petronet LNG Limited has informed the Exchange about Transcript",
-     "url": "https://nsearchives.nseindia.com/corporate/PETRONET_09112026165711_Intimationtranscript.pdf",
-     "size": "551.96 KB",
+     "nse_summary": "Bajaj Finserv Limited has informed the Exchange about Transcript",
+     "url": "https://nsearchives.nseindia.com/corporate/walimbelk_10112026161626_Earning_Call_Transcript.pdf",
+     "size": "636.23 KB",
      "category": "earnings_call",
      "tier": "worth_knowing",
      "reason": "The call transcript or recording is out.",
@@ -285,13 +148,13 @@
    "rank_reason": "1st of 3 in Worth knowing. Cards sort by category (Earnings call is 19th in the order), then newest first."
   },
   {
-   "id": "NATIONALUM:earnings_call:106853226",
-   "symbol": "NATIONALUM",
-   "company": "National Aluminium Company Limited",
+   "id": "MEDANTA:earnings_call:106853993",
+   "symbol": "MEDANTA",
+   "company": "Global Health Limited",
    "category": "earnings_call",
    "category_label": "Earnings call",
    "tier": "worth_knowing",
-   "time": "2026-11-09T12:11:44+05:30",
+   "time": "2026-11-10T11:41:17+05:30",
    "headline": "Transcript",
    "why": [
     {
@@ -301,13 +164,13 @@
    ],
    "filings": [
     {
-     "id": "106853226",
-     "time": "2026-11-09T12:11:44+05:30",
+     "id": "106853993",
+     "time": "2026-11-10T11:41:17+05:30",
      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
      "headline": "Transcript",
-     "nse_summary": "National Aluminium Company Limited has informed the Exchange about Transcript",
-     "url": "https://nsearchives.nseindia.com/corporate/bharatsahu_09112026121121_SELetterTranscript.pdf",
-     "size": "305.19 KB",
+     "nse_summary": "Global Health Limited has informed the Exchange about Transcript",
+     "url": "https://nsearchives.nseindia.com/corporate/MEDANTA21_10112026114048_GHLTRANSCRIPTSINTNOV2026SIGNED.pdf",
+     "size": "652.67 KB",
      "category": "earnings_call",
      "tier": "worth_knowing",
      "reason": "The call transcript or recording is out.",
@@ -319,14 +182,14 @@
    "rank_reason": "2nd of 3 in Worth knowing. Cards sort by category (Earnings call is 19th in the order), then newest first."
   },
   {
-   "id": "PETRONET:unclassified:106853778",
-   "symbol": "PETRONET",
-   "company": "Petronet LNG Limited",
+   "id": "BAJAJFINSV:unclassified:106854322",
+   "symbol": "BAJAJFINSV",
+   "company": "Bajaj Finserv Limited",
    "category": "unclassified",
    "category_label": "Unclassified",
    "tier": "worth_knowing",
-   "time": "2026-11-09T22:51:45+05:30",
-   "headline": "Communication to shareholders regarding deduction of tax at source (TDS) onInterim dividend for the financial year 2026-27",
+   "time": "2026-11-10T17:33:46+05:30",
+   "headline": "The Subscription to the Warrants issued by Bajaj Finance Limited, a listed subsidiary of the Company",
    "why": [
     {
      "text": "No rule matched, so it is shown rather than hidden.",
@@ -335,13 +198,13 @@
    ],
    "filings": [
     {
-     "id": "106853778",
-     "time": "2026-11-09T22:51:45+05:30",
+     "id": "106854322",
+     "time": "2026-11-10T17:33:46+05:30",
      "subject": "General Updates",
-     "headline": "Communication to shareholders regarding deduction of tax at source (TDS) onInterim dividend for the financial year 2026-27",
-     "nse_summary": "Communication to shareholders regarding deduction of tax at source (TDS) onInterim dividend for the financial year 2026-27.",
-     "url": "https://nsearchives.nseindia.com/corporate/PETRONET_09112026225050_letter_to_stock_exchange-TDSsigned.pdf",
-     "size": "1.12 MB",
+     "headline": "The Subscription to the Warrants issued by Bajaj Finance Limited, a listed subsidiary of the Company",
+     "nse_summary": "Bajaj Finserv Limited has informed the Exchange about the Subscription to the Warrants issued by Bajaj Finance Limited, a listed subsidiary of the Company",
+     "url": "https://nsearchives.nseindia.com/corporate/walimbelk_10112026173255_BFS_SEIntimatiom_SubscriptionofWarrants10Nov2026.pdf",
+     "size": "238.09 KB",
      "category": "unclassified",
      "tier": "worth_knowing",
      "reason": "No rule matched, so it is shown rather than hidden.",
@@ -356,97 +219,77 @@
   }
  ],
  "routine": {
-  "count": 5,
+  "count": 4,
   "groups": [
    {
     "label": "Investor meetings",
     "reason": "Schedules of analyst and investor meetings.",
     "items": [
      {
-      "id": "106853622",
-      "time": "2026-11-09T18:08:06+05:30",
+      "id": "106854205",
+      "time": "2026-11-10T16:06:40+05:30",
       "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-      "headline": "Schedule of Analyst Call with J.P. Morgan India Emerging Opportunities Forum to be held on Thursday, November 19, 2026",
-      "nse_summary": "CDSL has informed the Exchange about Schedule of Analyst Call with J.P. Morgan India Emerging Opportunities Forum to be held on Thursday, November 19, 2026",
-      "url": "https://nsearchives.nseindia.com/corporate/CDSL_09112026180719_ConCallInvite_Nov19_2026_sd.pdf",
-      "size": "306.78 KB",
+      "headline": "Schedule of meet",
+      "nse_summary": "Global Health Limited has informed the Exchange about Schedule of meet",
+      "url": "https://nsearchives.nseindia.com/corporate/MEDANTA21_10112026160354_GHLANALYSTSMEETNOVEMBER102026_SIGNED.pdf",
+      "size": "905.12 KB",
       "category": "investor_meetings",
       "tier": "routine",
       "reason": "Schedules of analyst and investor meetings.",
       "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
-      "symbol": "CDSL"
+      "symbol": "MEDANTA"
      },
      {
-      "id": "106853618",
-      "time": "2026-11-09T18:05:26+05:30",
+      "id": "106854206",
+      "time": "2026-11-10T16:06:40+05:30",
       "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-      "headline": "Schedule of Analyst Call with Avendus Spark INDX: Annual Investor Conference to be held on Wednesday, November 18, 2026",
-      "nse_summary": "CDSL has informed the Exchange about Schedule of Analyst Call with Avendus Spark INDX: Annual Investor Conference to be held on Wednesday, November 18, 2026",
-      "url": "https://nsearchives.nseindia.com/corporate/CDSL_09112026180456_ConCallInvite_Nov18_2026_Sd.pdf",
-      "size": "306.17 KB",
+      "headline": "Schedule of meet",
+      "nse_summary": "Global Health Limited has informed the Exchange about Schedule of meet",
+      "url": "https://nsearchives.nseindia.com/corporate/MEDANTA21_10112026160417_GHLANALYSTSMEETNOVEMBER102026_SIGNED.pdf",
+      "size": "905.12 KB",
       "category": "investor_meetings",
       "tier": "routine",
       "reason": "Schedules of analyst and investor meetings.",
       "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
-      "symbol": "CDSL"
+      "symbol": "MEDANTA"
      },
      {
-      "id": "106853616",
-      "time": "2026-11-09T18:03:30+05:30",
+      "id": "106854204",
+      "time": "2026-11-10T16:06:40+05:30",
       "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-      "headline": "Schedule of Analyst Call with JM Financial Annual India Conference - India Xchange 2026 to be held on Tuesday, November 17, 2026",
-      "nse_summary": "CDSL has informed the Exchange about Schedule of Analyst Call with JM Financial Annual India Conference - India Xchange 2026 to be held on Tuesday, November 17, 2026",
-      "url": "https://nsearchives.nseindia.com/corporate/CDSL_09112026180247_ConCallInvite_Nov17_2026_sd.pdf",
-      "size": "306.15 KB",
+      "headline": "Schedule of meet",
+      "nse_summary": "Global Health Limited has informed the Exchange about Schedule of meet",
+      "url": "https://nsearchives.nseindia.com/corporate/MEDANTA21_10112026160319_GHLANALYSTSMEETNOVEMBER102026SIGNED.pdf",
+      "size": "547.24 KB",
       "category": "investor_meetings",
       "tier": "routine",
       "reason": "Schedules of analyst and investor meetings.",
       "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
-      "symbol": "CDSL"
+      "symbol": "MEDANTA"
      },
      {
-      "id": "106853610",
-      "time": "2026-11-09T18:00:34+05:30",
+      "id": "106854203",
+      "time": "2026-11-10T16:06:39+05:30",
       "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-      "headline": "Schedule of Analyst Call with Non-Deal Road Show organised by HDFC Securities Limited to be held on Friday, November 13, 2026",
-      "nse_summary": "CDSL has informed the Exchange about Schedule of Analyst Call with Non-Deal Road Show organised by HDFC Securities Limited to be held on Friday, November 13, 2026",
-      "url": "https://nsearchives.nseindia.com/corporate/CDSL_09112026175741_ConCallInvite_Nov13_2026_sd.pdf",
-      "size": "306.21 KB",
+      "headline": "Schedule of meet",
+      "nse_summary": "Global Health Limited has informed the Exchange about Schedule of meet",
+      "url": "https://nsearchives.nseindia.com/corporate/MEDANTA21_10112026160241_GHLANALYSTSMEETNOVEMBER102026SIGNED.pdf",
+      "size": "547.24 KB",
       "category": "investor_meetings",
       "tier": "routine",
       "reason": "Schedules of analyst and investor meetings.",
       "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
-      "symbol": "CDSL"
-     },
-     {
-      "id": "106853294",
-      "time": "2026-11-09T13:00:58+05:30",
-      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-      "headline": "Intimation of schedule of Analyst / Institutional Investors Meetings",
-      "nse_summary": "Trent Limited has informed the Exchange about intimation of schedule of Analyst / Institutional Investors Meetings",
-      "url": "https://nsearchives.nseindia.com/corporate/TRENT_09112026125235_Investor_Analyst_Meeting_09112026.pdf",
-      "size": "307.47 KB",
-      "category": "investor_meetings",
-      "tier": "routine",
-      "reason": "Schedules of analyst and investor meetings.",
-      "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
-      "symbol": "TRENT"
+      "symbol": "MEDANTA"
      }
     ],
-    "count": 5
+    "count": 4
    }
   ]
  },
  "price_check": {
-  "sessions": [
-   {
-    "day": "2026-11-09",
-    "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261109_F_0000.csv.zip",
-    "stocks": 18
-   }
-  ],
+  "sessions": [],
   "stocks": 18,
-  "hits": 1
+  "hits": 0
  },
  "ranking": {
   "tiers": [
