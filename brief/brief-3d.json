@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-12T01:16:27.794688+05:30",
+ "generated_at": "2026-11-13T01:43:45.038387+05:30",
  "window": {
   "key": "3d",
   "label": "Last 3 days",
-  "start": "2026-11-09T01:16:27.794688+05:30",
-  "end": "2026-11-12T01:16:27.794688+05:30"
+  "start": "2026-11-10T01:43:45.038387+05:30",
+  "end": "2026-11-13T01:43:45.038387+05:30"
  },
  "windows": [
   {
@@ -104,149 +104,884 @@
   "volume_lookback_sessions": 20
  },
  "counts": {
-  "needs_you": 4,
-  "worth_knowing": 7,
+  "needs_you": 7,
+  "worth_knowing": 8,
   "routine_filings": 11,
-  "filings": 18,
-  "companies": 8
+  "filings": 24,
+  "companies": 11
  },
  "cards": [
   {
-   "id": "SBIN:price_move:2026-11-11",
-   "symbol": "SBIN",
-   "company": "State Bank of India",
-   "category": "price_move",
-   "category_label": "Unusual move",
+   "id": "IRCTC:results:106857040",
+   "symbol": "IRCTC",
+   "company": "Indian Railway Catering And Tourism Corporation Limited",
+   "category": "results",
+   "category_label": "Results",
    "tier": "needs_you",
-   "time": "2026-11-11T15:30:00+05:30",
-   "headline": "Unusual volume",
+   "time": "2026-11-12T17:32:14+05:30",
+   "headline": "Q2 FY27 results",
    "why": [
     {
-     "text": "09 Nov: Traded 2.1× its average volume of the previous 20 sessions, beyond your 2× threshold.",
-     "evidence": "NSE bhavcopy files 09 Oct – 09 Nov 2026"
+     "text": "Quarterly or annual results are material by default.",
+     "evidence": "NSE subject \"Outcome of Board Meeting\"; summary mentions financial results"
     },
     {
-     "text": "11 Nov: Traded 2.0× its average volume of the previous 20 sessions, beyond your 2× threshold.",
+     "text": "The stock also crossed a threshold. 11 Nov: Traded 6.0× its average volume of the previous 20 sessions, beyond your 2× threshold.",
      "evidence": "NSE bhavcopy files 12 Oct – 11 Nov 2026"
     }
    ],
-   "filings": [],
+   "filings": [
+    {
+     "id": "106857040",
+     "time": "2026-11-12T17:32:14+05:30",
+     "subject": "Outcome of Board Meeting",
+     "headline": "The financial results for the period ended September 30, 2026",
+     "nse_summary": "Indian Railway Catering And Tourism Corporation Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+     "url": "https://nsearchives.nseindia.com/corporate/IRCTC_12112026173058_Outcomeofboardmeeting12112026.pdf",
+     "size": "2.26 MB",
+     "category": "results",
+     "tier": "needs_you",
+     "reason": "Quarterly or annual results are material by default.",
+     "evidence": "NSE subject \"Outcome of Board Meeting\"; summary mentions financial results"
+    }
+   ],
+   "results": {
+    "status": "ok",
+    "kind": "corporate",
+    "basis": "Consolidated",
+    "quarter": "Q2 FY27",
+    "quarter_end": "2026-09-30",
+    "unit": "INR",
+    "note": "EBITDA is computed: PBT + finance costs + depreciation & amortisation − other income.",
+    "metrics": [
+     {
+      "key": "revenue",
+      "label": "Revenue",
+      "value": 13330749000.0,
+      "previous": 13695293000.0,
+      "year_ago": 11459901000.0,
+      "qoq_pct": -2.661819648546404,
+      "yoy_pct": 16.32516720694184,
+      "computed": false,
+      "inputs": [
+       {
+        "sign": 1,
+        "element": "RevenueFromOperations",
+        "value": 13330749000.0
+       }
+      ]
+     },
+     {
+      "key": "ebitda",
+      "label": "EBITDA",
+      "value": 2916633000.0,
+      "previous": 3866804000.0,
+      "year_ago": 4100361000.0,
+      "qoq_pct": -24.572515183081435,
+      "yoy_pct": -28.868872765105312,
+      "computed": true,
+      "inputs": [
+       {
+        "sign": 1,
+        "element": "ProfitBeforeTax",
+        "value": 3559531000.0
+       },
+       {
+        "sign": 1,
+        "element": "FinanceCosts",
+        "value": 42891000.0
+       },
+       {
+        "sign": 1,
+        "element": "DepreciationDepletionAndAmortisationExpense",
+        "value": 119963000.0
+       },
+       {
+        "sign": -1,
+        "element": "OtherIncome",
+        "value": 805752000.0
+       }
+      ]
+     },
+     {
+      "key": "pbt",
+      "label": "PBT",
+      "value": 3559531000.0,
+      "previous": 4416841000.0,
+      "year_ago": 4572106000.0,
+      "qoq_pct": -19.410026306131467,
+      "yoy_pct": -22.146796246631204,
+      "computed": false,
+      "inputs": [
+       {
+        "sign": 1,
+        "element": "ProfitBeforeTax",
+        "value": 3559531000.0
+       }
+      ]
+     },
+     {
+      "key": "pat",
+      "label": "PAT",
+      "value": 2635621000.0,
+      "previous": 3301588000.0,
+      "year_ago": 3420243000.0,
+      "qoq_pct": -20.1711115984187,
+      "yoy_pct": -22.940533757396775,
+      "computed": false,
+      "inputs": [
+       {
+        "sign": 1,
+        "element": "ProfitLossForPeriod",
+        "value": 2635621000.0
+       }
+      ]
+     }
+    ],
+    "sources": {
+     "current": {
+      "quarter": "Q2 FY27",
+      "quarter_end": "2026-09-30",
+      "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1756729_12112026061926_WEB.xml",
+      "ixbrl": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_212915_12112026181926_iXBRL_WEB.html",
+      "filed": "12-Nov-2026 18:19:11",
+      "revision": "Original"
+     },
+     "previous": {
+      "quarter": "Q1 FY27",
+      "quarter_end": "2026-06-30",
+      "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1713130_12082026084321_WEB.xml",
+      "ixbrl": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_186212_12082026204321_iXBRL_WEB.html",
+      "filed": "12-Aug-2026 20:43:14",
+      "revision": "Original"
+     },
+     "year_ago": {
+      "quarter": "Q2 FY26",
+      "quarter_end": "2025-09-30",
+      "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1572958_12112025090010_WEB.xml",
+      "ixbrl": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_126939_12112025210010_iXBRL_WEB.html",
+      "filed": "12-Nov-2025 21:00:10",
+      "revision": "Original"
+     }
+    },
+    "gaps": []
+   },
    "moves": [
     {
-     "day": "2026-11-09",
-     "close": 1042.0,
-     "prev_close": 1016.0,
-     "change_pct": 2.5590551181102317,
-     "volume": 24065897,
-     "avg_volume": 11449551.25,
-     "volume_multiple": 2.1019074437524354,
-     "source_url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261109_F_0000.csv.zip",
+     "day": "2026-11-11",
+     "close": 472.1,
+     "prev_close": 459.95,
+     "change_pct": 2.641591477334493,
+     "volume": 5088085,
+     "avg_volume": 849591.0,
+     "volume_multiple": 5.988864053409229,
+     "source_url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261111_F_0000.csv.zip",
      "lookback": [
-      {
-       "day": "2026-10-09",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261009_F_0000.csv.zip",
-       "volume": 6050801
-      },
       {
        "day": "2026-10-12",
        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261012_F_0000.csv.zip",
-       "volume": 9306202
+       "volume": 785057
       },
       {
        "day": "2026-10-13",
        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261013_F_0000.csv.zip",
-       "volume": 7120906
+       "volume": 922963
       },
       {
        "day": "2026-10-14",
        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261014_F_0000.csv.zip",
-       "volume": 11382365
+       "volume": 726620
       },
       {
        "day": "2026-10-15",
        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261015_F_0000.csv.zip",
-       "volume": 8607715
+       "volume": 856876
       },
       {
        "day": "2026-10-16",
        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261016_F_0000.csv.zip",
-       "volume": 7842693
+       "volume": 1263135
       },
       {
        "day": "2026-10-19",
        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261019_F_0000.csv.zip",
-       "volume": 15083265
+       "volume": 561197
       },
       {
        "day": "2026-10-21",
        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261021_F_0000.csv.zip",
-       "volume": 10252486
+       "volume": 604697
       },
       {
        "day": "2026-10-22",
        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261022_F_0000.csv.zip",
-       "volume": 5781352
+       "volume": 778278
       },
       {
        "day": "2026-10-23",
        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261023_F_0000.csv.zip",
-       "volume": 9734968
+       "volume": 856566
       },
       {
        "day": "2026-10-26",
        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261026_F_0000.csv.zip",
-       "volume": 6680063
+       "volume": 634807
       },
       {
        "day": "2026-10-27",
        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261027_F_0000.csv.zip",
-       "volume": 10927771
+       "volume": 944493
       },
       {
        "day": "2026-10-28",
        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261028_F_0000.csv.zip",
-       "volume": 11012192
+       "volume": 424242
       },
       {
        "day": "2026-10-29",
        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261029_F_0000.csv.zip",
-       "volume": 7852345
+       "volume": 404999
       },
       {
        "day": "2026-10-30",
        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261030_F_0000.csv.zip",
-       "volume": 7510705
+       "volume": 542565
       },
       {
        "day": "2026-11-02",
        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261102_F_0000.csv.zip",
-       "volume": 9929558
+       "volume": 807444
       },
       {
        "day": "2026-11-03",
        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261103_F_0000.csv.zip",
-       "volume": 27959412
+       "volume": 454585
       },
       {
        "day": "2026-11-04",
        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261104_F_0000.csv.zip",
-       "volume": 14881781
+       "volume": 677287
       },
       {
        "day": "2026-11-05",
        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261105_F_0000.csv.zip",
-       "volume": 25273153
+       "volume": 1794774
       },
       {
        "day": "2026-11-06",
        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261106_F_0000.csv.zip",
-       "volume": 15801292
+       "volume": 1346982
+      },
+      {
+       "day": "2026-11-09",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261109_F_0000.csv.zip",
+       "volume": 1604253
       }
      ],
      "price_hit": false,
      "volume_hit": true,
      "caveats": []
+    }
+   ],
+   "related": [],
+   "rank": 1,
+   "rank_reason": "1st of 7 in Needs you. Cards sort by category (Results is 1st in the order), then newest first."
+  },
+  {
+   "id": "ALKEM:results:106856541",
+   "symbol": "ALKEM",
+   "company": "Alkem Laboratories Limited",
+   "category": "results",
+   "category_label": "Results",
+   "tier": "needs_you",
+   "time": "2026-11-12T13:54:26+05:30",
+   "headline": "Q2 FY27 results",
+   "why": [
+    {
+     "text": "Quarterly or annual results are material by default.",
+     "evidence": "NSE subject \"Outcome of Board Meeting\"; summary mentions financial results"
     },
+    {
+     "text": "2 filings from ALKEM about results in this window are grouped into one card.",
+     "evidence": null
+    },
+    {
+     "text": "The stock also crossed a threshold. 12 Nov: Traded 9.4× its average volume of the previous 20 sessions, beyond your 2× threshold.",
+     "evidence": "NSE bhavcopy files 13 Oct – 12 Nov 2026"
+    }
+   ],
+   "filings": [
+    {
+     "id": "106856550",
+     "time": "2026-11-12T14:00:18+05:30",
+     "subject": "Investor Presentation",
+     "headline": "Investor Presentation",
+     "nse_summary": "Alkem Laboratories Limited has informed the Exchange about Investor Presentation",
+     "url": "https://nsearchives.nseindia.com/corporate/ALKEM_12112026140001_Reg30PressReleaseandInvestorPresentation12112026.pdf",
+     "size": "1.96 MB",
+     "category": "results",
+     "tier": "worth_knowing",
+     "reason": "Investor presentations usually accompany results.",
+     "evidence": "NSE subject \"Investor Presentation\""
+    },
+    {
+     "id": "106856541",
+     "time": "2026-11-12T13:54:26+05:30",
+     "subject": "Outcome of Board Meeting",
+     "headline": "The financial results for the period ended September 30, 2026",
+     "nse_summary": "Alkem Laboratories Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+     "url": "https://nsearchives.nseindia.com/corporate/ALKEM_12112026135201_AlkemReg3312112026.pdf",
+     "size": "4.22 MB",
+     "category": "results",
+     "tier": "needs_you",
+     "reason": "Quarterly or annual results are material by default.",
+     "evidence": "NSE subject \"Outcome of Board Meeting\"; summary mentions financial results"
+    }
+   ],
+   "results": {
+    "status": "ok",
+    "kind": "corporate",
+    "basis": "Consolidated",
+    "quarter": "Q2 FY27",
+    "quarter_end": "2026-09-30",
+    "unit": "INR",
+    "note": "EBITDA is computed: PBT + finance costs + depreciation & amortisation − other income.",
+    "metrics": [
+     {
+      "key": "revenue",
+      "label": "Revenue",
+      "value": 45519900000.0,
+      "previous": 37401500000.0,
+      "year_ago": 40009900000.0,
+      "qoq_pct": 21.70608130689946,
+      "yoy_pct": 13.77159153109606,
+      "computed": false,
+      "inputs": [
+       {
+        "sign": 1,
+        "element": "RevenueFromOperations",
+        "value": 45519900000.0
+       }
+      ]
+     },
+     {
+      "key": "ebitda",
+      "label": "EBITDA",
+      "value": 10601900000.0,
+      "previous": 7660500000.0,
+      "year_ago": 9207700000.0,
+      "qoq_pct": 38.396971477057626,
+      "yoy_pct": 15.141674902527225,
+      "computed": true,
+      "inputs": [
+       {
+        "sign": 1,
+        "element": "ProfitBeforeTax",
+        "value": 9996500000.0
+       },
+       {
+        "sign": 1,
+        "element": "FinanceCosts",
+        "value": 576700000.0
+       },
+       {
+        "sign": 1,
+        "element": "DepreciationDepletionAndAmortisationExpense",
+        "value": 1370800000.0
+       },
+       {
+        "sign": -1,
+        "element": "OtherIncome",
+        "value": 1342100000.0
+       }
+      ]
+     },
+     {
+      "key": "pbt",
+      "label": "PBT",
+      "value": 9996500000.0,
+      "previous": 7719900000.0,
+      "year_ago": 8958300000.0,
+      "qoq_pct": 29.490019300768154,
+      "yoy_pct": 11.589252425125295,
+      "computed": false,
+      "inputs": [
+       {
+        "sign": 1,
+        "element": "ProfitBeforeTax",
+        "value": 9996500000.0
+       }
+      ]
+     },
+     {
+      "key": "pat",
+      "label": "PAT",
+      "value": 6671300000.0,
+      "previous": 5209800000.0,
+      "year_ago": 7791100000.0,
+      "qoq_pct": 28.05290030327461,
+      "yoy_pct": -14.372810001155168,
+      "computed": false,
+      "inputs": [
+       {
+        "sign": 1,
+        "element": "ProfitLossForPeriod",
+        "value": 6671300000.0
+       }
+      ]
+     }
+    ],
+    "sources": {
+     "current": {
+      "quarter": "Q2 FY27",
+      "quarter_end": "2026-09-30",
+      "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1756589_12112026044834_WEB.xml",
+      "ixbrl": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_212772_12112026164834_iXBRL_WEB.html",
+      "filed": "12-Nov-2026 16:47:13",
+      "revision": "Original"
+     },
+     "previous": {
+      "quarter": "Q1 FY27",
+      "quarter_end": "2026-06-30",
+      "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1714695_14082026055201_WEB.xml",
+      "ixbrl": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_187457_14082026175202_iXBRL_WEB.html",
+      "filed": "14-Aug-2026 17:49:06",
+      "revision": "Original"
+     },
+     "year_ago": {
+      "quarter": "Q2 FY26",
+      "quarter_end": "2025-09-30",
+      "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1573770_13112025060624_WEB.xml",
+      "ixbrl": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_127320_13112025180624_iXBRL_WEB.html",
+      "filed": "13-Nov-2025 18:06:24",
+      "revision": "Original"
+     }
+    },
+    "gaps": []
+   },
+   "moves": [
+    {
+     "day": "2026-11-12",
+     "close": 5302.0,
+     "prev_close": 5448.0,
+     "change_pct": -2.679882525697508,
+     "volume": 1000355,
+     "avg_volume": 105948.55,
+     "volume_multiple": 9.441894202421835,
+     "source_url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261112_F_0000.csv.zip",
+     "lookback": [
+      {
+       "day": "2026-10-13",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261013_F_0000.csv.zip",
+       "volume": 103084
+      },
+      {
+       "day": "2026-10-14",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261014_F_0000.csv.zip",
+       "volume": 79840
+      },
+      {
+       "day": "2026-10-15",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261015_F_0000.csv.zip",
+       "volume": 59913
+      },
+      {
+       "day": "2026-10-16",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261016_F_0000.csv.zip",
+       "volume": 160798
+      },
+      {
+       "day": "2026-10-19",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261019_F_0000.csv.zip",
+       "volume": 95218
+      },
+      {
+       "day": "2026-10-21",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261021_F_0000.csv.zip",
+       "volume": 279107
+      },
+      {
+       "day": "2026-10-22",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261022_F_0000.csv.zip",
+       "volume": 49335
+      },
+      {
+       "day": "2026-10-23",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261023_F_0000.csv.zip",
+       "volume": 54982
+      },
+      {
+       "day": "2026-10-26",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261026_F_0000.csv.zip",
+       "volume": 69617
+      },
+      {
+       "day": "2026-10-27",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261027_F_0000.csv.zip",
+       "volume": 166281
+      },
+      {
+       "day": "2026-10-28",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261028_F_0000.csv.zip",
+       "volume": 78885
+      },
+      {
+       "day": "2026-10-29",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261029_F_0000.csv.zip",
+       "volume": 58530
+      },
+      {
+       "day": "2026-10-30",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261030_F_0000.csv.zip",
+       "volume": 108036
+      },
+      {
+       "day": "2026-11-02",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261102_F_0000.csv.zip",
+       "volume": 100190
+      },
+      {
+       "day": "2026-11-03",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261103_F_0000.csv.zip",
+       "volume": 129407
+      },
+      {
+       "day": "2026-11-04",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261104_F_0000.csv.zip",
+       "volume": 48616
+      },
+      {
+       "day": "2026-11-05",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261105_F_0000.csv.zip",
+       "volume": 92864
+      },
+      {
+       "day": "2026-11-06",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261106_F_0000.csv.zip",
+       "volume": 65881
+      },
+      {
+       "day": "2026-11-09",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261109_F_0000.csv.zip",
+       "volume": 169880
+      },
+      {
+       "day": "2026-11-11",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261111_F_0000.csv.zip",
+       "volume": 148507
+      }
+     ],
+     "price_hit": false,
+     "volume_hit": true,
+     "caveats": []
+    }
+   ],
+   "related": [
+    "Management change",
+    "Earnings call"
+   ],
+   "rank": 2,
+   "rank_reason": "2nd of 7 in Needs you. Cards sort by category (Results is 1st in the order), then newest first."
+  },
+  {
+   "id": "HAL:results:106856505",
+   "symbol": "HAL",
+   "company": "Hindustan Aeronautics Limited",
+   "category": "results",
+   "category_label": "Results",
+   "tier": "needs_you",
+   "time": "2026-11-12T13:30:14+05:30",
+   "headline": "Q2 FY27 results",
+   "why": [
+    {
+     "text": "Quarterly or annual results are material by default.",
+     "evidence": "NSE subject \"Outcome of Board Meeting\"; summary mentions financial results"
+    },
+    {
+     "text": "The stock also crossed a threshold. 12 Nov: Traded 3.3× its average volume of the previous 20 sessions, beyond your 2× threshold.",
+     "evidence": "NSE bhavcopy files 13 Oct – 12 Nov 2026"
+    }
+   ],
+   "filings": [
+    {
+     "id": "106856505",
+     "time": "2026-11-12T13:30:14+05:30",
+     "subject": "Outcome of Board Meeting",
+     "headline": "The financial results for the period ended September 30, 2026",
+     "nse_summary": "Hindustan Aeronautics Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026.",
+     "url": "https://nsearchives.nseindia.com/corporate/HAL_12112026132915_IntegratedFinancial_30092026.pdf",
+     "size": "20.62 MB",
+     "category": "results",
+     "tier": "needs_you",
+     "reason": "Quarterly or annual results are material by default.",
+     "evidence": "NSE subject \"Outcome of Board Meeting\"; summary mentions financial results"
+    }
+   ],
+   "results": {
+    "status": "ok",
+    "kind": "corporate",
+    "basis": "Consolidated",
+    "quarter": "Q2 FY27",
+    "quarter_end": "2026-09-30",
+    "unit": "INR",
+    "note": "EBITDA is computed: PBT + finance costs + depreciation & amortisation − other income.",
+    "metrics": [
+     {
+      "key": "revenue",
+      "label": "Revenue",
+      "value": 76132500000.0,
+      "previous": 55151700000.0,
+      "year_ago": 66286100000.0,
+      "qoq_pct": 38.04198238676233,
+      "yoy_pct": 14.85439632140071,
+      "computed": false,
+      "inputs": [
+       {
+        "sign": 1,
+        "element": "RevenueFromOperations",
+        "value": 76132500000.0
+       }
+      ]
+     },
+     {
+      "key": "ebitda",
+      "label": "EBITDA",
+      "value": 17394700000.0,
+      "previous": 15267700000.0,
+      "year_ago": 15578900000.0,
+      "qoq_pct": 13.93137145739043,
+      "yoy_pct": 11.655508412018811,
+      "computed": true,
+      "inputs": [
+       {
+        "sign": 1,
+        "element": "ProfitBeforeTax",
+        "value": 24695300000.0
+       },
+       {
+        "sign": 1,
+        "element": "FinanceCosts",
+        "value": 3600000.0
+       },
+       {
+        "sign": 1,
+        "element": "DepreciationDepletionAndAmortisationExpense",
+        "value": 2578800000.0
+       },
+       {
+        "sign": -1,
+        "element": "OtherIncome",
+        "value": 9883000000.0
+       }
+      ]
+     },
+     {
+      "key": "pbt",
+      "label": "PBT",
+      "value": 24695300000.0,
+      "previous": 21227200000.0,
+      "year_ago": 22196400000.0,
+      "qoq_pct": 16.338000301499967,
+      "yoy_pct": 11.258131949325122,
+      "computed": false,
+      "inputs": [
+       {
+        "sign": 1,
+        "element": "ProfitBeforeTax",
+        "value": 24695300000.0
+       }
+      ]
+     },
+     {
+      "key": "pat",
+      "label": "PAT",
+      "value": 19356400000.0,
+      "previous": 15896600000.0,
+      "year_ago": 16690500000.0,
+      "qoq_pct": 21.76440245083855,
+      "yoy_pct": 15.9725592402864,
+      "computed": false,
+      "inputs": [
+       {
+        "sign": 1,
+        "element": "ProfitLossForPeriod",
+        "value": 19356400000.0
+       }
+      ]
+     }
+    ],
+    "sources": {
+     "current": {
+      "quarter": "Q2 FY27",
+      "quarter_end": "2026-09-30",
+      "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1756516_12112026033817_WEB.xml",
+      "ixbrl": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_212713_12112026153817_iXBRL_WEB.html",
+      "filed": "12-Nov-2026 15:38:17",
+      "revision": "Original"
+     },
+     "previous": {
+      "quarter": "Q1 FY27",
+      "quarter_end": "2026-06-30",
+      "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1712384_12082026021942_WEB.xml",
+      "ixbrl": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_185601_12082026141946_iXBRL_WEB.html",
+      "filed": "12-Aug-2026 14:19:46",
+      "revision": "Original"
+     },
+     "year_ago": {
+      "quarter": "Q2 FY26",
+      "quarter_end": "2025-09-30",
+      "xbrl": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_INDAS_1572182_12112025042204_WEB.xml",
+      "ixbrl": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_126513_12112025162204_iXBRL_WEB.html",
+      "filed": "12-Nov-2025 16:22:04",
+      "revision": "Original"
+     }
+    },
+    "gaps": []
+   },
+   "moves": [
+    {
+     "day": "2026-11-12",
+     "close": 4843.4,
+     "prev_close": 4949.0,
+     "change_pct": -2.1337643968478592,
+     "volume": 2596682,
+     "avg_volume": 797125.2,
+     "volume_multiple": 3.2575585366012767,
+     "source_url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261112_F_0000.csv.zip",
+     "lookback": [
+      {
+       "day": "2026-10-13",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261013_F_0000.csv.zip",
+       "volume": 607858
+      },
+      {
+       "day": "2026-10-14",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261014_F_0000.csv.zip",
+       "volume": 725704
+      },
+      {
+       "day": "2026-10-15",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261015_F_0000.csv.zip",
+       "volume": 802602
+      },
+      {
+       "day": "2026-10-16",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261016_F_0000.csv.zip",
+       "volume": 942758
+      },
+      {
+       "day": "2026-10-19",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261019_F_0000.csv.zip",
+       "volume": 583323
+      },
+      {
+       "day": "2026-10-21",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261021_F_0000.csv.zip",
+       "volume": 694718
+      },
+      {
+       "day": "2026-10-22",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261022_F_0000.csv.zip",
+       "volume": 907135
+      },
+      {
+       "day": "2026-10-23",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261023_F_0000.csv.zip",
+       "volume": 1043219
+      },
+      {
+       "day": "2026-10-26",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261026_F_0000.csv.zip",
+       "volume": 578319
+      },
+      {
+       "day": "2026-10-27",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261027_F_0000.csv.zip",
+       "volume": 1046088
+      },
+      {
+       "day": "2026-10-28",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261028_F_0000.csv.zip",
+       "volume": 443033
+      },
+      {
+       "day": "2026-10-29",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261029_F_0000.csv.zip",
+       "volume": 509555
+      },
+      {
+       "day": "2026-10-30",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261030_F_0000.csv.zip",
+       "volume": 699027
+      },
+      {
+       "day": "2026-11-02",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261102_F_0000.csv.zip",
+       "volume": 584497
+      },
+      {
+       "day": "2026-11-03",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261103_F_0000.csv.zip",
+       "volume": 774647
+      },
+      {
+       "day": "2026-11-04",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261104_F_0000.csv.zip",
+       "volume": 1242735
+      },
+      {
+       "day": "2026-11-05",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261105_F_0000.csv.zip",
+       "volume": 913480
+      },
+      {
+       "day": "2026-11-06",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261106_F_0000.csv.zip",
+       "volume": 1168786
+      },
+      {
+       "day": "2026-11-09",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261109_F_0000.csv.zip",
+       "volume": 831506
+      },
+      {
+       "day": "2026-11-11",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261111_F_0000.csv.zip",
+       "volume": 843514
+      }
+     ],
+     "price_hit": false,
+     "volume_hit": true,
+     "caveats": []
+    }
+   ],
+   "related": [
+    "Credit rating"
+   ],
+   "rank": 3,
+   "rank_reason": "3rd of 7 in Needs you. Cards sort by category (Results is 1st in the order), then newest first."
+  },
+  {
+   "id": "SBIN:price_move:2026-11-12",
+   "symbol": "SBIN",
+   "company": "State Bank of India",
+   "category": "price_move",
+   "category_label": "Unusual move",
+   "tier": "needs_you",
+   "time": "2026-11-12T15:30:00+05:30",
+   "headline": "Unusual volume",
+   "why": [
+    {
+     "text": "11 Nov: Traded 2.0× its average volume of the previous 20 sessions, beyond your 2× threshold.",
+     "evidence": "NSE bhavcopy files 12 Oct – 11 Nov 2026"
+    },
+    {
+     "text": "12 Nov: Traded 2.1× its average volume of the previous 20 sessions, beyond your 2× threshold.",
+     "evidence": "NSE bhavcopy files 13 Oct – 12 Nov 2026"
+    }
+   ],
+   "filings": [],
+   "moves": [
     {
      "day": "2026-11-11",
      "close": 1061.2,
@@ -361,11 +1096,382 @@
      "price_hit": false,
      "volume_hit": true,
      "caveats": []
+    },
+    {
+     "day": "2026-11-12",
+     "close": 1086.5,
+     "prev_close": 1061.2,
+     "change_pct": 2.384093479080285,
+     "volume": 26973410,
+     "avg_volume": 13127068.35,
+     "volume_multiple": 2.054793140465365,
+     "source_url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261112_F_0000.csv.zip",
+     "lookback": [
+      {
+       "day": "2026-10-13",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261013_F_0000.csv.zip",
+       "volume": 7120906
+      },
+      {
+       "day": "2026-10-14",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261014_F_0000.csv.zip",
+       "volume": 11382365
+      },
+      {
+       "day": "2026-10-15",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261015_F_0000.csv.zip",
+       "volume": 8607715
+      },
+      {
+       "day": "2026-10-16",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261016_F_0000.csv.zip",
+       "volume": 7842693
+      },
+      {
+       "day": "2026-10-19",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261019_F_0000.csv.zip",
+       "volume": 15083265
+      },
+      {
+       "day": "2026-10-21",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261021_F_0000.csv.zip",
+       "volume": 10252486
+      },
+      {
+       "day": "2026-10-22",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261022_F_0000.csv.zip",
+       "volume": 5781352
+      },
+      {
+       "day": "2026-10-23",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261023_F_0000.csv.zip",
+       "volume": 9734968
+      },
+      {
+       "day": "2026-10-26",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261026_F_0000.csv.zip",
+       "volume": 6680063
+      },
+      {
+       "day": "2026-10-27",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261027_F_0000.csv.zip",
+       "volume": 10927771
+      },
+      {
+       "day": "2026-10-28",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261028_F_0000.csv.zip",
+       "volume": 11012192
+      },
+      {
+       "day": "2026-10-29",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261029_F_0000.csv.zip",
+       "volume": 7852345
+      },
+      {
+       "day": "2026-10-30",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261030_F_0000.csv.zip",
+       "volume": 7510705
+      },
+      {
+       "day": "2026-11-02",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261102_F_0000.csv.zip",
+       "volume": 9929558
+      },
+      {
+       "day": "2026-11-03",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261103_F_0000.csv.zip",
+       "volume": 27959412
+      },
+      {
+       "day": "2026-11-04",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261104_F_0000.csv.zip",
+       "volume": 14881781
+      },
+      {
+       "day": "2026-11-05",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261105_F_0000.csv.zip",
+       "volume": 25273153
+      },
+      {
+       "day": "2026-11-06",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261106_F_0000.csv.zip",
+       "volume": 15801292
+      },
+      {
+       "day": "2026-11-09",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261109_F_0000.csv.zip",
+       "volume": 24065897
+      },
+      {
+       "day": "2026-11-11",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261111_F_0000.csv.zip",
+       "volume": 24841448
+      }
+     ],
+     "price_hit": false,
+     "volume_hit": true,
+     "caveats": []
     }
    ],
    "related": [],
-   "rank": 1,
-   "rank_reason": "1st of 4 in Needs you. Cards sort by category (Unusual move is 2nd in the order), then newest first."
+   "rank": 4,
+   "rank_reason": "4th of 7 in Needs you. Cards sort by category (Unusual move is 2nd in the order), then newest first."
+  },
+  {
+   "id": "CDSL:price_move:2026-11-12",
+   "symbol": "CDSL",
+   "company": "Central Depository Services (India) Limited",
+   "category": "price_move",
+   "category_label": "Unusual move",
+   "tier": "needs_you",
+   "time": "2026-11-12T15:30:00+05:30",
+   "headline": "Unusual volume",
+   "why": [
+    {
+     "text": "11 Nov: Traded 3.3× its average volume of the previous 20 sessions, beyond your 2× threshold.",
+     "evidence": "NSE bhavcopy files 12 Oct – 11 Nov 2026"
+    },
+    {
+     "text": "12 Nov: Traded 3.3× its average volume of the previous 20 sessions, beyond your 2× threshold.",
+     "evidence": "NSE bhavcopy files 13 Oct – 12 Nov 2026"
+    }
+   ],
+   "filings": [],
+   "moves": [
+    {
+     "day": "2026-11-11",
+     "close": 1407.0,
+     "prev_close": 1356.0,
+     "change_pct": 3.761061946902644,
+     "volume": 3723037,
+     "avg_volume": 1136768.65,
+     "volume_multiple": 3.275105273179376,
+     "source_url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261111_F_0000.csv.zip",
+     "lookback": [
+      {
+       "day": "2026-10-12",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261012_F_0000.csv.zip",
+       "volume": 750601
+      },
+      {
+       "day": "2026-10-13",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261013_F_0000.csv.zip",
+       "volume": 762099
+      },
+      {
+       "day": "2026-10-14",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261014_F_0000.csv.zip",
+       "volume": 640217
+      },
+      {
+       "day": "2026-10-15",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261015_F_0000.csv.zip",
+       "volume": 828150
+      },
+      {
+       "day": "2026-10-16",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261016_F_0000.csv.zip",
+       "volume": 825106
+      },
+      {
+       "day": "2026-10-19",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261019_F_0000.csv.zip",
+       "volume": 555214
+      },
+      {
+       "day": "2026-10-21",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261021_F_0000.csv.zip",
+       "volume": 650041
+      },
+      {
+       "day": "2026-10-22",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261022_F_0000.csv.zip",
+       "volume": 677522
+      },
+      {
+       "day": "2026-10-23",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261023_F_0000.csv.zip",
+       "volume": 1312164
+      },
+      {
+       "day": "2026-10-26",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261026_F_0000.csv.zip",
+       "volume": 907846
+      },
+      {
+       "day": "2026-10-27",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261027_F_0000.csv.zip",
+       "volume": 826875
+      },
+      {
+       "day": "2026-10-28",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261028_F_0000.csv.zip",
+       "volume": 678644
+      },
+      {
+       "day": "2026-10-29",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261029_F_0000.csv.zip",
+       "volume": 1828237
+      },
+      {
+       "day": "2026-10-30",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261030_F_0000.csv.zip",
+       "volume": 887384
+      },
+      {
+       "day": "2026-11-02",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261102_F_0000.csv.zip",
+       "volume": 2677103
+      },
+      {
+       "day": "2026-11-03",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261103_F_0000.csv.zip",
+       "volume": 3359973
+      },
+      {
+       "day": "2026-11-04",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261104_F_0000.csv.zip",
+       "volume": 1040765
+      },
+      {
+       "day": "2026-11-05",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261105_F_0000.csv.zip",
+       "volume": 1384511
+      },
+      {
+       "day": "2026-11-06",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261106_F_0000.csv.zip",
+       "volume": 788398
+      },
+      {
+       "day": "2026-11-09",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261109_F_0000.csv.zip",
+       "volume": 1354523
+      }
+     ],
+     "price_hit": false,
+     "volume_hit": true,
+     "caveats": []
+    },
+    {
+     "day": "2026-11-12",
+     "close": 1455.0,
+     "prev_close": 1407.0,
+     "change_pct": 3.4115138592750505,
+     "volume": 4199335,
+     "avg_volume": 1285390.45,
+     "volume_multiple": 3.266972304018596,
+     "source_url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261112_F_0000.csv.zip",
+     "lookback": [
+      {
+       "day": "2026-10-13",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261013_F_0000.csv.zip",
+       "volume": 762099
+      },
+      {
+       "day": "2026-10-14",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261014_F_0000.csv.zip",
+       "volume": 640217
+      },
+      {
+       "day": "2026-10-15",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261015_F_0000.csv.zip",
+       "volume": 828150
+      },
+      {
+       "day": "2026-10-16",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261016_F_0000.csv.zip",
+       "volume": 825106
+      },
+      {
+       "day": "2026-10-19",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261019_F_0000.csv.zip",
+       "volume": 555214
+      },
+      {
+       "day": "2026-10-21",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261021_F_0000.csv.zip",
+       "volume": 650041
+      },
+      {
+       "day": "2026-10-22",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261022_F_0000.csv.zip",
+       "volume": 677522
+      },
+      {
+       "day": "2026-10-23",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261023_F_0000.csv.zip",
+       "volume": 1312164
+      },
+      {
+       "day": "2026-10-26",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261026_F_0000.csv.zip",
+       "volume": 907846
+      },
+      {
+       "day": "2026-10-27",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261027_F_0000.csv.zip",
+       "volume": 826875
+      },
+      {
+       "day": "2026-10-28",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261028_F_0000.csv.zip",
+       "volume": 678644
+      },
+      {
+       "day": "2026-10-29",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261029_F_0000.csv.zip",
+       "volume": 1828237
+      },
+      {
+       "day": "2026-10-30",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261030_F_0000.csv.zip",
+       "volume": 887384
+      },
+      {
+       "day": "2026-11-02",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261102_F_0000.csv.zip",
+       "volume": 2677103
+      },
+      {
+       "day": "2026-11-03",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261103_F_0000.csv.zip",
+       "volume": 3359973
+      },
+      {
+       "day": "2026-11-04",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261104_F_0000.csv.zip",
+       "volume": 1040765
+      },
+      {
+       "day": "2026-11-05",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261105_F_0000.csv.zip",
+       "volume": 1384511
+      },
+      {
+       "day": "2026-11-06",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261106_F_0000.csv.zip",
+       "volume": 788398
+      },
+      {
+       "day": "2026-11-09",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261109_F_0000.csv.zip",
+       "volume": 1354523
+      },
+      {
+       "day": "2026-11-11",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261111_F_0000.csv.zip",
+       "volume": 3723037
+      }
+     ],
+     "price_hit": false,
+     "volume_hit": true,
+     "caveats": []
+    }
+   ],
+   "related": [],
+   "rank": 5,
+   "rank_reason": "5th of 7 in Needs you. Cards sort by category (Unusual move is 2nd in the order), then newest first."
   },
   {
    "id": "PETRONET:price_move:2026-11-11",
@@ -501,285 +1607,53 @@
     }
    ],
    "related": [
-    "Earnings call",
     "Unclassified"
    ],
-   "rank": 2,
-   "rank_reason": "2nd of 4 in Needs you. Cards sort by category (Unusual move is 2nd in the order), then newest first."
+   "rank": 6,
+   "rank_reason": "6th of 7 in Needs you. Cards sort by category (Unusual move is 2nd in the order), then newest first."
   },
   {
-   "id": "IRCTC:price_move:2026-11-11",
-   "symbol": "IRCTC",
-   "company": "Indian Railway Catering And Tourism Corporation Limited",
-   "category": "price_move",
-   "category_label": "Unusual move",
+   "id": "ALKEM:management_change:106856547",
+   "symbol": "ALKEM",
+   "company": "Alkem Laboratories Limited",
+   "category": "management_change",
+   "category_label": "Management change",
    "tier": "needs_you",
-   "time": "2026-11-11T15:30:00+05:30",
-   "headline": "Unusual volume",
+   "time": "2026-11-12T13:58:25+05:30",
+   "headline": "Appointment of Mr Gopal Kothari as Chief Financial Officer of the Company w.e.f. December 02, 2026",
    "why": [
     {
-     "text": "11 Nov: Traded 6.0× its average volume of the previous 20 sessions, beyond your 2× threshold.",
-     "evidence": "NSE bhavcopy files 12 Oct – 11 Nov 2026"
+     "text": "A change at the top (CEO, CFO, MD or similar).",
+     "evidence": "NSE subject \"Appointment\"; summary names the role \"Chief Financial\""
     }
    ],
-   "filings": [],
-   "moves": [
+   "filings": [
     {
-     "day": "2026-11-11",
-     "close": 472.1,
-     "prev_close": 459.95,
-     "change_pct": 2.641591477334493,
-     "volume": 5088085,
-     "avg_volume": 849591.0,
-     "volume_multiple": 5.988864053409229,
-     "source_url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261111_F_0000.csv.zip",
-     "lookback": [
-      {
-       "day": "2026-10-12",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261012_F_0000.csv.zip",
-       "volume": 785057
-      },
-      {
-       "day": "2026-10-13",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261013_F_0000.csv.zip",
-       "volume": 922963
-      },
-      {
-       "day": "2026-10-14",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261014_F_0000.csv.zip",
-       "volume": 726620
-      },
-      {
-       "day": "2026-10-15",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261015_F_0000.csv.zip",
-       "volume": 856876
-      },
-      {
-       "day": "2026-10-16",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261016_F_0000.csv.zip",
-       "volume": 1263135
-      },
-      {
-       "day": "2026-10-19",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261019_F_0000.csv.zip",
-       "volume": 561197
-      },
-      {
-       "day": "2026-10-21",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261021_F_0000.csv.zip",
-       "volume": 604697
-      },
-      {
-       "day": "2026-10-22",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261022_F_0000.csv.zip",
-       "volume": 778278
-      },
-      {
-       "day": "2026-10-23",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261023_F_0000.csv.zip",
-       "volume": 856566
-      },
-      {
-       "day": "2026-10-26",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261026_F_0000.csv.zip",
-       "volume": 634807
-      },
-      {
-       "day": "2026-10-27",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261027_F_0000.csv.zip",
-       "volume": 944493
-      },
-      {
-       "day": "2026-10-28",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261028_F_0000.csv.zip",
-       "volume": 424242
-      },
-      {
-       "day": "2026-10-29",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261029_F_0000.csv.zip",
-       "volume": 404999
-      },
-      {
-       "day": "2026-10-30",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261030_F_0000.csv.zip",
-       "volume": 542565
-      },
-      {
-       "day": "2026-11-02",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261102_F_0000.csv.zip",
-       "volume": 807444
-      },
-      {
-       "day": "2026-11-03",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261103_F_0000.csv.zip",
-       "volume": 454585
-      },
-      {
-       "day": "2026-11-04",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261104_F_0000.csv.zip",
-       "volume": 677287
-      },
-      {
-       "day": "2026-11-05",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261105_F_0000.csv.zip",
-       "volume": 1794774
-      },
-      {
-       "day": "2026-11-06",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261106_F_0000.csv.zip",
-       "volume": 1346982
-      },
-      {
-       "day": "2026-11-09",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261109_F_0000.csv.zip",
-       "volume": 1604253
-      }
-     ],
-     "price_hit": false,
-     "volume_hit": true,
-     "caveats": []
+     "id": "106856547",
+     "time": "2026-11-12T13:58:25+05:30",
+     "subject": "Appointment",
+     "headline": "Appointment of Mr Gopal Kothari as Chief Financial Officer of the Company w.e.f. December 02, 2026",
+     "nse_summary": "Alkem Laboratories Limited has informed the Exchange regarding Appointment of Mr Gopal Kothari as Chief Financial Officer of the Company w.e.f. December 02, 2026.",
+     "url": "https://nsearchives.nseindia.com/corporate/ALKEM_12112026135747_Reg30AppointmentofCFO.pdf",
+     "size": "275.09 KB",
+     "category": "management_change",
+     "tier": "needs_you",
+     "reason": "A change at the top (CEO, CFO, MD or similar).",
+     "evidence": "NSE subject \"Appointment\"; summary names the role \"Chief Financial\""
     }
    ],
-   "related": [],
-   "rank": 3,
-   "rank_reason": "3rd of 4 in Needs you. Cards sort by category (Unusual move is 2nd in the order), then newest first."
-  },
-  {
-   "id": "CDSL:price_move:2026-11-11",
-   "symbol": "CDSL",
-   "company": "Central Depository Services (India) Limited",
-   "category": "price_move",
-   "category_label": "Unusual move",
-   "tier": "needs_you",
-   "time": "2026-11-11T15:30:00+05:30",
-   "headline": "Unusual volume",
-   "why": [
-    {
-     "text": "11 Nov: Traded 3.3× its average volume of the previous 20 sessions, beyond your 2× threshold.",
-     "evidence": "NSE bhavcopy files 12 Oct – 11 Nov 2026"
-    }
+   "profile": {
+    "text": "Mr. Gopal Kothari has over 24 years of experience in Financial Planning & Analysis, Business Partnering, Cash Flow Management, Business Finance, Cost Management & Productivity, Enabling Growth, Taxation, Management Reporting, Finance Control, dealing with Board of Directors, Business Integration and New Products Development. Mr. Kothari is a qualified Chartered Accountant (CA) and Company Secretary (CS) , and holds B. Com. (Honours) degree.",
+    "page": 2,
+    "url": "https://nsearchives.nseindia.com/corporate/ALKEM_12112026135747_Reg30AppointmentofCFO.pdf",
+    "filing": "Appointment of Mr Gopal Kothari as Chief Financial Officer of the Company w.e.f. December 02, 2026"
+   },
+   "related": [
+    "Results",
+    "Earnings call"
    ],
-   "filings": [],
-   "moves": [
-    {
-     "day": "2026-11-11",
-     "close": 1407.0,
-     "prev_close": 1356.0,
-     "change_pct": 3.761061946902644,
-     "volume": 3723037,
-     "avg_volume": 1136768.65,
-     "volume_multiple": 3.275105273179376,
-     "source_url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261111_F_0000.csv.zip",
-     "lookback": [
-      {
-       "day": "2026-10-12",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261012_F_0000.csv.zip",
-       "volume": 750601
-      },
-      {
-       "day": "2026-10-13",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261013_F_0000.csv.zip",
-       "volume": 762099
-      },
-      {
-       "day": "2026-10-14",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261014_F_0000.csv.zip",
-       "volume": 640217
-      },
-      {
-       "day": "2026-10-15",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261015_F_0000.csv.zip",
-       "volume": 828150
-      },
-      {
-       "day": "2026-10-16",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261016_F_0000.csv.zip",
-       "volume": 825106
-      },
-      {
-       "day": "2026-10-19",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261019_F_0000.csv.zip",
-       "volume": 555214
-      },
-      {
-       "day": "2026-10-21",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261021_F_0000.csv.zip",
-       "volume": 650041
-      },
-      {
-       "day": "2026-10-22",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261022_F_0000.csv.zip",
-       "volume": 677522
-      },
-      {
-       "day": "2026-10-23",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261023_F_0000.csv.zip",
-       "volume": 1312164
-      },
-      {
-       "day": "2026-10-26",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261026_F_0000.csv.zip",
-       "volume": 907846
-      },
-      {
-       "day": "2026-10-27",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261027_F_0000.csv.zip",
-       "volume": 826875
-      },
-      {
-       "day": "2026-10-28",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261028_F_0000.csv.zip",
-       "volume": 678644
-      },
-      {
-       "day": "2026-10-29",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261029_F_0000.csv.zip",
-       "volume": 1828237
-      },
-      {
-       "day": "2026-10-30",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261030_F_0000.csv.zip",
-       "volume": 887384
-      },
-      {
-       "day": "2026-11-02",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261102_F_0000.csv.zip",
-       "volume": 2677103
-      },
-      {
-       "day": "2026-11-03",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261103_F_0000.csv.zip",
-       "volume": 3359973
-      },
-      {
-       "day": "2026-11-04",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261104_F_0000.csv.zip",
-       "volume": 1040765
-      },
-      {
-       "day": "2026-11-05",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261105_F_0000.csv.zip",
-       "volume": 1384511
-      },
-      {
-       "day": "2026-11-06",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261106_F_0000.csv.zip",
-       "volume": 788398
-      },
-      {
-       "day": "2026-11-09",
-       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261109_F_0000.csv.zip",
-       "volume": 1354523
-      }
-     ],
-     "price_hit": false,
-     "volume_hit": true,
-     "caveats": []
-    }
-   ],
-   "related": [],
-   "rank": 4,
-   "rank_reason": "4th of 4 in Needs you. Cards sort by category (Unusual move is 2nd in the order), then newest first."
+   "rank": 7,
+   "rank_reason": "7th of 7 in Needs you. Cards sort by category (Management change is 3rd in the order), then newest first."
   },
   {
    "id": "HAL:credit_rating:106855146",
@@ -811,9 +1685,48 @@
      "evidence": "NSE subject \"Credit Rating- Others\""
     }
    ],
-   "related": [],
+   "related": [
+    "Results"
+   ],
    "rank": 1,
-   "rank_reason": "1st of 7 in Worth knowing. Cards sort by category (Credit rating is 9th in the order), then newest first."
+   "rank_reason": "1st of 8 in Worth knowing. Cards sort by category (Credit rating is 9th in the order), then newest first."
+  },
+  {
+   "id": "ALKEM:earnings_call:106857671",
+   "symbol": "ALKEM",
+   "company": "Alkem Laboratories Limited",
+   "category": "earnings_call",
+   "category_label": "Earnings call",
+   "tier": "worth_knowing",
+   "time": "2026-11-12T20:32:44+05:30",
+   "headline": "Link of Recording",
+   "why": [
+    {
+     "text": "The call transcript or recording is out.",
+     "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"; summary mentions a transcript/recording"
+    }
+   ],
+   "filings": [
+    {
+     "id": "106857671",
+     "time": "2026-11-12T20:32:44+05:30",
+     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+     "headline": "Link of Recording",
+     "nse_summary": "Alkem Laboratories Limited has informed the Exchange about Link of Recording",
+     "url": "https://nsearchives.nseindia.com/corporate/ALKEM_12112026203231_AlkemEarningsConferenceCallAudioRecordingNovember2026signed.pdf",
+     "size": "276.50 KB",
+     "category": "earnings_call",
+     "tier": "worth_knowing",
+     "reason": "The call transcript or recording is out.",
+     "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"; summary mentions a transcript/recording"
+    }
+   ],
+   "related": [
+    "Results",
+    "Management change"
+   ],
+   "rank": 2,
+   "rank_reason": "2nd of 8 in Worth knowing. Cards sort by category (Earnings call is 19th in the order), then newest first."
   },
   {
    "id": "BAJAJFINSV:earnings_call:106854221",
@@ -848,8 +1761,8 @@
    "related": [
     "Unclassified"
    ],
-   "rank": 2,
-   "rank_reason": "2nd of 7 in Worth knowing. Cards sort by category (Earnings call is 19th in the order), then newest first."
+   "rank": 3,
+   "rank_reason": "3rd of 8 in Worth knowing. Cards sort by category (Earnings call is 19th in the order), then newest first."
   },
   {
    "id": "MEDANTA:earnings_call:106853993",
@@ -882,79 +1795,112 @@
     }
    ],
    "related": [],
-   "rank": 3,
-   "rank_reason": "3rd of 7 in Worth knowing. Cards sort by category (Earnings call is 19th in the order), then newest first."
-  },
-  {
-   "id": "PETRONET:earnings_call:106853500",
-   "symbol": "PETRONET",
-   "company": "Petronet LNG Limited",
-   "category": "earnings_call",
-   "category_label": "Earnings call",
-   "tier": "worth_knowing",
-   "time": "2026-11-09T16:57:21+05:30",
-   "headline": "Transcript",
-   "why": [
-    {
-     "text": "The call transcript or recording is out.",
-     "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"; summary mentions a transcript/recording"
-    }
-   ],
-   "filings": [
-    {
-     "id": "106853500",
-     "time": "2026-11-09T16:57:21+05:30",
-     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-     "headline": "Transcript",
-     "nse_summary": "Petronet LNG Limited has informed the Exchange about Transcript",
-     "url": "https://nsearchives.nseindia.com/corporate/PETRONET_09112026165711_Intimationtranscript.pdf",
-     "size": "551.96 KB",
-     "category": "earnings_call",
-     "tier": "worth_knowing",
-     "reason": "The call transcript or recording is out.",
-     "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"; summary mentions a transcript/recording"
-    }
-   ],
-   "related": [
-    "Unclassified",
-    "Unusual move"
-   ],
    "rank": 4,
-   "rank_reason": "4th of 7 in Worth knowing. Cards sort by category (Earnings call is 19th in the order), then newest first."
+   "rank_reason": "4th of 8 in Worth knowing. Cards sort by category (Earnings call is 19th in the order), then newest first."
   },
   {
-   "id": "NATIONALUM:earnings_call:106853226",
-   "symbol": "NATIONALUM",
-   "company": "National Aluminium Company Limited",
-   "category": "earnings_call",
-   "category_label": "Earnings call",
+   "id": "HDFCBANK:unclassified:106857049",
+   "symbol": "HDFCBANK",
+   "company": "HDFC Bank Limited",
+   "category": "unclassified",
+   "category_label": "Unclassified",
    "tier": "worth_knowing",
-   "time": "2026-11-09T12:11:44+05:30",
-   "headline": "Transcript",
+   "time": "2026-11-12T17:33:25+05:30",
+   "headline": "Approval from the Reserve Bank of India for re-appointment of Mr. V. Srinivasa Rangan asthe Whole-time Director (designated as Executive Director) of HDFC Bank Limited",
    "why": [
     {
-     "text": "The call transcript or recording is out.",
-     "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"; summary mentions a transcript/recording"
+     "text": "No rule matched, so it is shown rather than hidden.",
+     "evidence": "NSE subject \"General Updates\""
     }
    ],
    "filings": [
     {
-     "id": "106853226",
-     "time": "2026-11-09T12:11:44+05:30",
-     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-     "headline": "Transcript",
-     "nse_summary": "National Aluminium Company Limited has informed the Exchange about Transcript",
-     "url": "https://nsearchives.nseindia.com/corporate/bharatsahu_09112026121121_SELetterTranscript.pdf",
-     "size": "305.19 KB",
-     "category": "earnings_call",
+     "id": "106857049",
+     "time": "2026-11-12T17:33:25+05:30",
+     "subject": "General Updates",
+     "headline": "Approval from the Reserve Bank of India for re-appointment of Mr. V. Srinivasa Rangan asthe Whole-time Director (designated as Executive Director) of HDFC Bank Limited",
+     "nse_summary": "HDFC Bank Limited has informed the Exchange about Approval from the Reserve Bank of India for re-appointment of Mr. V. Srinivasa Rangan asthe Whole-time Director (designated as Executive Director) of HDFC Bank Limited",
+     "url": "https://nsearchives.nseindia.com/corporate/HDFCBANK3_12112026173223_SE_Intimation-_VSR.pdf",
+     "size": "669.76 KB",
+     "category": "unclassified",
      "tier": "worth_knowing",
-     "reason": "The call transcript or recording is out.",
-     "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"; summary mentions a transcript/recording"
+     "reason": "No rule matched, so it is shown rather than hidden.",
+     "evidence": "NSE subject \"General Updates\""
     }
    ],
    "related": [],
    "rank": 5,
-   "rank_reason": "5th of 7 in Worth knowing. Cards sort by category (Earnings call is 19th in the order), then newest first."
+   "rank_reason": "5th of 8 in Worth knowing. Cards sort by category (Unclassified is 20th in the order), then newest first."
+  },
+  {
+   "id": "INFY:unclassified:106856189",
+   "symbol": "INFY",
+   "company": "Infosys Limited",
+   "category": "unclassified",
+   "category_label": "Unclassified",
+   "tier": "worth_knowing",
+   "time": "2026-11-12T11:19:58+05:30",
+   "headline": "Six Promising Researchers Win the Infosys Prize 2026 Awarded by the Infosys Science Foundation",
+   "why": [
+    {
+     "text": "No rule matched, so it is shown rather than hidden.",
+     "evidence": "NSE subject \"Updates\""
+    }
+   ],
+   "filings": [
+    {
+     "id": "106856189",
+     "time": "2026-11-12T11:19:58+05:30",
+     "subject": "Updates",
+     "headline": "Six Promising Researchers Win the Infosys Prize 2026 Awarded by the Infosys Science Foundation",
+     "nse_summary": "Infosys Limited has informed the Exchange regarding 'Six Promising Researchers Win the Infosys Prize 2026 Awarded by the Infosys Science Foundation'.",
+     "url": "https://nsearchives.nseindia.com/corporate/Infosys_12112026111940_PR_12112026.pdf",
+     "size": "3.30 MB",
+     "category": "unclassified",
+     "tier": "worth_knowing",
+     "reason": "No rule matched, so it is shown rather than hidden.",
+     "evidence": "NSE subject \"Updates\""
+    }
+   ],
+   "related": [],
+   "rank": 6,
+   "rank_reason": "6th of 8 in Worth knowing. Cards sort by category (Unclassified is 20th in the order), then newest first."
+  },
+  {
+   "id": "PETRONET:unclassified:106856166",
+   "symbol": "PETRONET",
+   "company": "Petronet LNG Limited",
+   "category": "unclassified",
+   "category_label": "Unclassified",
+   "tier": "worth_knowing",
+   "time": "2026-11-12T10:55:23+05:30",
+   "headline": "General Updates. Intimation regarding Schedule of Analyst/ Institutional Investor Meets/ Conferences pursuant to Regulation 30 of Securities and Exchange Board of India (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+   "why": [
+    {
+     "text": "No rule matched, so it is shown rather than hidden.",
+     "evidence": "NSE subject \"General Updates\""
+    }
+   ],
+   "filings": [
+    {
+     "id": "106856166",
+     "time": "2026-11-12T10:55:23+05:30",
+     "subject": "General Updates",
+     "headline": "General Updates. Intimation regarding Schedule of Analyst/ Institutional Investor Meets/ Conferences pursuant to Regulation 30 of Securities and Exchange Board of India (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+     "nse_summary": "Petronet LNG Limited has informed the Exchange about General Updates. Intimation regarding Schedule of Analyst/ Institutional Investor Meets/ Conferences pursuant to Regulation 30 of Securities and Exchange Board of India (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+     "url": "https://nsearchives.nseindia.com/corporate/PETRONET_12112026105513_schedule1718112026.pdf",
+     "size": "150.71 KB",
+     "category": "unclassified",
+     "tier": "worth_knowing",
+     "reason": "No rule matched, so it is shown rather than hidden.",
+     "evidence": "NSE subject \"General Updates\""
+    }
+   ],
+   "related": [
+    "Unusual move"
+   ],
+   "rank": 7,
+   "rank_reason": "7th of 8 in Worth knowing. Cards sort by category (Unclassified is 20th in the order), then newest first."
   },
   {
    "id": "BAJAJFINSV:unclassified:106854322",
@@ -989,45 +1935,8 @@
    "related": [
     "Earnings call"
    ],
-   "rank": 6,
-   "rank_reason": "6th of 7 in Worth knowing. Cards sort by category (Unclassified is 20th in the order), then newest first."
-  },
-  {
-   "id": "PETRONET:unclassified:106853778",
-   "symbol": "PETRONET",
-   "company": "Petronet LNG Limited",
-   "category": "unclassified",
-   "category_label": "Unclassified",
-   "tier": "worth_knowing",
-   "time": "2026-11-09T22:51:45+05:30",
-   "headline": "Communication to shareholders regarding deduction of tax at source (TDS) onInterim dividend for the financial year 2026-27",
-   "why": [
-    {
-     "text": "No rule matched, so it is shown rather than hidden.",
-     "evidence": "NSE subject \"General Updates\""
-    }
-   ],
-   "filings": [
-    {
-     "id": "106853778",
-     "time": "2026-11-09T22:51:45+05:30",
-     "subject": "General Updates",
-     "headline": "Communication to shareholders regarding deduction of tax at source (TDS) onInterim dividend for the financial year 2026-27",
-     "nse_summary": "Communication to shareholders regarding deduction of tax at source (TDS) onInterim dividend for the financial year 2026-27.",
-     "url": "https://nsearchives.nseindia.com/corporate/PETRONET_09112026225050_letter_to_stock_exchange-TDSsigned.pdf",
-     "size": "1.12 MB",
-     "category": "unclassified",
-     "tier": "worth_knowing",
-     "reason": "No rule matched, so it is shown rather than hidden.",
-     "evidence": "NSE subject \"General Updates\""
-    }
-   ],
-   "related": [
-    "Earnings call",
-    "Unusual move"
-   ],
-   "rank": 7,
-   "rank_reason": "7th of 7 in Worth knowing. Cards sort by category (Unclassified is 20th in the order), then newest first."
+   "rank": 8,
+   "rank_reason": "8th of 8 in Worth knowing. Cards sort by category (Unclassified is 20th in the order), then newest first."
   }
  ],
  "routine": {
@@ -1037,6 +1946,62 @@
     "label": "Investor meetings",
     "reason": "Schedules of analyst and investor meetings.",
     "items": [
+     {
+      "id": "106857662",
+      "time": "2026-11-12T20:23:38+05:30",
+      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "headline": "Please note that the Company executives will be participating in the Institutional Investors' Meeting - JM Financial India Conference, scheduled to be held on November 17, 2026 at Mumbai. It is expected that the meeting with the investors will be on one-on-one basis",
+      "nse_summary": "Please note that the Company executives will be participating in the Institutional Investors' Meeting - JM Financial India Conference, scheduled to be held on November 17, 2026 at Mumbai. It is expected that the meeting with the investors will be on one-on-one basis.",
+      "url": "https://nsearchives.nseindia.com/corporate/kavinavora_12112026202324_SE_12112026.pdf",
+      "size": "169.90 KB",
+      "category": "investor_meetings",
+      "tier": "routine",
+      "reason": "Schedules of analyst and investor meetings.",
+      "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
+      "symbol": "RELIANCE"
+     },
+     {
+      "id": "106857256",
+      "time": "2026-11-12T18:21:56+05:30",
+      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "headline": "Schedule of meet",
+      "nse_summary": "KEC International Limited has informed the Exchange about Schedule of meet",
+      "url": "https://nsearchives.nseindia.com/corporate/KEC_12112026182139_AnalystMeetIntimation.pdf",
+      "size": "295.47 KB",
+      "category": "investor_meetings",
+      "tier": "routine",
+      "reason": "Schedules of analyst and investor meetings.",
+      "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
+      "symbol": "KEC"
+     },
+     {
+      "id": "106856600",
+      "time": "2026-11-12T14:27:53+05:30",
+      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "headline": "Schedule of meet",
+      "nse_summary": "HDFC Bank Limited has informed the Exchange about Schedule of meet",
+      "url": "https://nsearchives.nseindia.com/corporate/HDFCBANK3_12112026142725_Analystmeetintimation12112026.pdf",
+      "size": "290.30 KB",
+      "category": "investor_meetings",
+      "tier": "routine",
+      "reason": "Schedules of analyst and investor meetings.",
+      "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
+      "symbol": "HDFCBANK"
+     },
+     {
+      "id": "106856503",
+      "time": "2026-11-12T13:28:46+05:30",
+      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "headline": "Schedule of meet",
+      "nse_summary": "Bajaj Finserv Limited has informed the Exchange about Schedule of meet",
+      "url": "https://nsearchives.nseindia.com/corporate/walimbelk_12112026132830_BFSSEIntimationInvestorcall18112026.pdf",
+      "size": "226.30 KB",
+      "category": "investor_meetings",
+      "tier": "routine",
+      "reason": "Schedules of analyst and investor meetings.",
+      "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
+      "symbol": "BAJAJFINSV"
+     },
      {
       "id": "106855622",
       "time": "2026-11-11T19:00:41+05:30",
@@ -1120,97 +2085,48 @@
       "reason": "Schedules of analyst and investor meetings.",
       "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
       "symbol": "MEDANTA"
-     },
-     {
-      "id": "106853622",
-      "time": "2026-11-09T18:08:06+05:30",
-      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-      "headline": "Schedule of Analyst Call with J.P. Morgan India Emerging Opportunities Forum to be held on Thursday, November 19, 2026",
-      "nse_summary": "CDSL has informed the Exchange about Schedule of Analyst Call with J.P. Morgan India Emerging Opportunities Forum to be held on Thursday, November 19, 2026",
-      "url": "https://nsearchives.nseindia.com/corporate/CDSL_09112026180719_ConCallInvite_Nov19_2026_sd.pdf",
-      "size": "306.78 KB",
-      "category": "investor_meetings",
-      "tier": "routine",
-      "reason": "Schedules of analyst and investor meetings.",
-      "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
-      "symbol": "CDSL"
-     },
-     {
-      "id": "106853618",
-      "time": "2026-11-09T18:05:26+05:30",
-      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-      "headline": "Schedule of Analyst Call with Avendus Spark INDX: Annual Investor Conference to be held on Wednesday, November 18, 2026",
-      "nse_summary": "CDSL has informed the Exchange about Schedule of Analyst Call with Avendus Spark INDX: Annual Investor Conference to be held on Wednesday, November 18, 2026",
-      "url": "https://nsearchives.nseindia.com/corporate/CDSL_09112026180456_ConCallInvite_Nov18_2026_Sd.pdf",
-      "size": "306.17 KB",
-      "category": "investor_meetings",
-      "tier": "routine",
-      "reason": "Schedules of analyst and investor meetings.",
-      "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
-      "symbol": "CDSL"
-     },
-     {
-      "id": "106853616",
-      "time": "2026-11-09T18:03:30+05:30",
-      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-      "headline": "Schedule of Analyst Call with JM Financial Annual India Conference - India Xchange 2026 to be held on Tuesday, November 17, 2026",
-      "nse_summary": "CDSL has informed the Exchange about Schedule of Analyst Call with JM Financial Annual India Conference - India Xchange 2026 to be held on Tuesday, November 17, 2026",
-      "url": "https://nsearchives.nseindia.com/corporate/CDSL_09112026180247_ConCallInvite_Nov17_2026_sd.pdf",
-      "size": "306.15 KB",
-      "category": "investor_meetings",
-      "tier": "routine",
-      "reason": "Schedules of analyst and investor meetings.",
-      "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
-      "symbol": "CDSL"
-     },
-     {
-      "id": "106853610",
-      "time": "2026-11-09T18:00:34+05:30",
-      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-      "headline": "Schedule of Analyst Call with Non-Deal Road Show organised by HDFC Securities Limited to be held on Friday, November 13, 2026",
-      "nse_summary": "CDSL has informed the Exchange about Schedule of Analyst Call with Non-Deal Road Show organised by HDFC Securities Limited to be held on Friday, November 13, 2026",
-      "url": "https://nsearchives.nseindia.com/corporate/CDSL_09112026175741_ConCallInvite_Nov13_2026_sd.pdf",
-      "size": "306.21 KB",
-      "category": "investor_meetings",
-      "tier": "routine",
-      "reason": "Schedules of analyst and investor meetings.",
-      "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
-      "symbol": "CDSL"
-     },
-     {
-      "id": "106853294",
-      "time": "2026-11-09T13:00:58+05:30",
-      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-      "headline": "Intimation of schedule of Analyst / Institutional Investors Meetings",
-      "nse_summary": "Trent Limited has informed the Exchange about intimation of schedule of Analyst / Institutional Investors Meetings",
-      "url": "https://nsearchives.nseindia.com/corporate/TRENT_09112026125235_Investor_Analyst_Meeting_09112026.pdf",
-      "size": "307.47 KB",
-      "category": "investor_meetings",
-      "tier": "routine",
-      "reason": "Schedules of analyst and investor meetings.",
-      "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
-      "symbol": "TRENT"
      }
     ],
-    "count": 11
+    "count": 10
+   },
+   {
+    "label": "Routine paperwork",
+    "reason": "Routine compliance paperwork.",
+    "items": [
+     {
+      "id": "106856555",
+      "time": "2026-11-12T14:03:11+05:30",
+      "subject": "Trading Window",
+      "headline": "The Trading Window closure pursuant to SEBI (Prohibition of Insider Trading) Regulations, 2015",
+      "nse_summary": "Alkem Laboratories Limited has informed the Exchange regarding the Trading Window closure pursuant to SEBI (Prohibition of Insider Trading) Regulations, 2015",
+      "url": "https://nsearchives.nseindia.com/corporate/ALKEM_12112026140252_IntimationforOpeningofTradingWindow12112026.pdf",
+      "size": "241.30 KB",
+      "category": "routine_paperwork",
+      "tier": "routine",
+      "reason": "Routine compliance paperwork.",
+      "evidence": "NSE subject \"Trading Window\"",
+      "symbol": "ALKEM"
+     }
+    ],
+    "count": 1
    }
   ]
  },
  "price_check": {
   "sessions": [
    {
-    "day": "2026-11-09",
-    "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261109_F_0000.csv.zip",
+    "day": "2026-11-11",
+    "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261111_F_0000.csv.zip",
     "stocks": 18
    },
    {
-    "day": "2026-11-11",
-    "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261111_F_0000.csv.zip",
+    "day": "2026-11-12",
+    "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261112_F_0000.csv.zip",
     "stocks": 18
    }
   ],
   "stocks": 18,
-  "hits": 5
+  "hits": 8
  },
  "ranking": {
   "tiers": [
@@ -1272,7 +2188,7 @@
    }
   ],
   "cards_with_extracts": 0,
-  "filings_waiting": 1,
+  "filings_waiting": 2,
   "claims_shown": 0,
   "claims_discarded": 0,
   "spend": {
