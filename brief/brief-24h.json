@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-18T02:40:00.825380+05:30",
+ "generated_at": "2026-11-19T02:16:46.681035+05:30",
  "window": {
   "key": "24h",
   "label": "Last 24 hours",
-  "start": "2026-11-17T02:40:00.825380+05:30",
-  "end": "2026-11-18T02:40:00.825380+05:30"
+  "start": "2026-11-18T02:16:46.681035+05:30",
+  "end": "2026-11-19T02:16:46.681035+05:30"
  },
  "windows": [
   {
@@ -104,90 +104,261 @@
   "volume_lookback_sessions": 20
  },
  "counts": {
-  "needs_you": 0,
-  "worth_knowing": 3,
-  "routine_filings": 4,
+  "needs_you": 1,
+  "worth_knowing": 4,
+  "routine_filings": 3,
   "filings": 7,
-  "companies": 6
+  "companies": 5
  },
  "cards": [
   {
-   "id": "RELIANCE:unclassified:106864030",
-   "symbol": "RELIANCE",
-   "company": "Reliance Industries Limited",
-   "category": "unclassified",
-   "category_label": "Unclassified",
-   "tier": "worth_knowing",
-   "time": "2026-11-17T18:47:04+05:30",
-   "headline": "This is further to the disclosure dated November 12, 2026 made by the Company. We wish to inform you that the Company executives participated in the Institutional Investors' Meeting - JM Financial India Conference and no unpublished price sensitive information was shared/discussed in the said one-on-one meeting",
+   "id": "SBIN:price_move:2026-11-18",
+   "symbol": "SBIN",
+   "company": "State Bank of India",
+   "category": "price_move",
+   "category_label": "Unusual move",
+   "tier": "needs_you",
+   "time": "2026-11-18T15:30:00+05:30",
+   "headline": "Unusual volume",
    "why": [
     {
-     "text": "No rule matched, so it is shown rather than hidden.",
-     "evidence": "NSE subject \"Updates\""
+     "text": "18 Nov: Traded 2.3× its average volume of the previous 20 sessions, beyond your 2× threshold.",
+     "evidence": "NSE bhavcopy files 19 Oct – 18 Nov 2026"
     }
    ],
-   "filings": [
+   "filings": [],
+   "moves": [
     {
-     "id": "106864030",
-     "time": "2026-11-17T18:47:04+05:30",
-     "subject": "Updates",
-     "headline": "This is further to the disclosure dated November 12, 2026 made by the Company. We wish to inform you that the Company executives participated in the Institutional Investors' Meeting - JM Financial India Conference and no unpublished price sensitive information was shared/discussed in the said one-on-one meeting",
-     "nse_summary": "This is further to the disclosure dated November 12, 2026 made by the Company. We wish to inform you that the Company executives participated in the Institutional Investors' Meeting - JM Financial India Conference and no unpublished price sensitive information was shared/discussed in the said one-on-one meeting.",
-     "url": "https://nsearchives.nseindia.in/corporate/kavinavora_17112026184407_SE_17112026.pdf",
-     "size": "191.80 KB",
-     "category": "unclassified",
-     "tier": "worth_knowing",
-     "reason": "No rule matched, so it is shown rather than hidden.",
-     "evidence": "NSE subject \"Updates\""
+     "day": "2026-11-18",
+     "close": 1135.0,
+     "prev_close": 1108.6,
+     "change_pct": 2.3813819231463196,
+     "volume": 35420675,
+     "avg_volume": 15148763.05,
+     "volume_multiple": 2.338189255656751,
+     "source_url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261118_F_0000.csv.zip",
+     "lookback": [
+      {
+       "day": "2026-10-19",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261019_F_0000.csv.zip",
+       "volume": 15083265
+      },
+      {
+       "day": "2026-10-21",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261021_F_0000.csv.zip",
+       "volume": 10252486
+      },
+      {
+       "day": "2026-10-22",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261022_F_0000.csv.zip",
+       "volume": 5781352
+      },
+      {
+       "day": "2026-10-23",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261023_F_0000.csv.zip",
+       "volume": 9734968
+      },
+      {
+       "day": "2026-10-26",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261026_F_0000.csv.zip",
+       "volume": 6680063
+      },
+      {
+       "day": "2026-10-27",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261027_F_0000.csv.zip",
+       "volume": 10927771
+      },
+      {
+       "day": "2026-10-28",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261028_F_0000.csv.zip",
+       "volume": 11012192
+      },
+      {
+       "day": "2026-10-29",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261029_F_0000.csv.zip",
+       "volume": 7852345
+      },
+      {
+       "day": "2026-10-30",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261030_F_0000.csv.zip",
+       "volume": 7510705
+      },
+      {
+       "day": "2026-11-02",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261102_F_0000.csv.zip",
+       "volume": 9929558
+      },
+      {
+       "day": "2026-11-03",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261103_F_0000.csv.zip",
+       "volume": 27959412
+      },
+      {
+       "day": "2026-11-04",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261104_F_0000.csv.zip",
+       "volume": 14881781
+      },
+      {
+       "day": "2026-11-05",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261105_F_0000.csv.zip",
+       "volume": 25273153
+      },
+      {
+       "day": "2026-11-06",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261106_F_0000.csv.zip",
+       "volume": 15801292
+      },
+      {
+       "day": "2026-11-09",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261109_F_0000.csv.zip",
+       "volume": 24065897
+      },
+      {
+       "day": "2026-11-11",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261111_F_0000.csv.zip",
+       "volume": 24841448
+      },
+      {
+       "day": "2026-11-12",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261112_F_0000.csv.zip",
+       "volume": 26973410
+      },
+      {
+       "day": "2026-11-13",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+       "volume": 15886106
+      },
+      {
+       "day": "2026-11-16",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261116_F_0000.csv.zip",
+       "volume": 16216839
+      },
+      {
+       "day": "2026-11-17",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261117_F_0000.csv.zip",
+       "volume": 16311218
+      }
+     ],
+     "price_hit": false,
+     "volume_hit": true,
+     "caveats": []
     }
    ],
    "related": [],
    "rank": 1,
-   "rank_reason": "1st of 3 in Worth knowing. Cards sort by category (Unclassified is 20th in the order), then newest first."
+   "rank_reason": "1st of 1 in Needs you. Cards sort by category (Unusual move is 2nd in the order), then newest first."
   },
   {
-   "id": "HDFCBANK:unclassified:106863688",
-   "symbol": "HDFCBANK",
-   "company": "HDFC Bank Limited",
-   "category": "unclassified",
-   "category_label": "Unclassified",
+   "id": "MEDANTA:credit_rating:106865209",
+   "symbol": "MEDANTA",
+   "company": "Global Health Limited",
+   "category": "credit_rating",
+   "category_label": "Credit rating",
    "tier": "worth_knowing",
-   "time": "2026-11-17T15:54:23+05:30",
-   "headline": "Grant of stock options under Employee Stock Option Scheme (ESOS Plan H-2024) and Grant of Restricted Stock Units under Employees Stock Incentive Master Scheme 2022",
+   "time": "2026-11-18T18:27:19+05:30",
+   "headline": "Credit Rating",
    "why": [
     {
-     "text": "No rule matched, so it is shown rather than hidden.",
-     "evidence": "NSE subject \"Updates\""
+     "text": "A rating action without a downgrade.",
+     "evidence": "NSE subject \"Credit Rating\""
     }
    ],
    "filings": [
     {
-     "id": "106863688",
-     "time": "2026-11-17T15:54:23+05:30",
-     "subject": "Updates",
-     "headline": "Grant of stock options under Employee Stock Option Scheme (ESOS Plan H-2024) and Grant of Restricted Stock Units under Employees Stock Incentive Master Scheme 2022",
-     "nse_summary": "HDFC Bank Limited has informed the Exchange regarding 'Grant of stock options under Employee Stock Option Scheme (ESOS Plan H-2024) and Grant of Restricted Stock Units under Employees Stock Incentive Master Scheme 2022'.",
-     "url": "https://nsearchives.nseindia.in/corporate/HDFCBANK3_17112026155359_SE_Intimation_grant_of_ESOP_17112026.pdf",
-     "size": "304.42 KB",
-     "category": "unclassified",
+     "id": "106865209",
+     "time": "2026-11-18T18:27:19+05:30",
+     "subject": "Credit Rating",
+     "headline": "Credit Rating",
+     "nse_summary": "Global Health Limited has informed the Exchange about Credit Rating",
+     "url": "https://nsearchives.nseindia.in/corporate/MEDANTA21_18112026182645_GHLCREDITRATING18Nov2026Signed.pdf",
+     "size": "1.17 MB",
+     "category": "credit_rating",
      "tier": "worth_knowing",
-     "reason": "No rule matched, so it is shown rather than hidden.",
-     "evidence": "NSE subject \"Updates\""
+     "reason": "A rating action without a downgrade.",
+     "evidence": "NSE subject \"Credit Rating\""
+    }
+   ],
+   "related": [],
+   "rank": 1,
+   "rank_reason": "1st of 4 in Worth knowing. Cards sort by category (Credit rating is 9th in the order), then newest first."
+  },
+  {
+   "id": "NATIONALUM:orders_business:106865085",
+   "symbol": "NATIONALUM",
+   "company": "National Aluminium Company Limited",
+   "category": "orders_business",
+   "category_label": "Orders & business update",
+   "tier": "worth_knowing",
+   "time": "2026-11-18T17:36:35+05:30",
+   "headline": "A press release dated November 18, 2026, titled \"NALCO Signs MoU with RUSAL for Collaboration in Scandium Recovery from Red Mud\"",
+   "why": [
+    {
+     "text": "Business news from the company: orders, launches, tie-ups.",
+     "evidence": "NSE subject \"Press Release\""
+    }
+   ],
+   "filings": [
+    {
+     "id": "106865085",
+     "time": "2026-11-18T17:36:35+05:30",
+     "subject": "Press Release",
+     "headline": "A press release dated November 18, 2026, titled \"NALCO Signs MoU with RUSAL for Collaboration in Scandium Recovery from Red Mud\"",
+     "nse_summary": "National Aluminium Company Limited has informed the Exchange regarding a press release dated November 18, 2026, titled \"NALCO Signs MoU with RUSAL for Collaboration in Scandium Recovery from Red Mud\".",
+     "url": "https://nsearchives.nseindia.in/corporate/bharatsahu_18112026173619_seletterpr.pdf",
+     "size": "1.47 MB",
+     "category": "orders_business",
+     "tier": "worth_knowing",
+     "reason": "Business news from the company: orders, launches, tie-ups.",
+     "evidence": "NSE subject \"Press Release\""
     }
    ],
    "related": [],
    "rank": 2,
-   "rank_reason": "2nd of 3 in Worth knowing. Cards sort by category (Unclassified is 20th in the order), then newest first."
+   "rank_reason": "2nd of 4 in Worth knowing. Cards sort by category (Orders & business update is 12th in the order), then newest first."
   },
   {
-   "id": "INFY:unclassified:106863621",
+   "id": "ALKEM:earnings_call:106864738",
+   "symbol": "ALKEM",
+   "company": "Alkem Laboratories Limited",
+   "category": "earnings_call",
+   "category_label": "Earnings call",
+   "tier": "worth_knowing",
+   "time": "2026-11-18T12:38:08+05:30",
+   "headline": "Q2 & H1FY2027 - Earnings Conference Call Transcript",
+   "why": [
+    {
+     "text": "The call transcript or recording is out.",
+     "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"; summary mentions a transcript/recording"
+    }
+   ],
+   "filings": [
+    {
+     "id": "106864738",
+     "time": "2026-11-18T12:38:08+05:30",
+     "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+     "headline": "Q2 & H1FY2027 - Earnings Conference Call Transcript",
+     "nse_summary": "Alkem Laboratories Limited has informed the Exchange about Q2 & H1FY2027 - Earnings Conference Call Transcript",
+     "url": "https://nsearchives.nseindia.in/corporate/ALKEM_18112026123326_AlkemEarningsCallTranscript_signed.pdf",
+     "size": "613.30 KB",
+     "category": "earnings_call",
+     "tier": "worth_knowing",
+     "reason": "The call transcript or recording is out.",
+     "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"; summary mentions a transcript/recording"
+    }
+   ],
+   "related": [],
+   "rank": 3,
+   "rank_reason": "3rd of 4 in Worth knowing. Cards sort by category (Earnings call is 19th in the order), then newest first."
+  },
+  {
+   "id": "INFY:unclassified:106865419",
    "symbol": "INFY",
    "company": "Infosys Limited",
    "category": "unclassified",
    "category_label": "Unclassified",
    "tier": "worth_knowing",
-   "time": "2026-11-17T14:58:50+05:30",
-   "headline": "Infosys Positioned as a Leader in the 2026 Gartner® Magic Quadrant for Public Cloud Optimization and Transformation Services for the Fourth Consecutive Year",
+   "time": "2026-11-18T22:06:40+05:30",
+   "headline": "Disclosure Under Regulation 30 Of SEBI LODR Regulations",
    "why": [
     {
      "text": "No rule matched, so it is shown rather than hidden.",
@@ -196,13 +367,13 @@
    ],
    "filings": [
     {
-     "id": "106863621",
-     "time": "2026-11-17T14:58:50+05:30",
+     "id": "106865419",
+     "time": "2026-11-18T22:06:40+05:30",
      "subject": "Updates",
-     "headline": "Infosys Positioned as a Leader in the 2026 Gartner® Magic Quadrant for Public Cloud Optimization and Transformation Services for the Fourth Consecutive Year",
-     "nse_summary": "Infosys Limited has informed the Exchange regarding 'Infosys Positioned as a Leader in the 2026 Gartner® Magic Quadrant for Public Cloud Optimization and Transformation Services for the Fourth Consecutive Year'.",
-     "url": "https://nsearchives.nseindia.in/corporate/Infosys_17112026145826_PR_17112026.pdf",
-     "size": "3.29 MB",
+     "headline": "Disclosure Under Regulation 30 Of SEBI LODR Regulations",
+     "nse_summary": "Infosys Limited has informed the Exchange regarding 'Disclosure Under Regulation 30 Of SEBI LODR Regulations'.",
+     "url": "https://nsearchives.nseindia.in/corporate/INFY_18112026220604_Reg_30_disclosure_18112026.pdf",
+     "size": "3.17 MB",
      "category": "unclassified",
      "tier": "worth_knowing",
      "reason": "No rule matched, so it is shown rather than hidden.",
@@ -210,39 +381,25 @@
     }
    ],
    "related": [],
-   "rank": 3,
-   "rank_reason": "3rd of 3 in Worth knowing. Cards sort by category (Unclassified is 20th in the order), then newest first."
+   "rank": 4,
+   "rank_reason": "4th of 4 in Worth knowing. Cards sort by category (Unclassified is 20th in the order), then newest first."
   }
  ],
  "routine": {
-  "count": 4,
+  "count": 3,
   "groups": [
    {
     "label": "Investor meetings",
     "reason": "Schedules of analyst and investor meetings.",
     "items": [
      {
-      "id": "106864004",
-      "time": "2026-11-17T18:31:32+05:30",
+      "id": "106864971",
+      "time": "2026-11-18T16:22:02+05:30",
       "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-      "headline": "Schedule of Analyst Call with Comgest to be held on Friday, November 20, 2026",
-      "nse_summary": "CDSL has informed the Exchange about Schedule of Analyst Call with Comgest to be held on Friday, November 20, 2026",
-      "url": "https://nsearchives.nseindia.in/corporate/CDSL_17112026182705_ConCallInvite_Nov20_2026_Signed.pdf",
-      "size": "333.19 KB",
-      "category": "investor_meetings",
-      "tier": "routine",
-      "reason": "Schedules of analyst and investor meetings.",
-      "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
-      "symbol": "CDSL"
-     },
-     {
-      "id": "106863994",
-      "time": "2026-11-17T18:27:21+05:30",
-      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-      "headline": "State Bank Of India has informed the Exchange about",
-      "nse_summary": "State Bank Of India has informed the Exchange about",
-      "url": "https://nsearchives.nseindia.in/corporate/SBIN1_17112026182711_MeetOutcome17112026_dsc.pdf",
-      "size": "243.50 KB",
+      "headline": "Outcome of the investors meet",
+      "nse_summary": "State Bank Of India has informed the Exchange about outcome of the investors meet",
+      "url": "https://nsearchives.nseindia.in/corporate/SBIN1_18112026162054_MeetOutcome18112026_dsc.pdf",
+      "size": "231.06 KB",
       "category": "investor_meetings",
       "tier": "routine",
       "reason": "Schedules of analyst and investor meetings.",
@@ -250,39 +407,39 @@
       "symbol": "SBIN"
      },
      {
-      "id": "106863565",
-      "time": "2026-11-17T14:06:22+05:30",
+      "id": "106864935",
+      "time": "2026-11-18T15:57:54+05:30",
       "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-      "headline": "Intimation of schedule of Analyst / Institutional Investors Meetings",
-      "nse_summary": "Trent Limited has informed the Exchange about Intimation of schedule of Analyst / Institutional Investors Meetings",
-      "url": "https://nsearchives.nseindia.in/corporate/TRENT_17112026140114_Investor_Analyst_Meeting_17112026.pdf",
-      "size": "289.84 KB",
+      "headline": "Schedule of meet",
+      "nse_summary": "Global Health Limited has informed the Exchange about Schedule of meet",
+      "url": "https://nsearchives.nseindia.in/corporate/MEDANTA21_18112026155718_GHLANALYSTSMEETNOVEMBER182026Signed.pdf",
+      "size": "543.19 KB",
       "category": "investor_meetings",
       "tier": "routine",
       "reason": "Schedules of analyst and investor meetings.",
       "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
-      "symbol": "TRENT"
+      "symbol": "MEDANTA"
      }
     ],
-    "count": 3
+    "count": 2
    },
    {
     "label": "Routine paperwork",
-    "reason": "Routine compliance paperwork.",
+    "reason": "Routine administration (registrar, CIN, demat, notices).",
     "items": [
      {
-      "id": "106863558",
-      "time": "2026-11-17T13:59:06+05:30",
-      "subject": "ESOP/ESOS/ESPS",
-      "headline": "Allotment of 1412278 Shares",
-      "nse_summary": "HDFC Bank Limited has informed the Exchange regarding Allotment of 1412278 Shares.",
-      "url": "https://nsearchives.nseindia.in/corporate/HDFCBANK3_17112026135613_SELetterESOP17112026.pdf",
-      "size": "283.62 KB",
+      "id": "106865423",
+      "time": "2026-11-18T22:10:55+05:30",
+      "subject": "Updates",
+      "headline": "Change in Corporate office address of the Company s Registrar and Share Transfer Agent",
+      "nse_summary": "Infosys Limited has informed the Exchange regarding 'Change in Corporate office address of the Company s Registrar and Share Transfer Agent'.",
+      "url": "https://nsearchives.nseindia.in/corporate/INFY_18112026221036_SE_filing_17112027__1_.pdf",
+      "size": "3.13 MB",
       "category": "routine_paperwork",
       "tier": "routine",
-      "reason": "Routine compliance paperwork.",
-      "evidence": "NSE subject \"ESOP/ESOS/ESPS\"",
-      "symbol": "HDFCBANK"
+      "reason": "Routine administration (registrar, CIN, demat, notices).",
+      "evidence": "NSE subject \"Updates\"; summary is about routine administration",
+      "symbol": "INFY"
      }
     ],
     "count": 1
@@ -292,13 +449,13 @@
  "price_check": {
   "sessions": [
    {
-    "day": "2026-11-17",
-    "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261117_F_0000.csv.zip",
+    "day": "2026-11-18",
+    "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261118_F_0000.csv.zip",
     "stocks": 18
    }
   ],
   "stocks": 18,
-  "hits": 0
+  "hits": 1
  },
  "ranking": {
   "tiers": [
@@ -360,7 +517,7 @@
    }
   ],
   "cards_with_extracts": 0,
-  "filings_waiting": 0,
+  "filings_waiting": 2,
   "claims_shown": 0,
   "claims_discarded": 0,
   "spend": {
