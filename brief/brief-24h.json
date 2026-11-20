@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-20T02:22:38.061307+05:30",
+ "generated_at": "2026-11-21T02:07:16.751528+05:30",
  "window": {
   "key": "24h",
   "label": "Last 24 hours",
-  "start": "2026-11-19T02:22:38.061307+05:30",
-  "end": "2026-11-20T02:22:38.061307+05:30"
+  "start": "2026-11-20T02:07:16.751528+05:30",
+  "end": "2026-11-21T02:07:16.751528+05:30"
  },
  "windows": [
   {
@@ -105,90 +105,78 @@
  },
  "counts": {
   "needs_you": 0,
-  "worth_knowing": 2,
-  "routine_filings": 0,
-  "filings": 2,
-  "companies": 2
+  "worth_knowing": 0,
+  "routine_filings": 3,
+  "filings": 3,
+  "companies": 3
  },
- "cards": [
-  {
-   "id": "RELIANCE:unclassified:106866520",
-   "symbol": "RELIANCE",
-   "company": "Reliance Industries Limited",
-   "category": "unclassified",
-   "category_label": "Unclassified",
-   "tier": "worth_knowing",
-   "time": "2026-11-19T18:35:25+05:30",
-   "headline": "This is further to the disclosure dated November 13, 2026 made by the Company. We wish to inform you that the Company executives participated in the Institutional Investors' Meeting - Morgan Stanley 25th Annual Asia-Pacific Summit and no unpublished price sensitive information was shared/discussed in the said one-on-one meeting",
-   "why": [
-    {
-     "text": "No rule matched, so it is shown rather than hidden.",
-     "evidence": "NSE subject \"Updates\""
-    }
-   ],
-   "filings": [
-    {
-     "id": "106866520",
-     "time": "2026-11-19T18:35:25+05:30",
-     "subject": "Updates",
-     "headline": "This is further to the disclosure dated November 13, 2026 made by the Company. We wish to inform you that the Company executives participated in the Institutional Investors' Meeting - Morgan Stanley 25th Annual Asia-Pacific Summit and no unpublished price sensitive information was shared/discussed in the said one-on-one meeting",
-     "nse_summary": "This is further to the disclosure dated November 13, 2026 made by the Company. We wish to inform you that the Company executives participated in the Institutional Investors' Meeting - Morgan Stanley 25th Annual Asia-Pacific Summit and no unpublished price sensitive information was shared/discussed in the said one-on-one meeting.",
-     "url": "https://nsearchives.nseindia.in/corporate/kavinavora_19112026183441_SE_19112026.pdf",
-     "size": "198.92 KB",
-     "category": "unclassified",
-     "tier": "worth_knowing",
-     "reason": "No rule matched, so it is shown rather than hidden.",
-     "evidence": "NSE subject \"Updates\""
-    }
-   ],
-   "related": [],
-   "rank": 1,
-   "rank_reason": "1st of 2 in Worth knowing. Cards sort by category (Unclassified is 20th in the order), then newest first."
-  },
-  {
-   "id": "ALKEM:unclassified:106866058",
-   "symbol": "ALKEM",
-   "company": "Alkem Laboratories Limited",
-   "category": "unclassified",
-   "category_label": "Unclassified",
-   "tier": "worth_knowing",
-   "time": "2026-11-19T13:32:21+05:30",
-   "headline": "Update on US FDA Inspection at Company s manufacturing facility located at Amaliya, Daman",
-   "why": [
-    {
-     "text": "No rule matched, so it is shown rather than hidden.",
-     "evidence": "NSE subject \"General Updates\""
-    }
-   ],
-   "filings": [
-    {
-     "id": "106866058",
-     "time": "2026-11-19T13:32:21+05:30",
-     "subject": "General Updates",
-     "headline": "Update on US FDA Inspection at Company s manufacturing facility located at Amaliya, Daman",
-     "nse_summary": "Alkem Laboratories Limited has informed the Exchange about Update on US FDA Inspection at Company s manufacturing facility located at Amaliya, Daman .",
-     "url": "https://nsearchives.nseindia.in/corporate/ALKEM_19112026132550_Intimation-Warning_letter_USFDA_inspection_Daman.pdf",
-     "size": "288.13 KB",
-     "category": "unclassified",
-     "tier": "worth_knowing",
-     "reason": "No rule matched, so it is shown rather than hidden.",
-     "evidence": "NSE subject \"General Updates\""
-    }
-   ],
-   "related": [],
-   "rank": 2,
-   "rank_reason": "2nd of 2 in Worth knowing. Cards sort by category (Unclassified is 20th in the order), then newest first."
-  }
- ],
+ "cards": [],
  "routine": {
-  "count": 0,
-  "groups": []
+  "count": 3,
+  "groups": [
+   {
+    "label": "Investor meetings",
+    "reason": "Schedules of analyst and investor meetings.",
+    "items": [
+     {
+      "id": "106867671",
+      "time": "2026-11-20T18:07:41+05:30",
+      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "headline": "Intimation of schedule of Analyst / Institutional Investors Meetings",
+      "nse_summary": "Trent Limited has informed the Exchange about Intimation of schedule of Analyst / Institutional Investors Meetings",
+      "url": "https://nsearchives.nseindia.in/corporate/TRENT_20112026175823_InvestorAnalystMeeting20112026.pdf",
+      "size": "231.33 KB",
+      "category": "investor_meetings",
+      "tier": "routine",
+      "reason": "Schedules of analyst and investor meetings.",
+      "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
+      "symbol": "TRENT"
+     },
+     {
+      "id": "106867205",
+      "time": "2026-11-20T12:13:59+05:30",
+      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "headline": "Outcome of Analyst /Institutional Investor Meet",
+      "nse_summary": "Dixon Technologies (India) Limited has informed the Exchange about Outcome of Analyst /Institutional Investor Meet",
+      "url": "https://nsearchives.nseindia.in/corporate/DIXON_20112026121311_InvestorMeetOutcome20112026.pdf",
+      "size": "623.99 KB",
+      "category": "investor_meetings",
+      "tier": "routine",
+      "reason": "Schedules of analyst and investor meetings.",
+      "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
+      "symbol": "DIXON"
+     }
+    ],
+    "count": 2
+   },
+   {
+    "label": "Shareholder meeting",
+    "reason": "AGM/EGM and postal-ballot notices and results.",
+    "items": [
+     {
+      "id": "106867839",
+      "time": "2026-11-20T20:43:09+05:30",
+      "subject": "Shareholders meeting",
+      "headline": "Voting results",
+      "nse_summary": "HDFC Bank Limited has submitted the Exchange a copy Srutinizers report of Postal Ballot. Further, the company has informed the Exchange regarding voting results.",
+      "url": "https://nsearchives.nseindia.in/corporate/HDFCBANK_20112026204256_SE_Intimation_-_PB_Results_-20112026.pdf",
+      "size": "2.04 MB",
+      "category": "agm_egm",
+      "tier": "routine",
+      "reason": "AGM/EGM and postal-ballot notices and results.",
+      "evidence": "NSE subject \"Shareholders meeting\"",
+      "symbol": "HDFCBANK"
+     }
+    ],
+    "count": 1
+   }
+  ]
  },
  "price_check": {
   "sessions": [
    {
-    "day": "2026-11-19",
-    "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261119_F_0000.csv.zip",
+    "day": "2026-11-20",
+    "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261120_F_0000.csv.zip",
     "stocks": 18
    }
   ],
