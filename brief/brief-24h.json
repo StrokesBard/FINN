@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-24T05:40:02.156262+05:30",
+ "generated_at": "2026-11-25T04:10:31.491815+05:30",
  "window": {
   "key": "24h",
   "label": "Last 24 hours",
-  "start": "2026-11-23T05:40:02.156262+05:30",
-  "end": "2026-11-24T05:40:02.156262+05:30"
+  "start": "2026-11-24T04:10:31.491815+05:30",
+  "end": "2026-11-25T04:10:31.491815+05:30"
  },
  "windows": [
   {
@@ -105,129 +105,81 @@
  },
  "counts": {
   "needs_you": 0,
-  "worth_knowing": 2,
-  "routine_filings": 2,
-  "filings": 4,
-  "companies": 4
+  "worth_knowing": 1,
+  "routine_filings": 1,
+  "filings": 2,
+  "companies": 2
  },
  "cards": [
   {
-   "id": "SUNPHARMA:credit_rating:106869300",
-   "symbol": "SUNPHARMA",
-   "company": "Sun Pharmaceutical Industries Limited",
-   "category": "credit_rating",
-   "category_label": "Credit rating",
+   "id": "DIXON:management_change:106869612",
+   "symbol": "DIXON",
+   "company": "Dixon Technologies (India) Limited",
+   "category": "management_change",
+   "category_label": "Management change",
    "tier": "worth_knowing",
-   "time": "2026-11-23T20:35:37+05:30",
-   "headline": "Credit Rating",
+   "time": "2026-11-24T15:04:54+05:30",
+   "headline": "Appointment of Ms Aruna Jayanthi (DIN: 00817860) as Other of the company w.e.f. November 24, 2026",
    "why": [
     {
-     "text": "A rating action without a downgrade.",
-     "evidence": "NSE subject \"Credit Rating\""
+     "text": "A change below the top roles (director, KMP or senior management).",
+     "evidence": "NSE subject \"Appointment\""
     }
    ],
    "filings": [
     {
-     "id": "106869300",
-     "time": "2026-11-23T20:35:37+05:30",
-     "subject": "Credit Rating",
-     "headline": "Credit Rating",
-     "nse_summary": "Sun Pharmaceutical Industries Limited has informed the Exchange about Credit Rating",
-     "url": "https://nsearchives.nseindia.in/corporate/SUNSEC_23112026203508_Intimation_to_SE_-_GTC_SP_Credit_Rating.pdf",
-     "size": "393.41 KB",
-     "category": "credit_rating",
+     "id": "106869612",
+     "time": "2026-11-24T15:04:54+05:30",
+     "subject": "Appointment",
+     "headline": "Appointment of Ms Aruna Jayanthi (DIN: 00817860) as Other of the company w.e.f. November 24, 2026",
+     "nse_summary": "Dixon Technologies (India) Limited has informed the Exchange regarding Appointment of Ms Aruna Jayanthi (DIN: 00817860) as Other of the company w.e.f. November 24, 2026.",
+     "url": "https://nsearchives.nseindia.in/corporate/DIXON_24112026150148_Reg30DisclosureArunaJayanthi24112026.pdf",
+     "size": "637.89 KB",
+     "category": "management_change",
      "tier": "worth_knowing",
-     "reason": "A rating action without a downgrade.",
-     "evidence": "NSE subject \"Credit Rating\""
+     "reason": "A change below the top roles (director, KMP or senior management).",
+     "evidence": "NSE subject \"Appointment\""
     }
    ],
+   "profile": {
+    "text": "Ms. Aruna Jayanthi holds a Master’s degree in Management Studies in Finance from the Narsee Monjee Institute of Management Studies in Mumbai. Ms. Aruna, till March 2026, was leading Capgemini’s business in Canada and Latin America. She has held several global leadership positions in Capgemini including CEO Capgemini India, CEO Business Services, Head of Asia -Pacific and Latin America and Member of the Group Executive Committee. Ms. Aruna joined Capgemini in early 2000 and was part of the core team that initiated and set up the offshore capabilities.",
+    "page": 2,
+    "url": "https://nsearchives.nseindia.in/corporate/DIXON_24112026150148_Reg30DisclosureArunaJayanthi24112026.pdf",
+    "filing": "Appointment of Ms Aruna Jayanthi (DIN: 00817860) as Other of the company w.e.f. November 24, 2026"
+   },
    "related": [],
    "rank": 1,
-   "rank_reason": "1st of 2 in Worth knowing. Cards sort by category (Credit rating is 9th in the order), then newest first."
-  },
-  {
-   "id": "NATIONALUM:unclassified:106869252",
-   "symbol": "NATIONALUM",
-   "company": "National Aluminium Company Limited",
-   "category": "unclassified",
-   "category_label": "Unclassified",
-   "tier": "worth_knowing",
-   "time": "2026-11-23T19:32:18+05:30",
-   "headline": "Incorporation of NLC NALCO Power Private Limited",
-   "why": [
-    {
-     "text": "No rule matched, so it is shown rather than hidden.",
-     "evidence": "NSE subject \"General Updates\""
-    }
-   ],
-   "filings": [
-    {
-     "id": "106869252",
-     "time": "2026-11-23T19:32:18+05:30",
-     "subject": "General Updates",
-     "headline": "Incorporation of NLC NALCO Power Private Limited",
-     "nse_summary": "National Aluminium Company Limited has informed the Exchange about Incorporation of NLC NALCO Power Private Limited",
-     "url": "https://nsearchives.nseindia.in/corporate/bharatsahu_23112026193151_SELETTERJVC.pdf",
-     "size": "1.04 MB",
-     "category": "unclassified",
-     "tier": "worth_knowing",
-     "reason": "No rule matched, so it is shown rather than hidden.",
-     "evidence": "NSE subject \"General Updates\""
-    }
-   ],
-   "related": [],
-   "rank": 2,
-   "rank_reason": "2nd of 2 in Worth knowing. Cards sort by category (Unclassified is 20th in the order), then newest first."
+   "rank_reason": "1st of 1 in Worth knowing. Cards sort by category (Management change is 3rd in the order), then newest first."
   }
  ],
  "routine": {
-  "count": 2,
+  "count": 1,
   "groups": [
    {
     "label": "Investor meetings",
     "reason": "Schedules of analyst and investor meetings.",
     "items": [
      {
-      "id": "106869096",
-      "time": "2026-11-23T17:57:34+05:30",
+      "id": "106869664",
+      "time": "2026-11-24T16:06:14+05:30",
       "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
       "headline": "Schedule of meet",
-      "nse_summary": "State Bank Of India has informed the Exchange about Schedule of meet",
-      "url": "https://nsearchives.nseindia.in/corporate/SBIN_23112026175710_BSE_NSE_InvestorMeet_Intimation_23112026.pdf",
-      "size": "258.14 KB",
+      "nse_summary": "Global Health Limited has informed the Exchange about Schedule of meet",
+      "url": "https://nsearchives.nseindia.in/corporate/MEDANTA21_24112026160545_GHLANALYSTSMEETNOVEMBER242026Signed.pdf",
+      "size": "509.94 KB",
       "category": "investor_meetings",
       "tier": "routine",
       "reason": "Schedules of analyst and investor meetings.",
       "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
-      "symbol": "SBIN"
-     },
-     {
-      "id": "106869094",
-      "time": "2026-11-23T17:56:51+05:30",
-      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-      "headline": "Analyst/Institutional Investor Meet",
-      "nse_summary": "Dixon Technologies (India) Limited has informed the Exchange about Analyst/Institutional Investor Meet",
-      "url": "https://nsearchives.nseindia.in/corporate/DIXON_23112026175353_InvestorMeetOutcome23112026.pdf",
-      "size": "618.37 KB",
-      "category": "investor_meetings",
-      "tier": "routine",
-      "reason": "Schedules of analyst and investor meetings.",
-      "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
-      "symbol": "DIXON"
+      "symbol": "MEDANTA"
      }
     ],
-    "count": 2
+    "count": 1
    }
   ]
  },
  "price_check": {
-  "sessions": [
-   {
-    "day": "2026-11-23",
-    "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261123_F_0000.csv.zip",
-    "stocks": 18
-   }
-  ],
+  "sessions": [],
   "stocks": 18,
   "hits": 0
  },

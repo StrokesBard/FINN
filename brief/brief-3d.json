@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-24T05:40:02.156262+05:30",
+ "generated_at": "2026-11-25T04:10:31.491815+05:30",
  "window": {
   "key": "3d",
   "label": "Last 3 days",
-  "start": "2026-11-21T05:40:02.156262+05:30",
-  "end": "2026-11-24T05:40:02.156262+05:30"
+  "start": "2026-11-22T04:10:31.491815+05:30",
+  "end": "2026-11-25T04:10:31.491815+05:30"
  },
  "windows": [
   {
@@ -108,9 +108,49 @@
   "worth_knowing": 3,
   "routine_filings": 3,
   "filings": 6,
-  "companies": 4
+  "companies": 5
  },
  "cards": [
+  {
+   "id": "DIXON:management_change:106869612",
+   "symbol": "DIXON",
+   "company": "Dixon Technologies (India) Limited",
+   "category": "management_change",
+   "category_label": "Management change",
+   "tier": "worth_knowing",
+   "time": "2026-11-24T15:04:54+05:30",
+   "headline": "Appointment of Ms Aruna Jayanthi (DIN: 00817860) as Other of the company w.e.f. November 24, 2026",
+   "why": [
+    {
+     "text": "A change below the top roles (director, KMP or senior management).",
+     "evidence": "NSE subject \"Appointment\""
+    }
+   ],
+   "filings": [
+    {
+     "id": "106869612",
+     "time": "2026-11-24T15:04:54+05:30",
+     "subject": "Appointment",
+     "headline": "Appointment of Ms Aruna Jayanthi (DIN: 00817860) as Other of the company w.e.f. November 24, 2026",
+     "nse_summary": "Dixon Technologies (India) Limited has informed the Exchange regarding Appointment of Ms Aruna Jayanthi (DIN: 00817860) as Other of the company w.e.f. November 24, 2026.",
+     "url": "https://nsearchives.nseindia.in/corporate/DIXON_24112026150148_Reg30DisclosureArunaJayanthi24112026.pdf",
+     "size": "637.89 KB",
+     "category": "management_change",
+     "tier": "worth_knowing",
+     "reason": "A change below the top roles (director, KMP or senior management).",
+     "evidence": "NSE subject \"Appointment\""
+    }
+   ],
+   "profile": {
+    "text": "Ms. Aruna Jayanthi holds a Master’s degree in Management Studies in Finance from the Narsee Monjee Institute of Management Studies in Mumbai. Ms. Aruna, till March 2026, was leading Capgemini’s business in Canada and Latin America. She has held several global leadership positions in Capgemini including CEO Capgemini India, CEO Business Services, Head of Asia -Pacific and Latin America and Member of the Group Executive Committee. Ms. Aruna joined Capgemini in early 2000 and was part of the core team that initiated and set up the offshore capabilities.",
+    "page": 2,
+    "url": "https://nsearchives.nseindia.in/corporate/DIXON_24112026150148_Reg30DisclosureArunaJayanthi24112026.pdf",
+    "filing": "Appointment of Ms Aruna Jayanthi (DIN: 00817860) as Other of the company w.e.f. November 24, 2026"
+   },
+   "related": [],
+   "rank": 1,
+   "rank_reason": "1st of 3 in Worth knowing. Cards sort by category (Management change is 3rd in the order), then newest first."
+  },
   {
    "id": "SUNPHARMA:credit_rating:106869300",
    "symbol": "SUNPHARMA",
@@ -142,8 +182,8 @@
     }
    ],
    "related": [],
-   "rank": 1,
-   "rank_reason": "1st of 3 in Worth knowing. Cards sort by category (Credit rating is 9th in the order), then newest first."
+   "rank": 2,
+   "rank_reason": "2nd of 3 in Worth knowing. Cards sort by category (Credit rating is 9th in the order), then newest first."
   },
   {
    "id": "NATIONALUM:unclassified:106869252",
@@ -176,40 +216,6 @@
     }
    ],
    "related": [],
-   "rank": 2,
-   "rank_reason": "2nd of 3 in Worth knowing. Cards sort by category (Unclassified is 20th in the order), then newest first."
-  },
-  {
-   "id": "DIXON:unclassified:106868327",
-   "symbol": "DIXON",
-   "company": "Dixon Technologies (India) Limited",
-   "category": "unclassified",
-   "category_label": "Unclassified",
-   "tier": "worth_knowing",
-   "time": "2026-11-21T20:31:34+05:30",
-   "headline": "Update on Asset Purchase Agreement executed between Dixon Technologies (India) Limited and Vimal Plast (India) Private Limited",
-   "why": [
-    {
-     "text": "No rule matched, so it is shown rather than hidden.",
-     "evidence": "NSE subject \"Updates\""
-    }
-   ],
-   "filings": [
-    {
-     "id": "106868327",
-     "time": "2026-11-21T20:31:34+05:30",
-     "subject": "Updates",
-     "headline": "Update on Asset Purchase Agreement executed between Dixon Technologies (India) Limited and Vimal Plast (India) Private Limited",
-     "nse_summary": "Dixon Technologies (India) Limited has informed the Exchange regarding 'Update on Asset Purchase Agreement executed between Dixon Technologies (India) Limited and Vimal Plast (India) Private Limited'.",
-     "url": "https://nsearchives.nseindia.in/corporate/DIXON_21112026203112_VimalClosingAnnouncement21112026.pdf",
-     "size": "325.94 KB",
-     "category": "unclassified",
-     "tier": "worth_knowing",
-     "reason": "No rule matched, so it is shown rather than hidden.",
-     "evidence": "NSE subject \"Updates\""
-    }
-   ],
-   "related": [],
    "rank": 3,
    "rank_reason": "3rd of 3 in Worth knowing. Cards sort by category (Unclassified is 20th in the order), then newest first."
   }
@@ -221,6 +227,20 @@
     "label": "Investor meetings",
     "reason": "Schedules of analyst and investor meetings.",
     "items": [
+     {
+      "id": "106869664",
+      "time": "2026-11-24T16:06:14+05:30",
+      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "headline": "Schedule of meet",
+      "nse_summary": "Global Health Limited has informed the Exchange about Schedule of meet",
+      "url": "https://nsearchives.nseindia.in/corporate/MEDANTA21_24112026160545_GHLANALYSTSMEETNOVEMBER242026Signed.pdf",
+      "size": "509.94 KB",
+      "category": "investor_meetings",
+      "tier": "routine",
+      "reason": "Schedules of analyst and investor meetings.",
+      "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
+      "symbol": "MEDANTA"
+     },
      {
       "id": "106869096",
       "time": "2026-11-23T17:57:34+05:30",
@@ -250,28 +270,7 @@
       "symbol": "DIXON"
      }
     ],
-    "count": 2
-   },
-   {
-    "label": "Routine paperwork",
-    "reason": "Routine compliance paperwork.",
-    "items": [
-     {
-      "id": "106868122",
-      "time": "2026-11-21T12:47:03+05:30",
-      "subject": "Copy of Newspaper Publication",
-      "headline": "Newspaper Advertisements about opening of Special Window for transfer of physical shares",
-      "nse_summary": "Newspaper Advertisements about opening of Special Window for transfer of physical shares",
-      "url": "https://nsearchives.nseindia.in/corporate/SUNSEC_21112026124625_SEIntimationSpecialWindow21112026_signed.pdf",
-      "size": "1.55 MB",
-      "category": "routine_paperwork",
-      "tier": "routine",
-      "reason": "Routine compliance paperwork.",
-      "evidence": "NSE subject \"Copy of Newspaper Publication\"",
-      "symbol": "SUNPHARMA"
-     }
-    ],
-    "count": 1
+    "count": 3
    }
   ]
  },
@@ -346,7 +345,7 @@
    }
   ],
   "cards_with_extracts": 0,
-  "filings_waiting": 1,
+  "filings_waiting": 2,
   "claims_shown": 0,
   "claims_discarded": 0,
   "spend": {
