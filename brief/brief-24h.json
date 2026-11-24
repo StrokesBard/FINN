@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-21T02:07:16.751528+05:30",
+ "generated_at": "2026-11-24T05:40:02.156262+05:30",
  "window": {
   "key": "24h",
   "label": "Last 24 hours",
-  "start": "2026-11-20T02:07:16.751528+05:30",
-  "end": "2026-11-21T02:07:16.751528+05:30"
+  "start": "2026-11-23T05:40:02.156262+05:30",
+  "end": "2026-11-24T05:40:02.156262+05:30"
  },
  "windows": [
   {
@@ -105,41 +105,110 @@
  },
  "counts": {
   "needs_you": 0,
-  "worth_knowing": 0,
-  "routine_filings": 3,
-  "filings": 3,
-  "companies": 3
+  "worth_knowing": 2,
+  "routine_filings": 2,
+  "filings": 4,
+  "companies": 4
  },
- "cards": [],
+ "cards": [
+  {
+   "id": "SUNPHARMA:credit_rating:106869300",
+   "symbol": "SUNPHARMA",
+   "company": "Sun Pharmaceutical Industries Limited",
+   "category": "credit_rating",
+   "category_label": "Credit rating",
+   "tier": "worth_knowing",
+   "time": "2026-11-23T20:35:37+05:30",
+   "headline": "Credit Rating",
+   "why": [
+    {
+     "text": "A rating action without a downgrade.",
+     "evidence": "NSE subject \"Credit Rating\""
+    }
+   ],
+   "filings": [
+    {
+     "id": "106869300",
+     "time": "2026-11-23T20:35:37+05:30",
+     "subject": "Credit Rating",
+     "headline": "Credit Rating",
+     "nse_summary": "Sun Pharmaceutical Industries Limited has informed the Exchange about Credit Rating",
+     "url": "https://nsearchives.nseindia.in/corporate/SUNSEC_23112026203508_Intimation_to_SE_-_GTC_SP_Credit_Rating.pdf",
+     "size": "393.41 KB",
+     "category": "credit_rating",
+     "tier": "worth_knowing",
+     "reason": "A rating action without a downgrade.",
+     "evidence": "NSE subject \"Credit Rating\""
+    }
+   ],
+   "related": [],
+   "rank": 1,
+   "rank_reason": "1st of 2 in Worth knowing. Cards sort by category (Credit rating is 9th in the order), then newest first."
+  },
+  {
+   "id": "NATIONALUM:unclassified:106869252",
+   "symbol": "NATIONALUM",
+   "company": "National Aluminium Company Limited",
+   "category": "unclassified",
+   "category_label": "Unclassified",
+   "tier": "worth_knowing",
+   "time": "2026-11-23T19:32:18+05:30",
+   "headline": "Incorporation of NLC NALCO Power Private Limited",
+   "why": [
+    {
+     "text": "No rule matched, so it is shown rather than hidden.",
+     "evidence": "NSE subject \"General Updates\""
+    }
+   ],
+   "filings": [
+    {
+     "id": "106869252",
+     "time": "2026-11-23T19:32:18+05:30",
+     "subject": "General Updates",
+     "headline": "Incorporation of NLC NALCO Power Private Limited",
+     "nse_summary": "National Aluminium Company Limited has informed the Exchange about Incorporation of NLC NALCO Power Private Limited",
+     "url": "https://nsearchives.nseindia.in/corporate/bharatsahu_23112026193151_SELETTERJVC.pdf",
+     "size": "1.04 MB",
+     "category": "unclassified",
+     "tier": "worth_knowing",
+     "reason": "No rule matched, so it is shown rather than hidden.",
+     "evidence": "NSE subject \"General Updates\""
+    }
+   ],
+   "related": [],
+   "rank": 2,
+   "rank_reason": "2nd of 2 in Worth knowing. Cards sort by category (Unclassified is 20th in the order), then newest first."
+  }
+ ],
  "routine": {
-  "count": 3,
+  "count": 2,
   "groups": [
    {
     "label": "Investor meetings",
     "reason": "Schedules of analyst and investor meetings.",
     "items": [
      {
-      "id": "106867671",
-      "time": "2026-11-20T18:07:41+05:30",
+      "id": "106869096",
+      "time": "2026-11-23T17:57:34+05:30",
       "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-      "headline": "Intimation of schedule of Analyst / Institutional Investors Meetings",
-      "nse_summary": "Trent Limited has informed the Exchange about Intimation of schedule of Analyst / Institutional Investors Meetings",
-      "url": "https://nsearchives.nseindia.in/corporate/TRENT_20112026175823_InvestorAnalystMeeting20112026.pdf",
-      "size": "231.33 KB",
+      "headline": "Schedule of meet",
+      "nse_summary": "State Bank Of India has informed the Exchange about Schedule of meet",
+      "url": "https://nsearchives.nseindia.in/corporate/SBIN_23112026175710_BSE_NSE_InvestorMeet_Intimation_23112026.pdf",
+      "size": "258.14 KB",
       "category": "investor_meetings",
       "tier": "routine",
       "reason": "Schedules of analyst and investor meetings.",
       "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
-      "symbol": "TRENT"
+      "symbol": "SBIN"
      },
      {
-      "id": "106867205",
-      "time": "2026-11-20T12:13:59+05:30",
+      "id": "106869094",
+      "time": "2026-11-23T17:56:51+05:30",
       "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-      "headline": "Outcome of Analyst /Institutional Investor Meet",
-      "nse_summary": "Dixon Technologies (India) Limited has informed the Exchange about Outcome of Analyst /Institutional Investor Meet",
-      "url": "https://nsearchives.nseindia.in/corporate/DIXON_20112026121311_InvestorMeetOutcome20112026.pdf",
-      "size": "623.99 KB",
+      "headline": "Analyst/Institutional Investor Meet",
+      "nse_summary": "Dixon Technologies (India) Limited has informed the Exchange about Analyst/Institutional Investor Meet",
+      "url": "https://nsearchives.nseindia.in/corporate/DIXON_23112026175353_InvestorMeetOutcome23112026.pdf",
+      "size": "618.37 KB",
       "category": "investor_meetings",
       "tier": "routine",
       "reason": "Schedules of analyst and investor meetings.",
@@ -148,35 +217,14 @@
      }
     ],
     "count": 2
-   },
-   {
-    "label": "Shareholder meeting",
-    "reason": "AGM/EGM and postal-ballot notices and results.",
-    "items": [
-     {
-      "id": "106867839",
-      "time": "2026-11-20T20:43:09+05:30",
-      "subject": "Shareholders meeting",
-      "headline": "Voting results",
-      "nse_summary": "HDFC Bank Limited has submitted the Exchange a copy Srutinizers report of Postal Ballot. Further, the company has informed the Exchange regarding voting results.",
-      "url": "https://nsearchives.nseindia.in/corporate/HDFCBANK_20112026204256_SE_Intimation_-_PB_Results_-20112026.pdf",
-      "size": "2.04 MB",
-      "category": "agm_egm",
-      "tier": "routine",
-      "reason": "AGM/EGM and postal-ballot notices and results.",
-      "evidence": "NSE subject \"Shareholders meeting\"",
-      "symbol": "HDFCBANK"
-     }
-    ],
-    "count": 1
    }
   ]
  },
  "price_check": {
   "sessions": [
    {
-    "day": "2026-11-20",
-    "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261120_F_0000.csv.zip",
+    "day": "2026-11-23",
+    "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261123_F_0000.csv.zip",
     "stocks": 18
    }
   ],
@@ -243,7 +291,7 @@
    }
   ],
   "cards_with_extracts": 0,
-  "filings_waiting": 0,
+  "filings_waiting": 1,
   "claims_shown": 0,
   "claims_discarded": 0,
   "spend": {
