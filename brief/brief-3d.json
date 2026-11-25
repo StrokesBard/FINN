@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-25T04:10:31.491815+05:30",
+ "generated_at": "2026-11-26T03:23:15.517421+05:30",
  "window": {
   "key": "3d",
   "label": "Last 3 days",
-  "start": "2026-11-22T04:10:31.491815+05:30",
-  "end": "2026-11-25T04:10:31.491815+05:30"
+  "start": "2026-11-23T03:23:15.517421+05:30",
+  "end": "2026-11-26T03:23:15.517421+05:30"
  },
  "windows": [
   {
@@ -104,13 +104,185 @@
   "volume_lookback_sessions": 20
  },
  "counts": {
-  "needs_you": 0,
-  "worth_knowing": 3,
-  "routine_filings": 3,
-  "filings": 6,
-  "companies": 5
+  "needs_you": 1,
+  "worth_knowing": 5,
+  "routine_filings": 5,
+  "filings": 10,
+  "companies": 8
  },
  "cards": [
+  {
+   "id": "BAJAJFINSV:price_move:2026-11-25",
+   "symbol": "BAJAJFINSV",
+   "company": "Bajaj Finserv Limited",
+   "category": "price_move",
+   "category_label": "Unusual move",
+   "tier": "needs_you",
+   "time": "2026-11-25T15:30:00+05:30",
+   "headline": "Unusual volume",
+   "why": [
+    {
+     "text": "25 Nov: Traded 4.6× its average volume of the previous 20 sessions, beyond your 2× threshold.",
+     "evidence": "NSE bhavcopy files 26 Oct – 25 Nov 2026"
+    }
+   ],
+   "filings": [],
+   "moves": [
+    {
+     "day": "2026-11-25",
+     "close": 1925.0,
+     "prev_close": 1880.1,
+     "change_pct": 2.388170841976489,
+     "volume": 5034092,
+     "avg_volume": 1095750.35,
+     "volume_multiple": 4.594196114105736,
+     "source_url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261125_F_0000.csv.zip",
+     "lookback": [
+      {
+       "day": "2026-10-26",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261026_F_0000.csv.zip",
+       "volume": 580721
+      },
+      {
+       "day": "2026-10-27",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261027_F_0000.csv.zip",
+       "volume": 2481029
+      },
+      {
+       "day": "2026-10-28",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261028_F_0000.csv.zip",
+       "volume": 1552455
+      },
+      {
+       "day": "2026-10-29",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261029_F_0000.csv.zip",
+       "volume": 1296480
+      },
+      {
+       "day": "2026-10-30",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261030_F_0000.csv.zip",
+       "volume": 842889
+      },
+      {
+       "day": "2026-11-02",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261102_F_0000.csv.zip",
+       "volume": 715793
+      },
+      {
+       "day": "2026-11-03",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261103_F_0000.csv.zip",
+       "volume": 1263773
+      },
+      {
+       "day": "2026-11-04",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261104_F_0000.csv.zip",
+       "volume": 1751744
+      },
+      {
+       "day": "2026-11-05",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261105_F_0000.csv.zip",
+       "volume": 1561387
+      },
+      {
+       "day": "2026-11-06",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261106_F_0000.csv.zip",
+       "volume": 767674
+      },
+      {
+       "day": "2026-11-09",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261109_F_0000.csv.zip",
+       "volume": 569601
+      },
+      {
+       "day": "2026-11-11",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261111_F_0000.csv.zip",
+       "volume": 495627
+      },
+      {
+       "day": "2026-11-12",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261112_F_0000.csv.zip",
+       "volume": 1331091
+      },
+      {
+       "day": "2026-11-13",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+       "volume": 425853
+      },
+      {
+       "day": "2026-11-16",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261116_F_0000.csv.zip",
+       "volume": 677262
+      },
+      {
+       "day": "2026-11-17",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261117_F_0000.csv.zip",
+       "volume": 637609
+      },
+      {
+       "day": "2026-11-18",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261118_F_0000.csv.zip",
+       "volume": 1092325
+      },
+      {
+       "day": "2026-11-19",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261119_F_0000.csv.zip",
+       "volume": 1344972
+      },
+      {
+       "day": "2026-11-20",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261120_F_0000.csv.zip",
+       "volume": 1504294
+      },
+      {
+       "day": "2026-11-23",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261123_F_0000.csv.zip",
+       "volume": 1022428
+      }
+     ],
+     "price_hit": false,
+     "volume_hit": true,
+     "caveats": []
+    }
+   ],
+   "related": [],
+   "rank": 1,
+   "rank_reason": "1st of 1 in Needs you. Cards sort by category (Unusual move is 2nd in the order), then newest first."
+  },
+  {
+   "id": "HDFCBANK:management_change:106870715",
+   "symbol": "HDFCBANK",
+   "company": "HDFC Bank Limited",
+   "category": "management_change",
+   "category_label": "Management change",
+   "tier": "worth_knowing",
+   "time": "2026-11-25T18:01:30+05:30",
+   "headline": "Change in Director(s) of the company",
+   "why": [
+    {
+     "text": "A change below the top roles (director, KMP or senior management).",
+     "evidence": "NSE subject \"Change in Director(s)\""
+    }
+   ],
+   "filings": [
+    {
+     "id": "106870715",
+     "time": "2026-11-25T18:01:30+05:30",
+     "subject": "Change in Director(s)",
+     "headline": "Change in Director(s) of the company",
+     "nse_summary": "HDFC Bank Limited has informed the Exchange regarding Change in Director(s) of the company.",
+     "url": "https://nsearchives.nseindia.in/corporate/HDFCBANK3_25112026180104_SE_intimation-_HKB.pdf",
+     "size": "746.62 KB",
+     "category": "management_change",
+     "tier": "worth_knowing",
+     "reason": "A change below the top roles (director, KMP or senior management).",
+     "evidence": "NSE subject \"Change in Director(s)\""
+    }
+   ],
+   "profile": null,
+   "related": [],
+   "rank": 1,
+   "rank_reason": "1st of 5 in Worth knowing. Cards sort by category (Management change is 3rd in the order), then newest first."
+  },
   {
    "id": "DIXON:management_change:106869612",
    "symbol": "DIXON",
@@ -148,8 +320,8 @@
     "filing": "Appointment of Ms Aruna Jayanthi (DIN: 00817860) as Other of the company w.e.f. November 24, 2026"
    },
    "related": [],
-   "rank": 1,
-   "rank_reason": "1st of 3 in Worth knowing. Cards sort by category (Management change is 3rd in the order), then newest first."
+   "rank": 2,
+   "rank_reason": "2nd of 5 in Worth knowing. Cards sort by category (Management change is 3rd in the order), then newest first."
   },
   {
    "id": "SUNPHARMA:credit_rating:106869300",
@@ -182,8 +354,42 @@
     }
    ],
    "related": [],
-   "rank": 2,
-   "rank_reason": "2nd of 3 in Worth knowing. Cards sort by category (Credit rating is 9th in the order), then newest first."
+   "rank": 3,
+   "rank_reason": "3rd of 5 in Worth knowing. Cards sort by category (Credit rating is 9th in the order), then newest first."
+  },
+  {
+   "id": "INFY:unclassified:106870398",
+   "symbol": "INFY",
+   "company": "Infosys Limited",
+   "category": "unclassified",
+   "category_label": "Unclassified",
+   "tier": "worth_knowing",
+   "time": "2026-11-25T15:00:58+05:30",
+   "headline": "Infosys Becomes the World s First Organization to Achieve CMMI AI Maturity (AIM) Level 5",
+   "why": [
+    {
+     "text": "No rule matched, so it is shown rather than hidden.",
+     "evidence": "NSE subject \"Updates\""
+    }
+   ],
+   "filings": [
+    {
+     "id": "106870398",
+     "time": "2026-11-25T15:00:58+05:30",
+     "subject": "Updates",
+     "headline": "Infosys Becomes the World s First Organization to Achieve CMMI AI Maturity (AIM) Level 5",
+     "nse_summary": "Infosys Limited has informed the Exchange regarding 'Infosys Becomes the World s First Organization to Achieve CMMI AI Maturity (AIM) Level 5'.",
+     "url": "https://nsearchives.nseindia.in/corporate/Infosys_25112026150030_PR_25112026.pdf",
+     "size": "3.30 MB",
+     "category": "unclassified",
+     "tier": "worth_knowing",
+     "reason": "No rule matched, so it is shown rather than hidden.",
+     "evidence": "NSE subject \"Updates\""
+    }
+   ],
+   "related": [],
+   "rank": 4,
+   "rank_reason": "4th of 5 in Worth knowing. Cards sort by category (Unclassified is 20th in the order), then newest first."
   },
   {
    "id": "NATIONALUM:unclassified:106869252",
@@ -216,17 +422,45 @@
     }
    ],
    "related": [],
-   "rank": 3,
-   "rank_reason": "3rd of 3 in Worth knowing. Cards sort by category (Unclassified is 20th in the order), then newest first."
+   "rank": 5,
+   "rank_reason": "5th of 5 in Worth knowing. Cards sort by category (Unclassified is 20th in the order), then newest first."
   }
  ],
  "routine": {
-  "count": 3,
+  "count": 5,
   "groups": [
    {
     "label": "Investor meetings",
     "reason": "Schedules of analyst and investor meetings.",
     "items": [
+     {
+      "id": "106870597",
+      "time": "2026-11-25T17:24:40+05:30",
+      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "headline": "Schedule of meet",
+      "nse_summary": "Bajaj Finserv Limited has informed the Exchange about Schedule of meet",
+      "url": "https://nsearchives.nseindia.in/corporate/walimbelk_25112026172422_BFSSEIntimationInvestorsday07122026.pdf",
+      "size": "205.05 KB",
+      "category": "investor_meetings",
+      "tier": "routine",
+      "reason": "Schedules of analyst and investor meetings.",
+      "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
+      "symbol": "BAJAJFINSV"
+     },
+     {
+      "id": "106870505",
+      "time": "2026-11-25T16:39:15+05:30",
+      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "headline": "Schedule of meet",
+      "nse_summary": "Dixon Technologies (India) Limited has informed the Exchange about Schedule of meet",
+      "url": "https://nsearchives.nseindia.in/corporate/DIXON_25112026163756_InvestorMeetIntimation25112026.pdf",
+      "size": "712.55 KB",
+      "category": "investor_meetings",
+      "tier": "routine",
+      "reason": "Schedules of analyst and investor meetings.",
+      "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
+      "symbol": "DIXON"
+     },
      {
       "id": "106869664",
       "time": "2026-11-24T16:06:14+05:30",
@@ -270,7 +504,7 @@
       "symbol": "DIXON"
      }
     ],
-    "count": 3
+    "count": 5
    }
   ]
  },
@@ -280,10 +514,15 @@
     "day": "2026-11-23",
     "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261123_F_0000.csv.zip",
     "stocks": 18
+   },
+   {
+    "day": "2026-11-25",
+    "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261125_F_0000.csv.zip",
+    "stocks": 18
    }
   ],
   "stocks": 18,
-  "hits": 0
+  "hits": 1
  },
  "ranking": {
   "tiers": [
@@ -345,7 +584,7 @@
    }
   ],
   "cards_with_extracts": 0,
-  "filings_waiting": 2,
+  "filings_waiting": 3,
   "claims_shown": 0,
   "claims_discarded": 0,
   "spend": {
