@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-26T03:23:15.517421+05:30",
+ "generated_at": "2026-11-27T03:17:35.824077+05:30",
  "window": {
   "key": "7d",
   "label": "Last 7 days",
-  "start": "2026-11-19T03:23:15.517421+05:30",
-  "end": "2026-11-26T03:23:15.517421+05:30"
+  "start": "2026-11-20T03:17:35.824077+05:30",
+  "end": "2026-11-27T03:17:35.824077+05:30"
  },
  "windows": [
   {
@@ -105,10 +105,10 @@
  },
  "counts": {
   "needs_you": 1,
-  "worth_knowing": 8,
-  "routine_filings": 9,
-  "filings": 17,
-  "companies": 11
+  "worth_knowing": 7,
+  "routine_filings": 12,
+  "filings": 20,
+  "companies": 9
  },
  "cards": [
   {
@@ -249,6 +249,46 @@
    "rank_reason": "1st of 1 in Needs you. Cards sort by category (Unusual move is 2nd in the order), then newest first."
   },
   {
+   "id": "SUNPHARMA:results:106872055",
+   "symbol": "SUNPHARMA",
+   "company": "Sun Pharmaceutical Industries Limited",
+   "category": "results",
+   "category_label": "Results",
+   "tier": "worth_knowing",
+   "time": "2026-11-26T19:58:39+05:30",
+   "headline": "Investor Presentation",
+   "why": [
+    {
+     "text": "Investor presentations usually accompany results.",
+     "evidence": "NSE subject \"Investor Presentation\""
+    }
+   ],
+   "filings": [
+    {
+     "id": "106872055",
+     "time": "2026-11-26T19:58:39+05:30",
+     "subject": "Investor Presentation",
+     "headline": "Investor Presentation",
+     "nse_summary": "Sun Pharmaceutical Industries Limited has informed the Exchange about Investor Presentation",
+     "url": "https://nsearchives.nseindia.in/corporate/SUNPHARMA456_26112026195823_IntimationSE20261126_Investor_Presenatation_Nov2026_Signed.pdf",
+     "size": "4.42 MB",
+     "category": "results",
+     "tier": "worth_knowing",
+     "reason": "Investor presentations usually accompany results.",
+     "evidence": "NSE subject \"Investor Presentation\""
+    }
+   ],
+   "results": {
+    "status": "pending",
+    "reason": "NSE has not published the structured (XBRL) copy of these results yet. The results PDF is linked below."
+   },
+   "related": [
+    "Credit rating"
+   ],
+   "rank": 1,
+   "rank_reason": "1st of 7 in Worth knowing. Cards sort by category (Results is 1st in the order), then newest first."
+  },
+  {
    "id": "HDFCBANK:management_change:106870715",
    "symbol": "HDFCBANK",
    "company": "HDFC Bank Limited",
@@ -280,8 +320,8 @@
    ],
    "profile": null,
    "related": [],
-   "rank": 1,
-   "rank_reason": "1st of 8 in Worth knowing. Cards sort by category (Management change is 3rd in the order), then newest first."
+   "rank": 2,
+   "rank_reason": "2nd of 7 in Worth knowing. Cards sort by category (Management change is 3rd in the order), then newest first."
   },
   {
    "id": "DIXON:management_change:106869612",
@@ -322,8 +362,8 @@
    "related": [
     "Unclassified"
    ],
-   "rank": 2,
-   "rank_reason": "2nd of 8 in Worth knowing. Cards sort by category (Management change is 3rd in the order), then newest first."
+   "rank": 3,
+   "rank_reason": "3rd of 7 in Worth knowing. Cards sort by category (Management change is 3rd in the order), then newest first."
   },
   {
    "id": "SUNPHARMA:credit_rating:106869300",
@@ -355,9 +395,11 @@
      "evidence": "NSE subject \"Credit Rating\""
     }
    ],
-   "related": [],
-   "rank": 3,
-   "rank_reason": "3rd of 8 in Worth knowing. Cards sort by category (Credit rating is 9th in the order), then newest first."
+   "related": [
+    "Results"
+   ],
+   "rank": 4,
+   "rank_reason": "4th of 7 in Worth knowing. Cards sort by category (Credit rating is 9th in the order), then newest first."
   },
   {
    "id": "INFY:unclassified:106870398",
@@ -372,9 +414,26 @@
     {
      "text": "No rule matched, so it is shown rather than hidden.",
      "evidence": "NSE subject \"Updates\""
+    },
+    {
+     "text": "2 filings from INFY about unclassified in this window are grouped into one card.",
+     "evidence": null
     }
    ],
    "filings": [
+    {
+     "id": "106872100",
+     "time": "2026-11-26T22:17:06+05:30",
+     "subject": "Updates",
+     "headline": "Investor Conference",
+     "nse_summary": "Infosys Limited has informed the Exchange regarding 'Investor Conference'.",
+     "url": "https://nsearchives.nseindia.in/corporate/Infosys_26112026221607_SE_filing_Investor_conference_26112026.pdf",
+     "size": "3.12 MB",
+     "category": "unclassified",
+     "tier": "worth_knowing",
+     "reason": "No rule matched, so it is shown rather than hidden.",
+     "evidence": "NSE subject \"Updates\""
+    },
     {
      "id": "106870398",
      "time": "2026-11-25T15:00:58+05:30",
@@ -390,8 +449,8 @@
     }
    ],
    "related": [],
-   "rank": 4,
-   "rank_reason": "4th of 8 in Worth knowing. Cards sort by category (Unclassified is 20th in the order), then newest first."
+   "rank": 5,
+   "rank_reason": "5th of 7 in Worth knowing. Cards sort by category (Unclassified is 20th in the order), then newest first."
   },
   {
    "id": "NATIONALUM:unclassified:106869252",
@@ -424,8 +483,8 @@
     }
    ],
    "related": [],
-   "rank": 5,
-   "rank_reason": "5th of 8 in Worth knowing. Cards sort by category (Unclassified is 20th in the order), then newest first."
+   "rank": 6,
+   "rank_reason": "6th of 7 in Worth knowing. Cards sort by category (Unclassified is 20th in the order), then newest first."
   },
   {
    "id": "DIXON:unclassified:106868327",
@@ -460,85 +519,59 @@
    "related": [
     "Management change"
    ],
-   "rank": 6,
-   "rank_reason": "6th of 8 in Worth knowing. Cards sort by category (Unclassified is 20th in the order), then newest first."
-  },
-  {
-   "id": "RELIANCE:unclassified:106866520",
-   "symbol": "RELIANCE",
-   "company": "Reliance Industries Limited",
-   "category": "unclassified",
-   "category_label": "Unclassified",
-   "tier": "worth_knowing",
-   "time": "2026-11-19T18:35:25+05:30",
-   "headline": "This is further to the disclosure dated November 13, 2026 made by the Company. We wish to inform you that the Company executives participated in the Institutional Investors' Meeting - Morgan Stanley 25th Annual Asia-Pacific Summit and no unpublished price sensitive information was shared/discussed in the said one-on-one meeting",
-   "why": [
-    {
-     "text": "No rule matched, so it is shown rather than hidden.",
-     "evidence": "NSE subject \"Updates\""
-    }
-   ],
-   "filings": [
-    {
-     "id": "106866520",
-     "time": "2026-11-19T18:35:25+05:30",
-     "subject": "Updates",
-     "headline": "This is further to the disclosure dated November 13, 2026 made by the Company. We wish to inform you that the Company executives participated in the Institutional Investors' Meeting - Morgan Stanley 25th Annual Asia-Pacific Summit and no unpublished price sensitive information was shared/discussed in the said one-on-one meeting",
-     "nse_summary": "This is further to the disclosure dated November 13, 2026 made by the Company. We wish to inform you that the Company executives participated in the Institutional Investors' Meeting - Morgan Stanley 25th Annual Asia-Pacific Summit and no unpublished price sensitive information was shared/discussed in the said one-on-one meeting.",
-     "url": "https://nsearchives.nseindia.in/corporate/kavinavora_19112026183441_SE_19112026.pdf",
-     "size": "198.92 KB",
-     "category": "unclassified",
-     "tier": "worth_knowing",
-     "reason": "No rule matched, so it is shown rather than hidden.",
-     "evidence": "NSE subject \"Updates\""
-    }
-   ],
-   "related": [],
    "rank": 7,
-   "rank_reason": "7th of 8 in Worth knowing. Cards sort by category (Unclassified is 20th in the order), then newest first."
-  },
-  {
-   "id": "ALKEM:unclassified:106866058",
-   "symbol": "ALKEM",
-   "company": "Alkem Laboratories Limited",
-   "category": "unclassified",
-   "category_label": "Unclassified",
-   "tier": "worth_knowing",
-   "time": "2026-11-19T13:32:21+05:30",
-   "headline": "Update on US FDA Inspection at Company s manufacturing facility located at Amaliya, Daman",
-   "why": [
-    {
-     "text": "No rule matched, so it is shown rather than hidden.",
-     "evidence": "NSE subject \"General Updates\""
-    }
-   ],
-   "filings": [
-    {
-     "id": "106866058",
-     "time": "2026-11-19T13:32:21+05:30",
-     "subject": "General Updates",
-     "headline": "Update on US FDA Inspection at Company s manufacturing facility located at Amaliya, Daman",
-     "nse_summary": "Alkem Laboratories Limited has informed the Exchange about Update on US FDA Inspection at Company s manufacturing facility located at Amaliya, Daman .",
-     "url": "https://nsearchives.nseindia.in/corporate/ALKEM_19112026132550_Intimation-Warning_letter_USFDA_inspection_Daman.pdf",
-     "size": "288.13 KB",
-     "category": "unclassified",
-     "tier": "worth_knowing",
-     "reason": "No rule matched, so it is shown rather than hidden.",
-     "evidence": "NSE subject \"General Updates\""
-    }
-   ],
-   "related": [],
-   "rank": 8,
-   "rank_reason": "8th of 8 in Worth knowing. Cards sort by category (Unclassified is 20th in the order), then newest first."
+   "rank_reason": "7th of 7 in Worth knowing. Cards sort by category (Unclassified is 20th in the order), then newest first."
   }
  ],
  "routine": {
-  "count": 9,
+  "count": 12,
   "groups": [
    {
     "label": "Investor meetings",
     "reason": "Schedules of analyst and investor meetings.",
     "items": [
+     {
+      "id": "106871628",
+      "time": "2026-11-26T14:50:10+05:30",
+      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "headline": "Intimation of schedule of Analyst / Institutional Investors Meeting",
+      "nse_summary": "Trent Limited has informed the Exchange about Intimation of schedule of Analyst / Institutional Investors Meeting",
+      "url": "https://nsearchives.nseindia.in/corporate/TRENT_26112026143736_InvestorAnalystMeeting261120261.pdf",
+      "size": "296.92 KB",
+      "category": "investor_meetings",
+      "tier": "routine",
+      "reason": "Schedules of analyst and investor meetings.",
+      "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
+      "symbol": "TRENT"
+     },
+     {
+      "id": "106871411",
+      "time": "2026-11-26T11:22:56+05:30",
+      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "headline": "Analyst/Institutional Investor Meet",
+      "nse_summary": "Dixon Technologies (India) Limited has informed the Exchange about Analyst/Institutional Investor Meet",
+      "url": "https://nsearchives.nseindia.in/corporate/DIXON_26112026111744_InvestorMeetOutcome26112026.pdf",
+      "size": "617.90 KB",
+      "category": "investor_meetings",
+      "tier": "routine",
+      "reason": "Schedules of analyst and investor meetings.",
+      "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
+      "symbol": "DIXON"
+     },
+     {
+      "id": "106871395",
+      "time": "2026-11-26T10:58:27+05:30",
+      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "headline": "Intimation of schedule of Analyst / Institutional Investors Meetings",
+      "nse_summary": "Trent Limited has informed the Exchange about Intimation of schedule of Analyst / Institutional Investors Meetings",
+      "url": "https://nsearchives.nseindia.in/corporate/TRENT_26112026105032_InvestorAnalystMeeting26112026.pdf",
+      "size": "298.43 KB",
+      "category": "investor_meetings",
+      "tier": "routine",
+      "reason": "Schedules of analyst and investor meetings.",
+      "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
+      "symbol": "TRENT"
+     },
      {
       "id": "106870597",
       "time": "2026-11-25T17:24:40+05:30",
@@ -638,7 +671,7 @@
       "symbol": "DIXON"
      }
     ],
-    "count": 7
+    "count": 10
    },
    {
     "label": "Shareholder meeting",
@@ -687,11 +720,6 @@
  "price_check": {
   "sessions": [
    {
-    "day": "2026-11-19",
-    "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261119_F_0000.csv.zip",
-    "stocks": 18
-   },
-   {
     "day": "2026-11-20",
     "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261120_F_0000.csv.zip",
     "stocks": 18
@@ -704,6 +732,11 @@
    {
     "day": "2026-11-25",
     "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261125_F_0000.csv.zip",
+    "stocks": 18
+   },
+   {
+    "day": "2026-11-26",
+    "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261126_F_0000.csv.zip",
     "stocks": 18
    }
   ],
@@ -770,7 +803,7 @@
    }
   ],
   "cards_with_extracts": 0,
-  "filings_waiting": 3,
+  "filings_waiting": 4,
   "claims_shown": 0,
   "claims_discarded": 0,
   "spend": {

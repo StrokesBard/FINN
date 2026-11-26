@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-26T03:23:15.517421+05:30",
+ "generated_at": "2026-11-27T03:17:35.824077+05:30",
  "window": {
   "key": "3d",
   "label": "Last 3 days",
-  "start": "2026-11-23T03:23:15.517421+05:30",
-  "end": "2026-11-26T03:23:15.517421+05:30"
+  "start": "2026-11-24T03:17:35.824077+05:30",
+  "end": "2026-11-27T03:17:35.824077+05:30"
  },
  "windows": [
   {
@@ -105,10 +105,10 @@
  },
  "counts": {
   "needs_you": 1,
-  "worth_knowing": 5,
-  "routine_filings": 5,
-  "filings": 10,
-  "companies": 8
+  "worth_knowing": 4,
+  "routine_filings": 6,
+  "filings": 11,
+  "companies": 7
  },
  "cards": [
   {
@@ -249,6 +249,44 @@
    "rank_reason": "1st of 1 in Needs you. Cards sort by category (Unusual move is 2nd in the order), then newest first."
   },
   {
+   "id": "SUNPHARMA:results:106872055",
+   "symbol": "SUNPHARMA",
+   "company": "Sun Pharmaceutical Industries Limited",
+   "category": "results",
+   "category_label": "Results",
+   "tier": "worth_knowing",
+   "time": "2026-11-26T19:58:39+05:30",
+   "headline": "Investor Presentation",
+   "why": [
+    {
+     "text": "Investor presentations usually accompany results.",
+     "evidence": "NSE subject \"Investor Presentation\""
+    }
+   ],
+   "filings": [
+    {
+     "id": "106872055",
+     "time": "2026-11-26T19:58:39+05:30",
+     "subject": "Investor Presentation",
+     "headline": "Investor Presentation",
+     "nse_summary": "Sun Pharmaceutical Industries Limited has informed the Exchange about Investor Presentation",
+     "url": "https://nsearchives.nseindia.in/corporate/SUNPHARMA456_26112026195823_IntimationSE20261126_Investor_Presenatation_Nov2026_Signed.pdf",
+     "size": "4.42 MB",
+     "category": "results",
+     "tier": "worth_knowing",
+     "reason": "Investor presentations usually accompany results.",
+     "evidence": "NSE subject \"Investor Presentation\""
+    }
+   ],
+   "results": {
+    "status": "pending",
+    "reason": "NSE has not published the structured (XBRL) copy of these results yet. The results PDF is linked below."
+   },
+   "related": [],
+   "rank": 1,
+   "rank_reason": "1st of 4 in Worth knowing. Cards sort by category (Results is 1st in the order), then newest first."
+  },
+  {
    "id": "HDFCBANK:management_change:106870715",
    "symbol": "HDFCBANK",
    "company": "HDFC Bank Limited",
@@ -280,8 +318,8 @@
    ],
    "profile": null,
    "related": [],
-   "rank": 1,
-   "rank_reason": "1st of 5 in Worth knowing. Cards sort by category (Management change is 3rd in the order), then newest first."
+   "rank": 2,
+   "rank_reason": "2nd of 4 in Worth knowing. Cards sort by category (Management change is 3rd in the order), then newest first."
   },
   {
    "id": "DIXON:management_change:106869612",
@@ -320,42 +358,8 @@
     "filing": "Appointment of Ms Aruna Jayanthi (DIN: 00817860) as Other of the company w.e.f. November 24, 2026"
    },
    "related": [],
-   "rank": 2,
-   "rank_reason": "2nd of 5 in Worth knowing. Cards sort by category (Management change is 3rd in the order), then newest first."
-  },
-  {
-   "id": "SUNPHARMA:credit_rating:106869300",
-   "symbol": "SUNPHARMA",
-   "company": "Sun Pharmaceutical Industries Limited",
-   "category": "credit_rating",
-   "category_label": "Credit rating",
-   "tier": "worth_knowing",
-   "time": "2026-11-23T20:35:37+05:30",
-   "headline": "Credit Rating",
-   "why": [
-    {
-     "text": "A rating action without a downgrade.",
-     "evidence": "NSE subject \"Credit Rating\""
-    }
-   ],
-   "filings": [
-    {
-     "id": "106869300",
-     "time": "2026-11-23T20:35:37+05:30",
-     "subject": "Credit Rating",
-     "headline": "Credit Rating",
-     "nse_summary": "Sun Pharmaceutical Industries Limited has informed the Exchange about Credit Rating",
-     "url": "https://nsearchives.nseindia.in/corporate/SUNSEC_23112026203508_Intimation_to_SE_-_GTC_SP_Credit_Rating.pdf",
-     "size": "393.41 KB",
-     "category": "credit_rating",
-     "tier": "worth_knowing",
-     "reason": "A rating action without a downgrade.",
-     "evidence": "NSE subject \"Credit Rating\""
-    }
-   ],
-   "related": [],
    "rank": 3,
-   "rank_reason": "3rd of 5 in Worth knowing. Cards sort by category (Credit rating is 9th in the order), then newest first."
+   "rank_reason": "3rd of 4 in Worth knowing. Cards sort by category (Management change is 3rd in the order), then newest first."
   },
   {
    "id": "INFY:unclassified:106870398",
@@ -370,9 +374,26 @@
     {
      "text": "No rule matched, so it is shown rather than hidden.",
      "evidence": "NSE subject \"Updates\""
+    },
+    {
+     "text": "2 filings from INFY about unclassified in this window are grouped into one card.",
+     "evidence": null
     }
    ],
    "filings": [
+    {
+     "id": "106872100",
+     "time": "2026-11-26T22:17:06+05:30",
+     "subject": "Updates",
+     "headline": "Investor Conference",
+     "nse_summary": "Infosys Limited has informed the Exchange regarding 'Investor Conference'.",
+     "url": "https://nsearchives.nseindia.in/corporate/Infosys_26112026221607_SE_filing_Investor_conference_26112026.pdf",
+     "size": "3.12 MB",
+     "category": "unclassified",
+     "tier": "worth_knowing",
+     "reason": "No rule matched, so it is shown rather than hidden.",
+     "evidence": "NSE subject \"Updates\""
+    },
     {
      "id": "106870398",
      "time": "2026-11-25T15:00:58+05:30",
@@ -389,50 +410,58 @@
    ],
    "related": [],
    "rank": 4,
-   "rank_reason": "4th of 5 in Worth knowing. Cards sort by category (Unclassified is 20th in the order), then newest first."
-  },
-  {
-   "id": "NATIONALUM:unclassified:106869252",
-   "symbol": "NATIONALUM",
-   "company": "National Aluminium Company Limited",
-   "category": "unclassified",
-   "category_label": "Unclassified",
-   "tier": "worth_knowing",
-   "time": "2026-11-23T19:32:18+05:30",
-   "headline": "Incorporation of NLC NALCO Power Private Limited",
-   "why": [
-    {
-     "text": "No rule matched, so it is shown rather than hidden.",
-     "evidence": "NSE subject \"General Updates\""
-    }
-   ],
-   "filings": [
-    {
-     "id": "106869252",
-     "time": "2026-11-23T19:32:18+05:30",
-     "subject": "General Updates",
-     "headline": "Incorporation of NLC NALCO Power Private Limited",
-     "nse_summary": "National Aluminium Company Limited has informed the Exchange about Incorporation of NLC NALCO Power Private Limited",
-     "url": "https://nsearchives.nseindia.in/corporate/bharatsahu_23112026193151_SELETTERJVC.pdf",
-     "size": "1.04 MB",
-     "category": "unclassified",
-     "tier": "worth_knowing",
-     "reason": "No rule matched, so it is shown rather than hidden.",
-     "evidence": "NSE subject \"General Updates\""
-    }
-   ],
-   "related": [],
-   "rank": 5,
-   "rank_reason": "5th of 5 in Worth knowing. Cards sort by category (Unclassified is 20th in the order), then newest first."
+   "rank_reason": "4th of 4 in Worth knowing. Cards sort by category (Unclassified is 20th in the order), then newest first."
   }
  ],
  "routine": {
-  "count": 5,
+  "count": 6,
   "groups": [
    {
     "label": "Investor meetings",
     "reason": "Schedules of analyst and investor meetings.",
     "items": [
+     {
+      "id": "106871628",
+      "time": "2026-11-26T14:50:10+05:30",
+      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "headline": "Intimation of schedule of Analyst / Institutional Investors Meeting",
+      "nse_summary": "Trent Limited has informed the Exchange about Intimation of schedule of Analyst / Institutional Investors Meeting",
+      "url": "https://nsearchives.nseindia.in/corporate/TRENT_26112026143736_InvestorAnalystMeeting261120261.pdf",
+      "size": "296.92 KB",
+      "category": "investor_meetings",
+      "tier": "routine",
+      "reason": "Schedules of analyst and investor meetings.",
+      "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
+      "symbol": "TRENT"
+     },
+     {
+      "id": "106871411",
+      "time": "2026-11-26T11:22:56+05:30",
+      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "headline": "Analyst/Institutional Investor Meet",
+      "nse_summary": "Dixon Technologies (India) Limited has informed the Exchange about Analyst/Institutional Investor Meet",
+      "url": "https://nsearchives.nseindia.in/corporate/DIXON_26112026111744_InvestorMeetOutcome26112026.pdf",
+      "size": "617.90 KB",
+      "category": "investor_meetings",
+      "tier": "routine",
+      "reason": "Schedules of analyst and investor meetings.",
+      "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
+      "symbol": "DIXON"
+     },
+     {
+      "id": "106871395",
+      "time": "2026-11-26T10:58:27+05:30",
+      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
+      "headline": "Intimation of schedule of Analyst / Institutional Investors Meetings",
+      "nse_summary": "Trent Limited has informed the Exchange about Intimation of schedule of Analyst / Institutional Investors Meetings",
+      "url": "https://nsearchives.nseindia.in/corporate/TRENT_26112026105032_InvestorAnalystMeeting26112026.pdf",
+      "size": "298.43 KB",
+      "category": "investor_meetings",
+      "tier": "routine",
+      "reason": "Schedules of analyst and investor meetings.",
+      "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
+      "symbol": "TRENT"
+     },
      {
       "id": "106870597",
       "time": "2026-11-25T17:24:40+05:30",
@@ -474,50 +503,22 @@
       "reason": "Schedules of analyst and investor meetings.",
       "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
       "symbol": "MEDANTA"
-     },
-     {
-      "id": "106869096",
-      "time": "2026-11-23T17:57:34+05:30",
-      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-      "headline": "Schedule of meet",
-      "nse_summary": "State Bank Of India has informed the Exchange about Schedule of meet",
-      "url": "https://nsearchives.nseindia.in/corporate/SBIN_23112026175710_BSE_NSE_InvestorMeet_Intimation_23112026.pdf",
-      "size": "258.14 KB",
-      "category": "investor_meetings",
-      "tier": "routine",
-      "reason": "Schedules of analyst and investor meetings.",
-      "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
-      "symbol": "SBIN"
-     },
-     {
-      "id": "106869094",
-      "time": "2026-11-23T17:56:51+05:30",
-      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-      "headline": "Analyst/Institutional Investor Meet",
-      "nse_summary": "Dixon Technologies (India) Limited has informed the Exchange about Analyst/Institutional Investor Meet",
-      "url": "https://nsearchives.nseindia.in/corporate/DIXON_23112026175353_InvestorMeetOutcome23112026.pdf",
-      "size": "618.37 KB",
-      "category": "investor_meetings",
-      "tier": "routine",
-      "reason": "Schedules of analyst and investor meetings.",
-      "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
-      "symbol": "DIXON"
      }
     ],
-    "count": 5
+    "count": 6
    }
   ]
  },
  "price_check": {
   "sessions": [
    {
-    "day": "2026-11-23",
-    "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261123_F_0000.csv.zip",
+    "day": "2026-11-25",
+    "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261125_F_0000.csv.zip",
     "stocks": 18
    },
    {
-    "day": "2026-11-25",
-    "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261125_F_0000.csv.zip",
+    "day": "2026-11-26",
+    "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261126_F_0000.csv.zip",
     "stocks": 18
    }
   ],
