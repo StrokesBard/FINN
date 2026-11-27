@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-27T03:17:35.824077+05:30",
+ "generated_at": "2026-11-28T03:00:44.036851+05:30",
  "window": {
   "key": "24h",
   "label": "Last 24 hours",
-  "start": "2026-11-26T03:17:35.824077+05:30",
-  "end": "2026-11-27T03:17:35.824077+05:30"
+  "start": "2026-11-27T03:00:44.036851+05:30",
+  "end": "2026-11-28T03:00:44.036851+05:30"
  },
  "windows": [
   {
@@ -104,150 +104,208 @@
   "volume_lookback_sessions": 20
  },
  "counts": {
-  "needs_you": 0,
-  "worth_knowing": 2,
-  "routine_filings": 3,
-  "filings": 5,
-  "companies": 4
+  "needs_you": 1,
+  "worth_knowing": 0,
+  "routine_filings": 2,
+  "filings": 2,
+  "companies": 2
  },
  "cards": [
   {
-   "id": "SUNPHARMA:results:106872055",
-   "symbol": "SUNPHARMA",
-   "company": "Sun Pharmaceutical Industries Limited",
-   "category": "results",
-   "category_label": "Results",
-   "tier": "worth_knowing",
-   "time": "2026-11-26T19:58:39+05:30",
-   "headline": "Investor Presentation",
+   "id": "HAL:price_move:2026-11-27",
+   "symbol": "HAL",
+   "company": "Hindustan Aeronautics Limited",
+   "category": "price_move",
+   "category_label": "Unusual move",
+   "tier": "needs_you",
+   "time": "2026-11-27T15:30:00+05:30",
+   "headline": "Unusual volume",
    "why": [
     {
-     "text": "Investor presentations usually accompany results.",
-     "evidence": "NSE subject \"Investor Presentation\""
+     "text": "27 Nov: Traded 3.0× its average volume of the previous 20 sessions, beyond your 2× threshold.",
+     "evidence": "NSE bhavcopy files 28 Oct – 27 Nov 2026"
     }
    ],
-   "filings": [
+   "filings": [],
+   "moves": [
     {
-     "id": "106872055",
-     "time": "2026-11-26T19:58:39+05:30",
-     "subject": "Investor Presentation",
-     "headline": "Investor Presentation",
-     "nse_summary": "Sun Pharmaceutical Industries Limited has informed the Exchange about Investor Presentation",
-     "url": "https://nsearchives.nseindia.in/corporate/SUNPHARMA456_26112026195823_IntimationSE20261126_Investor_Presenatation_Nov2026_Signed.pdf",
-     "size": "4.42 MB",
-     "category": "results",
-     "tier": "worth_knowing",
-     "reason": "Investor presentations usually accompany results.",
-     "evidence": "NSE subject \"Investor Presentation\""
+     "day": "2026-11-27",
+     "close": 5074.0,
+     "prev_close": 4909.6,
+     "change_pct": 3.3485416327195594,
+     "volume": 2412050,
+     "avg_volume": 804605.3,
+     "volume_multiple": 2.9978052592991866,
+     "source_url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261127_F_0000.csv.zip",
+     "lookback": [
+      {
+       "day": "2026-10-28",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261028_F_0000.csv.zip",
+       "volume": 443033
+      },
+      {
+       "day": "2026-10-29",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261029_F_0000.csv.zip",
+       "volume": 509555
+      },
+      {
+       "day": "2026-10-30",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261030_F_0000.csv.zip",
+       "volume": 699027
+      },
+      {
+       "day": "2026-11-02",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261102_F_0000.csv.zip",
+       "volume": 584497
+      },
+      {
+       "day": "2026-11-03",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261103_F_0000.csv.zip",
+       "volume": 774647
+      },
+      {
+       "day": "2026-11-04",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261104_F_0000.csv.zip",
+       "volume": 1242735
+      },
+      {
+       "day": "2026-11-05",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261105_F_0000.csv.zip",
+       "volume": 913480
+      },
+      {
+       "day": "2026-11-06",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261106_F_0000.csv.zip",
+       "volume": 1168786
+      },
+      {
+       "day": "2026-11-09",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261109_F_0000.csv.zip",
+       "volume": 831506
+      },
+      {
+       "day": "2026-11-11",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261111_F_0000.csv.zip",
+       "volume": 843514
+      },
+      {
+       "day": "2026-11-12",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261112_F_0000.csv.zip",
+       "volume": 2596682
+      },
+      {
+       "day": "2026-11-13",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+       "volume": 900759
+      },
+      {
+       "day": "2026-11-16",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261116_F_0000.csv.zip",
+       "volume": 446223
+      },
+      {
+       "day": "2026-11-17",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261117_F_0000.csv.zip",
+       "volume": 449126
+      },
+      {
+       "day": "2026-11-18",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261118_F_0000.csv.zip",
+       "volume": 517433
+      },
+      {
+       "day": "2026-11-19",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261119_F_0000.csv.zip",
+       "volume": 576125
+      },
+      {
+       "day": "2026-11-20",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261120_F_0000.csv.zip",
+       "volume": 492812
+      },
+      {
+       "day": "2026-11-23",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261123_F_0000.csv.zip",
+       "volume": 440368
+      },
+      {
+       "day": "2026-11-25",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261125_F_0000.csv.zip",
+       "volume": 980966
+      },
+      {
+       "day": "2026-11-26",
+       "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261126_F_0000.csv.zip",
+       "volume": 680832
+      }
+     ],
+     "price_hit": false,
+     "volume_hit": true,
+     "caveats": []
     }
    ],
-   "results": {
-    "status": "pending",
-    "reason": "NSE has not published the structured (XBRL) copy of these results yet. The results PDF is linked below."
-   },
    "related": [],
    "rank": 1,
-   "rank_reason": "1st of 2 in Worth knowing. Cards sort by category (Results is 1st in the order), then newest first."
-  },
-  {
-   "id": "INFY:unclassified:106872100",
-   "symbol": "INFY",
-   "company": "Infosys Limited",
-   "category": "unclassified",
-   "category_label": "Unclassified",
-   "tier": "worth_knowing",
-   "time": "2026-11-26T22:17:06+05:30",
-   "headline": "Investor Conference",
-   "why": [
-    {
-     "text": "No rule matched, so it is shown rather than hidden.",
-     "evidence": "NSE subject \"Updates\""
-    }
-   ],
-   "filings": [
-    {
-     "id": "106872100",
-     "time": "2026-11-26T22:17:06+05:30",
-     "subject": "Updates",
-     "headline": "Investor Conference",
-     "nse_summary": "Infosys Limited has informed the Exchange regarding 'Investor Conference'.",
-     "url": "https://nsearchives.nseindia.in/corporate/Infosys_26112026221607_SE_filing_Investor_conference_26112026.pdf",
-     "size": "3.12 MB",
-     "category": "unclassified",
-     "tier": "worth_knowing",
-     "reason": "No rule matched, so it is shown rather than hidden.",
-     "evidence": "NSE subject \"Updates\""
-    }
-   ],
-   "related": [],
-   "rank": 2,
-   "rank_reason": "2nd of 2 in Worth knowing. Cards sort by category (Unclassified is 20th in the order), then newest first."
+   "rank_reason": "1st of 1 in Needs you. Cards sort by category (Unusual move is 2nd in the order), then newest first."
   }
  ],
  "routine": {
-  "count": 3,
+  "count": 2,
   "groups": [
    {
     "label": "Investor meetings",
     "reason": "Schedules of analyst and investor meetings.",
     "items": [
      {
-      "id": "106871628",
-      "time": "2026-11-26T14:50:10+05:30",
+      "id": "106872655",
+      "time": "2026-11-27T14:18:49+05:30",
       "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-      "headline": "Intimation of schedule of Analyst / Institutional Investors Meeting",
-      "nse_summary": "Trent Limited has informed the Exchange about Intimation of schedule of Analyst / Institutional Investors Meeting",
-      "url": "https://nsearchives.nseindia.in/corporate/TRENT_26112026143736_InvestorAnalystMeeting261120261.pdf",
-      "size": "296.92 KB",
-      "category": "investor_meetings",
-      "tier": "routine",
-      "reason": "Schedules of analyst and investor meetings.",
-      "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
-      "symbol": "TRENT"
-     },
-     {
-      "id": "106871411",
-      "time": "2026-11-26T11:22:56+05:30",
-      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-      "headline": "Analyst/Institutional Investor Meet",
-      "nse_summary": "Dixon Technologies (India) Limited has informed the Exchange about Analyst/Institutional Investor Meet",
-      "url": "https://nsearchives.nseindia.in/corporate/DIXON_26112026111744_InvestorMeetOutcome26112026.pdf",
-      "size": "617.90 KB",
+      "headline": "Analyst/Institutional Investor Meet Outcome",
+      "nse_summary": "Dixon Technologies (India) Limited has informed the Exchange about Analyst/Institutional Investor Meet Outcome",
+      "url": "https://nsearchives.nseindia.in/corporate/DIXON_27112026141544_InvestorMeetOutcome27112026.pdf",
+      "size": "617.86 KB",
       "category": "investor_meetings",
       "tier": "routine",
       "reason": "Schedules of analyst and investor meetings.",
       "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
       "symbol": "DIXON"
-     },
-     {
-      "id": "106871395",
-      "time": "2026-11-26T10:58:27+05:30",
-      "subject": "Analysts/Institutional Investor Meet/Con. Call Updates",
-      "headline": "Intimation of schedule of Analyst / Institutional Investors Meetings",
-      "nse_summary": "Trent Limited has informed the Exchange about Intimation of schedule of Analyst / Institutional Investors Meetings",
-      "url": "https://nsearchives.nseindia.in/corporate/TRENT_26112026105032_InvestorAnalystMeeting26112026.pdf",
-      "size": "298.43 KB",
-      "category": "investor_meetings",
-      "tier": "routine",
-      "reason": "Schedules of analyst and investor meetings.",
-      "evidence": "NSE subject \"Analysts/Institutional Investor Meet/Con. Call Updates\"",
-      "symbol": "TRENT"
      }
     ],
-    "count": 3
+    "count": 1
+   },
+   {
+    "label": "Routine paperwork",
+    "reason": "Routine compliance paperwork.",
+    "items": [
+     {
+      "id": "106872810",
+      "time": "2026-11-27T16:12:40+05:30",
+      "subject": "Copy of Newspaper Publication",
+      "headline": "Copy of Newspaper Publication",
+      "nse_summary": "HDFC Bank Limited has informed the Exchange about Copy of Newspaper Publication",
+      "url": "https://nsearchives.nseindia.in/corporate/HDFCBANK_27112026160926_SEspecialwindowfortransferAdv27112026.pdf",
+      "size": "2.41 MB",
+      "category": "routine_paperwork",
+      "tier": "routine",
+      "reason": "Routine compliance paperwork.",
+      "evidence": "NSE subject \"Copy of Newspaper Publication\"",
+      "symbol": "HDFCBANK"
+     }
+    ],
+    "count": 1
    }
   ]
  },
  "price_check": {
   "sessions": [
    {
-    "day": "2026-11-26",
-    "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261126_F_0000.csv.zip",
+    "day": "2026-11-27",
+    "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261127_F_0000.csv.zip",
     "stocks": 18
    }
   ],
   "stocks": 18,
-  "hits": 0
+  "hits": 1
  },
  "ranking": {
   "tiers": [
@@ -309,7 +367,7 @@
    }
   ],
   "cards_with_extracts": 0,
-  "filings_waiting": 1,
+  "filings_waiting": 0,
   "claims_shown": 0,
   "claims_discarded": 0,
   "spend": {
